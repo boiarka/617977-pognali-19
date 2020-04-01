@@ -129,11 +129,84 @@
 
           <div class="step-section">
             <input class="visually-hidden form-checkbox" type="checkbox" name="childs" id="plan-childs" />
-            <label for="search-bus">Можно с детьми</label>
+            <label for="plan-childs">Можно с детьми</label>
           </div>
 
-          <div class="step-section">
-            Календарь
+          <div class="calendar-wrapper">
+            <div class="calendar-nav">
+              <button type="button"><img src="https://via.placeholder.com/150x150" width="50" height="50"
+                  alt="Влево"></button>
+              <div class="calendar-nav__date">Март 2019</div>
+              <button type="button"><img src="https://via.placeholder.com/150x150" width="50" height="50"
+                  alt="Вправо"></button>
+            </div>
+
+            <table class="calendar">
+              <tr>
+                <th>П</th>
+                <th>В</th>
+                <th>С</th>
+                <th>Ч</th>
+                <th>П</th>
+                <th class="calendar__item--weekend">С</th>
+                <th class="calendar__item--weekend">В</th>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td class="calendar__item--today calendar__item--possible">26</td>
+                <td class="calendar__item--possible">27</td>
+                <td class="calendar__item--possible">28</td>
+                <td class="calendar__item--gray">29</td>
+              </tr>
+              <tr>
+                <td class="calendar__item--gray">30</td>
+                <td class="calendar__item--gray">31</td>
+                <td class="calendar__item--gray">1</td>
+                <td class="calendar__item--gray">2</td>
+                <td class="calendar__item--gray">3</td>
+                <td class="calendar__item--gray">4</td>
+                <td class="calendar__item--gray">5</td>
+              </tr>
+            </table>
+
           </div>
 
           <button class="plan-form__button" type="button">Следующий шаг</button>
