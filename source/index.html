@@ -9,135 +9,173 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
-        alt="Логотип сайта «Погнали?»">
-    </a>
-    <nav class="main-nav">
-    </nav>
-    <div class="header-title">В путешествие с крутыми попутчиками!</div>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+          alt="Логотип сайта «Погнали?»">
+      </a>
+      <button class="page-header__toggle"></button>
+    </div>
+
+    <div class="main-nav visually-hidden">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="#">О сервисе</a></li>
+        <li class="site-list__item"><a href="#">Направления</a></li>
+        <li class="site-list__item"><a href="#">Попутчики</a></li>
+      </ul>
+
+      <a class="main-nav__login user-login" href="#">Авторизация</a>
+
+      <ul class="main-nav__contacts contacts-list">
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+            alt="Иконка телефона">
+          <a href="tel:+88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+            alt="Иконка письма">
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__social socials">
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="Facebook иконка">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="VK иконка">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="Instagram иконка">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-header__title">В путешествие с крутыми попутчиками!</div>
   </header>
 
   <main class="page-main">
 
-    <section class="user-block">
-      <ul class="user-block__buttons">
-        <li>
-          <a href="#">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка телефона">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка е-мейла">
-          </a>
-        </li>
-        <li>
-          <a href="#">Авторизация</a>
-        </li>
-      </ul>
-    </section>
+    <ul class="user-nav">
+      <li class="user-nav__item">
+        <a class="user-nav__phone" href="#">
+          <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка телефона">
+        </a>
+      </li>
+      <li class="user-nav__item">
+        <a class="user-nav__email" href="#">
+          <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка е-мейла">
+        </a>
+      </li>
+      <li class="user-nav__item">
+        <a class="user-login" href="#">Авторизация</a>
+      </li>
+    </ul>
 
-    <section class="list-block">
-      <p class="list-block__quote">«Лучшее приложение, что я видел в жизни!»</p>
-      <p class="list-block__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
-      <ol class="list-block__main-list">
-        <li>Выберите направление</li>
-        <li>Изучите идеи путешественников</li>
-        <li>Находите тех, кто похож на вас</li>
-        <li>Путешествуйте вместе!</li>
-      </ol>
-    </section>
+    <div class="quote">
+      <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
+      <p class="quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+    </div>
 
-    <section class="about-block">
-      <h3 class="section-h3">
+    <ol class="promo-list">
+      <li class="promo-list__item">Выберите направление</li>
+      <li class="promo-list__item">Изучите идеи путешественников</li>
+      <li class="promo-list__item">Находите тех, кто похож на вас</li>
+      <li class="promo-list__item">Путешествуйте вместе!</li>
+    </ol>
+
+    <section class="about">
+      <h3 class="page-title">
         О сервисе
       </h3>
-      <p class="section-text">
+      <p class="page-text">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
         своими идеями путешествий и черпайте вдохновение в чужих.</p>
-      <p class="section-text bold-text">
+      <p class="page-text page-text--bold">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
     </section>
 
 
-    <section class="directions-block">
-      <h3 class="section-h3">
+    <section class="directions">
+      <h3 class="page-title">
         Направления
       </h3>
-      <p class="section-text">
+      <p class="page-text page-text--dark">
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
         там заняться.
       </p>
+
       <article class="direction-card">
-        <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
           alt="Флаг страны">
         <h3 class="direction-card__title">Таиланд</h3>
-        <p class="direction-card__title-tagline">Джунгли зовут!</p>
-        <img class="direction-card__user-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка юзера">
-        <p class="direction-card__users-number">18321</p>
+        <p class="direction-card__description">Джунгли зовут!</p>
+        <p class="direction-card__counter">18321</p>
       </article>
 
       <article class="direction-card">
-        <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
           alt="Флаг страны">
-        <h3 class="direction-card__title">Таиланд</h3>
-        <p class="direction-card__title-tagline">Джунгли зовут!</p>
-        <img class="direction-card__user-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка юзера">
-        <p class="direction-card__users-number">18321</p>
+        <h3 class="direction-card__title">Франция</h3>
+        <p class="direction-card__description">Трэ бьен, манифик!</p>
+        <p class="direction-card__counter">12518</p>
       </article>
 
       <article class="direction-card">
-        <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
           alt="Флаг страны">
-        <h3 class="direction-card__title">Таиланд</h3>
-        <p class="direction-card__title-tagline">Джунгли зовут!</p>
-        <img class="direction-card__user-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка юзера">
-        <p class="direction-card__users-number">18321</p>
+        <h3 class="direction-card__title">Чехия</h3>
+        <p class="direction-card__description">Закоулки старой Европы</p>
+        <p class="direction-card__counter">5326</p>
       </article>
 
-      <button type="button" class="direction-card__button">
-        Показать все
-        <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка треугольника">
-      </button>
+      <button class="directions__button" type="button">Показать все</button>
     </section>
 
 
-    <section class="travelers-block">
-      <h3 class="section-h3">
+    <section class="travelers">
+      <h3 class="page-title travelers__title">
         Попутчики
       </h3>
-      <p class="section-text">
+      <p class="page-text travelers__text">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
         для хайкинга.
       </p>
-      <p class="section-text bold-text">
+      <p class="page-text page-text--bold">
         Теперь можно легко найти единомышленников!
       </p>
 
       <article class="traveler-card">
-        <div class="traveler-card__level">
-          <p>99</p>
-          <span>level</span>
+        <div class="level traveler-card__level">
+          <p class="level__count">99</p>
+          <span class="level__text">level</span>
         </div>
-        <div class="traveler-card__countries-flag">
-          <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-            alt="Флаг страны">
-          <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-            alt="Флаг страны">
-          <img class="direction-card__country-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-            alt="Флаг страны">
-        </div>
+        <ul class="traveler-card__countries">
+          <li class="traveler-card__country">
+            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+          </li>
+          <li class="traveler-card__country">
+            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+          </li>
+          <li class="traveler-card__country">
+            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+          </li>
+        </ul>
         <h3 class="traveler-card__name">Таня Фирсова</h3>
+        <span class="traveler-card__status user-status user-status--online"></span>
 
-        <ul class="traveler-card__tags">
+        <ul class="tags traveler-card__tags">
           <li><a href="#">#ЗОЖ</a></li>
           <li><a href="#">#ПП</a></li>
           <li><a href="#">#Фитнес</a></li>
@@ -146,49 +184,80 @@
           <li><a href="#">#смузи</a></li>
         </ul>
 
-        <ul class="traveler-card__movement-icons">
-          <li class="movement-icons__active">
-            <a href="#">
-              <img class="movement-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                alt="Иконка самолет">
-            </a>
+        <ul class="transport-list">
+          <li class="transport-list__item transport-list__item--active">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка самолет">
           </li>
-          <li>
-            <a href="#">
-              <img class="movement-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                alt="Иконка автобус">
-            </a>
+          <li class="transport-list__item">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка автобус">
           </li>
-          <li>
-            <a href="#">
-              <img class="movement-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                alt="Иконка велосипед">
-            </a>
+          <li class="transport-list__item">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка велосипед">
           </li>
-          <li>
-            <a href="#">
-              <img class="movement-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                alt="Иконка пешком">
-            </a>
+          <li class="transport-list__item">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка пешком">
           </li>
         </ul>
       </article>
 
-      <button type="button" class="direction-card__button">
-        Показать все
-        <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка треугольника">
-      </button>
+      <article class="traveler-card">
+        <div class="level traveler-card__level">
+          <p class="level__count">80</p>
+          <span class="level__text">level</span>
+        </div>
+        <ul class="traveler-card__countries">
+          <li class="traveler-card__country">
+            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+          </li>
+          <li class="traveler-card__country">
+            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+          </li>
+        </ul>
+        <h3 class="traveler-card__name">Петя Демин</h3>
+        <span class="traveler-card__status user-status user-status--online"></span>
+
+        <ul class="tags traveler-card__tags">
+          <li><a href="#">#бургер</a></li>
+          <li><a href="#">#бар</a></li>
+          <li><a href="#">#футбол</a></li>
+          <li><a href="#">#концерт</a></li>
+          <li><a href="#">#крафт</a></li>
+        </ul>
+
+        <ul class="transport-list">
+          <li class="transport-list__item transport-list__item--active">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка самолет">
+          </li>
+          <li class="transport-list__item transport-list__item--active">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка автобус">
+          </li>
+          <li class="transport-list__item">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка велосипед">
+          </li>
+          <li class="transport-list__item transport-list__item--active">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка пешком">
+          </li>
+        </ul>
+      </article>
+
+      <button class="travelers__button" type="button">Показать всех</button>
     </section>
 
 
-    <section class="profile-block">
-      <h3 class="profile-block__title">Добавьте свой профиль</h3>
-      <div class="profile-block__big-icon">
-        <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка телефонов">
+    <section class="profile">
+      <h3 class="profile__title page-title">Добавьте свой профиль</h3>
+      <div class="profile__icon">
+        <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка телефонов">
       </div>
-      <ol class="profile-block__list">
+      <ol class="profile__list">
         <li>
           Базовое размещение
           <span>Бесплатно</span>
@@ -202,54 +271,71 @@
           <span>59 руб./мес</span>
         </li>
       </ol>
-      <a href="#">Показать тарифы для бизнеса</a>
+      <button type="button">Показать тарифы для бизнеса</button>
+
+      <div class="profile-popup visually-hidden">
+        <h3 class="page-title profile-popup__title">
+          Бизнес-тарифы
+        </h3>
+        <ul class="business-list">
+          <li class="business-list__item">
+            Реклама у блоггера
+            300 000 руб./пост
+          </li>
+          <li class="business-list__item">
+            Накрутка подписчиков
+            от 1 руб./шт.
+          </li>
+          <li class="business-list__item">
+            Лайки от ботов
+            от 20 коп./лайк
+          </li>
+          <li class="business-list__item">
+            Ваш продакт-плейсмент
+            Индивидуально
+          </li>
+        </ul>
+        <button class="profile-popup__button" type="button">Закрыть окно</button>
+      </div>
     </section>
 
 
-    <section class="email-block">
-      <h3 class="email-block__title">Заинтересовались?</h3>
+    <section class="email-form">
+      <h3 class="page-title">Заинтересовались?</h3>
       <p>
-        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.
+        Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="email-form__link"
+          href="#">авторизуйтесь</a>.
       </p>
-      <form id="subscribe_form" method="post" action="https://echo.htmlacademy.ru">
-        <input type="text" placeholder="E-mail" value="" name="asd_email">
-        <button>
-          <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-            alt="Иконка треугольника">
-        </button>
+      <form class="subscribe_form" method="post" action="https://echo.htmlacademy.ru">
+        <input class="subscribe_form__input" type="text" placeholder="E-mail" name="asd_email">
+        <button class="subscribe_form__button"></button>
       </form>
-      <p>
+      <p class="page-text">
         Остались вопросы?
         Мы с радостью на них ответим!
       </p>
-      <ul class="email-block__contacts">
-        <li>
-          <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+      <ul class="email-form__contacts contacts-list">
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
             alt="Иконка телефона">
           <a href="tel:+88005558628">8 800 555-86-28</a>
         </li>
-        <li>
-          <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
             alt="Иконка письма">
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
       </ul>
     </section>
 
-    <section class="adress-block">
-      <div class="adress-block__text">
-        <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка карты">
+    <section class="address">
+      <div class="address__text">
+        <img class="address__icon" src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка карты">
         <p>ул. Большая Конюшенная, 19/8</p>
       </div>
-      <button type="button" class="adress-block__button">
-        Проложить маршрут
-        <img class="adress-block__button-icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Иконка треугольника">
-      </button>
-      <div class="adress-block__map">
-        <img class="direction-card__button-icon" src="https://via.placeholder.com/150x150" width="320" height="320"
-          alt="Карта">
+      <button class="address__button" type="button">Проложить маршрут</button>
+      <div class="address__map">
+        <img src="https://via.placeholder.com/150x150" width="320" height="320" alt="Карта">
       </div>
     </section>
 
@@ -257,35 +343,36 @@
 
 
   <footer class="page-footer">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
+    <a class="page-footer__logo">
+      <img class="page-footer__image" src="https://via.placeholder.com/150x150" width="100" height="19"
         alt="Логотип сайта «Погнали?»">
     </a>
-    <ul class="page-footer__social">
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+
+    <ul class="page-footer__social socials">
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="Facebook иконка">
         </a>
       </li>
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="VK иконка">
         </a>
       </li>
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="Instagram иконка">
         </a>
       </li>
     </ul>
 
-    <div class="page-footer__bottom">
-      <p>Разработано</p>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
       <a href="#">
-        <img class="page-footer__bottom-icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+        <img class="copyright__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
           alt="Иконка академии">
       </a>
     </div>

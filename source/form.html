@@ -7,50 +7,459 @@
 </head>
 
 <body>
-
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
-        alt="Логотип сайта «Погнали?»">
-    </a>
-    <nav class="main-nav">
-    </nav>
-    <div class="header-title">Направления</div>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+          alt="Логотип сайта «Погнали?»">
+      </a>
+      <button class="page-header__toggle"></button>
+    </div>
+
+    <div class="main-nav visually-hidden">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="#">О сервисе</a></li>
+        <li class="site-list__item"><a href="#">Направления</a></li>
+        <li class="site-list__item"><a href="#">Попутчики</a></li>
+      </ul>
+
+      <a class="main-nav__login user-login" href="#">Авторизация</a>
+
+      <ul class="main-nav__contacts contacts-list">
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+            alt="Иконка телефона">
+          <a href="tel:+88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts-list__item">
+          <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+            alt="Иконка письма">
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__social socials">
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="Facebook иконка">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="VK иконка">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="social-link" href="#">
+            <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+              alt="Instagram иконка">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-header__title page-header__title--bordered">Направления</div>
   </header>
 
-  <main class="page-main"></main>
+  <main class="page-main">
+    <div class="user-profile">
+
+      <div class="user-profile__photo edit-photo">
+        <div class="edit-photo__level level level--white">
+          <p class="level__count">99</p>
+          <span class="level__text">level</span>
+        </div>
+        <div class="edit-photo__image">
+          <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Фото">
+        </div>
+        <button class="edit-photo__button" type="button">Сменить фото</button>
+      </div>
+
+      <div class="user-profile__section">
+        <p class="user-profile__title">Тэги</p>
+        <ul class="user-profile__tags tags">
+          <li><a href="#">#ЗОЖ</a></li>
+          <li><a href="#">#ПП</a></li>
+          <li><a href="#">#Фитнес</a></li>
+          <li><a href="#">#пляж</a></li>
+          <li><a href="#">#авокадо</a></li>
+          <li><a href="#">#смузи</a></li>
+        </ul>
+      </div>
+
+
+      <div class="user-profile__section">
+        <p class="user-profile__title">Транспорт</p>
+        <ul class="user-profile__transport transport-list">
+          <li class="transport-list__active">
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка самолет">
+          </li>
+          <li>
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка автобус">
+          </li>
+          <li>
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка велосипед">
+          </li>
+          <li>
+            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
+              alt="Иконка пешком">
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="plans">
+      <p class="plans__title">Мои планы:</p>
+
+      <div class="trip-card">
+        <p class="trip-card__title">1 Франция, Италия</p>
+        <ul class="trip-card__info">
+          <li>3 попутчика</li>
+          <li>26 мар — 29 мар</li>
+        </ul>
+        <button class="trip-card__button" type="button">Изменить</button>
+      </div>
+
+      <div class="trip-card">
+        <p class="trip-card__title">2 Таиланд, Индонезия</p>
+        <ul class="trip-card__info">
+          <li>1 попутчик</li>
+          <li>1 июл — 15 июл</li>
+        </ul>
+        <button class="trip-card__button" type="button">Изменить</button>
+      </div>
+
+    </div>
+
+    <div class="add-plan">
+      <p class="add-plan__title">Добавить план:</p>
+      <ul class="add-plan__dots dots-list">
+        <li class="dots-list__item">
+          <button class="dots-list__button dots-list__button--active" type="button"></button>
+        </li>
+        <li class="dots-list__item">
+          <button class="dots-list__button" type="button"></button>
+        </li>
+        <li class="dots-list__item">
+          <button class="dots-list__button" type="button"></button>
+        </li>
+      </ul>
+
+      <form class="add-plan__form" method="post" action="https://echo.htmlacademy.ru/">
+
+        <fieldset class="step">
+          <p class="step__title">Шаг 1. Даты пребывания</p>
+          <p class="step__description">
+            Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
+            длительность.
+          </p>
+
+          <div class="step-section">
+            <label for="plan-travelers">
+              <p class="step-section__title">
+                <p>Ищу попутчиков:</p>
+                <span>Чел.</span>
+              </p>
+            </label>
+            <div class="counter-control">
+              <button class="counter-control__minus" type="button">-</button>
+              <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
+              <button class="counter-control__plus" type="button">+</button>
+            </div>
+          </div>
+
+
+          <div class="step-section">
+            <label for="plan-duration">
+              <p class="step-section__title">
+                <p>Длительность:</p>
+                <span>дн.</span>
+              </p>
+            </label>
+            <div class="counter-control">
+              <button class="counter-control__minus" type="button">-</button>
+              <input class="counter-control__input" type="text" value="1" name="duration" id="plan-duration" />
+              <button class="counter-control__plus" type="button">+</button>
+            </div>
+          </div>
+
+          <div class="step-section">
+            <label>
+              <input class="visually-hidden form-checkbox" type="checkbox" name="childs" />
+              Можно с детьми
+            </label>
+          </div>
+
+          <div class="calendar">
+            <div class="calendar__header calendar-nav">
+              <button class="calendar-nav__button" type="button">
+                <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Влево">
+              </button>
+              <div class="calendar-nav__date">Март 2019</div>
+              <button class="calendar-nav__button" type="button">
+                <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Вправо">
+              </button>
+            </div>
+
+            <table class="calendar__table days-table">
+              <tr>
+                <th class="days-table__day">П</th>
+                <th class="days-table__day">В</th>
+                <th class="days-table__day">С</th>
+                <th class="days-table__day">Ч</th>
+                <th class="days-table__day">П</th>
+                <th class="days-table__day days-table__day--weekend">С</th>
+                <th class="days-table__day days-table__day--weekend">В</th>
+              </tr>
+              <tr>
+                <td class="days-table__num">23</td>
+                <td class="days-table__num">24</td>
+                <td class="days-table__num">25</td>
+                <td class="days-table__num">26</td>
+                <td class="days-table__num">27</td>
+                <td class="days-table__num">28</td>
+                <td class="days-table__num">1</td>
+              </tr>
+              <tr>
+                <td class="days-table__num">2</td>
+                <td class="days-table__num">3</td>
+                <td class="days-table__num">4</td>
+                <td class="days-table__num">5</td>
+                <td class="days-table__num">6</td>
+                <td class="days-table__num">7</td>
+                <td class="days-table__num">8</td>
+              </tr>
+              <tr>
+                <td class="days-table__num">9</td>
+                <td class="days-table__num">10</td>
+                <td class="days-table__num">11</td>
+                <td class="days-table__num">12</td>
+                <td class="days-table__num">13</td>
+                <td class="days-table__num">14</td>
+                <td class="days-table__num">15</td>
+              </tr>
+              <tr>
+                <td class="days-table__num">16</td>
+                <td class="days-table__num">17</td>
+                <td class="days-table__num">18</td>
+                <td class="days-table__num">19</td>
+                <td class="days-table__num">20</td>
+                <td class="days-table__num">21</td>
+                <td class="days-table__num">22</td>
+              </tr>
+              <tr>
+                <td class="days-table__num">23</td>
+                <td class="days-table__num">24</td>
+                <td class="days-table__num">25</td>
+                <td
+                  class="days-table__num days-table__num--available days-table__num--selected days-table__num--active">
+                  26</td>
+                <td class="days-table__num days-table__num--available days-table__num--selected">27</td>
+                <td class="days-table__num days-table__num--available days-table__num--selected">28</td>
+                <td class="days-table__num days-table__num--available">29</td>
+              </tr>
+              <tr>
+                <td class="days-table__num days-table__num--available">30</td>
+                <td class="days-table__num days-table__num--available">31</td>
+                <td class="days-table__num days-table__num--available">1</td>
+                <td class="days-table__num days-table__num--available">2</td>
+                <td class="days-table__num days-table__num--available">3</td>
+                <td class="days-table__num days-table__num--available">4</td>
+                <td class="days-table__num days-table__num--available">5</td>
+              </tr>
+            </table>
+
+          </div>
+
+          <button class="plan-form__button button" type="button">Следующий шаг</button>
+        </fieldset>
+
+
+        <fieldset class="step">
+          <p class="step__title">Шаг 2. Маршрут</p>
+          <p class="step__description">
+            Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+          </p>
+
+          <div class="step__add-country route-section">
+
+            <div class="route-section__item added-country">
+              <button class="added-country__button" type="button">Босния и Герцеговина</button>
+              <div class="added-country__flag">
+                <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Флаг">
+                <button class="added-country__close close-button" type="button"></button>
+              </div>
+            </div>
+
+            <div class="route-section__item added-country">
+              <button class="added-country__button" type="button">Чехия</button>
+              <div class="added-country__flag">
+                <img src="https://via.placeholder.com/150x150" width="50" height="50" alt="Флаг">
+                <button class="added-country__close close-button" type="button"></button>
+              </div>
+            </div>
+
+            <div class="route-section__item choose-country">
+              <button class="choose-country__button" type="button">
+                Выберите страну
+                <button class="choose-country__close close-button" type="button"></button>
+              </button>
+
+              <div class="choose-country__popup countries-popup">
+
+                <div class="countries-popup__wrapper">
+                  <p class="countries-popup__title">Выберите страну</p>
+                  <button class="countries-popup__close close-button close-button--nobg" type="button"></button>
+                </div>
+
+                <div class="countries-popup__main">
+
+                  <table class="alphabet">
+                    <tr>
+                      <td><button class="alphabet__button alphabet__button--active" type="button">а</button></td>
+                      <td><button class="alphabet__button" type="button">б</button></td>
+                      <td><button class="alphabet__button" type="button">в</button></td>
+                      <td><button class="alphabet__button" type="button">г</button></td>
+                      <td><button class="alphabet__button" type="button">д</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="alphabet__button" type="button">е</button></td>
+                      <td><button class="alphabet__button" type="button">з</button></td>
+                      <td><button class="alphabet__button" type="button">и</button></td>
+                      <td><button class="alphabet__button" type="button">к</button></td>
+                      <td><button class="alphabet__button" type="button">л</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="alphabet__button" type="button">м</button></td>
+                      <td><button class="alphabet__button" type="button">н</button></td>
+                      <td><button class="alphabet__button" type="button">о</button></td>
+                      <td><button class="alphabet__button" type="button">п</button></td>
+                      <td><button class="alphabet__button" type="button">р</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="alphabet__button" type="button">с</button></td>
+                      <td><button class="alphabet__button" type="button">т</button></td>
+                      <td><button class="alphabet__button" type="button">у</button></td>
+                      <td><button class="alphabet__button" type="button">ф</button></td>
+                      <td><button class="alphabet__button" type="button">х</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="alphabet__button" type="button">ч</button></td>
+                      <td><button class="alphabet__button" type="button">ш</button></td>
+                      <td><button class="alphabet__button" type="button">з</button></td>
+                      <td><button class="alphabet__button" type="button">ю</button></td>
+                      <td><button class="alphabet__button" type="button">я</button></td>
+                    </tr>
+                  </table>
+
+                  <ul class="countries-list">
+                    <li class="countries-list__item"><a href="#">Австралия</a></li>
+                    <li class="countries-list__item"><a href="#">Австрия</a></li>
+                    <li class="countries-list__item"><a href="#">Азербайджан</a></li>
+                    <li class="countries-list__item"><a href="#">Албания</a></li>
+                    <li class="countries-list__item"><a href="#">Алжир</a></li>
+                    <li class="countries-list__item"><a href="#">Ангола</a></li>
+                    <li class="countries-list__item"><a href="#">Андорра</a></li>
+                    <li class="countries-list__item"><a href="#">Антигуа и Барбуда</a></li>
+                    <li class="countries-list__item"><a href="#">Аргентина</a></li>
+                    <li class="countries-list__item"><a href="#">Армения</a></li>
+                    <li class="countries-list__item"><a href="#">Афганистан</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="route-section__item add-country">
+              <button class="add-country__button" type="button">Добавить страну</button>
+            </div>
+
+          </div>
+
+          <button class="plan-form__button button" type="button">Следующий шаг</button>
+          <button class="plan-form__button button plan-form__button--nobg" type="button">На шаг назад</button>
+        </fieldset>
+
+        <fieldset class="step">
+          <p class="step__title">Шаг 3. Развлечения</p>
+          <p class="step__description">
+            Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+          </p>
+
+          <div class="step__selected-countries">
+
+            <div class="selected-country">
+              <label>
+                <p class="selected-country__name">Босния и Герцегови</p>
+                <img class="selected-country__flag" src="https://via.placeholder.com/150x150" width="50" height="50"
+                  alt="Флаг">
+                <textarea class="selected-country__textarea" placeholder="План действий" rows="10" cols="45"
+                  name="text"></textarea>
+              </label>
+            </div>
+
+            <div class="selected-country">
+              <label>
+                <p class="selected-country__name">Чехия</p>
+                <img class="selected-country__flag" src="https://via.placeholder.com/150x150" width="50" height="50"
+                  alt="Флаг">
+                <textarea class="selected-country__textarea" placeholder="План действий" rows="10" cols="45"
+                  name="text"></textarea>
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <button class="plan-form__button button">Отправить</button>
+        <button class="plan-form__button button plan-form__button--nobg" type="button">На шаг назад</button>
+      </form>
+
+    </div>
+
+  </main>
 
 
   <footer class="page-footer">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19"
+    <a class="page-footer__logo">
+      <img class="page-footer__image" src="https://via.placeholder.com/150x150" width="100" height="19"
         alt="Логотип сайта «Погнали?»">
     </a>
-    <ul class="page-footer__social">
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+
+    <ul class="page-footer__social socials">
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="Facebook иконка">
         </a>
       </li>
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="VK иконка">
         </a>
       </li>
-      <li>
-        <a href="#">
-          <img class="page-footer__social-icon" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <li class="socials__item">
+        <a class="social-link social-link--orange" href="#">
+          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
             alt="Instagram иконка">
         </a>
       </li>
     </ul>
 
-    <div class="page-footer__bottom">
-      <p>Разработано</p>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
       <a href="#">
-        <img class="page-footer__bottom-icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+        <img class="copyright__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
           alt="Иконка академии">
       </a>
     </div>
