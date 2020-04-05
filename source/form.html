@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Погнали: Направления</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <li class="site-list__item"><a href="#">Попутчики</a></li>
       </ul>
 
-      <a class="main-nav__login user-login" href="#">Авторизация</a>
+      <a class="main-nav__link button" href="#">Авторизация</a>
 
       <ul class="main-nav__contacts contacts-list">
         <li class="contacts-list__item">
@@ -74,7 +75,7 @@
         <div class="edit-photo__image">
           <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Фото">
         </div>
-        <button class="edit-photo__button" type="button">Сменить фото</button>
+        <button class="edit-photo__button button button--gray" type="button">Сменить фото</button>
       </div>
 
       <div class="user-profile__section">
@@ -93,19 +94,19 @@
       <div class="user-profile__section">
         <p class="user-profile__title">Транспорт</p>
         <ul class="user-profile__transport transport-list">
-          <li class="transport-list__active">
+          <li class="transport-list__item transport-list__item--active">
             <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка самолет">
           </li>
-          <li>
+          <li class="transport-list__item transport-list__item--active">
             <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка автобус">
           </li>
-          <li>
+          <li class="transport-list__item">
             <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка велосипед">
           </li>
-          <li>
+          <li class="transport-list__item transport-list__item--active">
             <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка пешком">
           </li>
@@ -118,7 +119,7 @@
     <div class="plans">
       <p class="plans__title">Мои планы:</p>
 
-      <div class="trip-card">
+      <div class="plans__card trip-card">
         <p class="trip-card__title">1 Франция, Италия</p>
         <ul class="trip-card__info">
           <li>3 попутчика</li>
@@ -127,7 +128,7 @@
         <button class="trip-card__button" type="button">Изменить</button>
       </div>
 
-      <div class="trip-card">
+      <div class="plans__card trip-card">
         <p class="trip-card__title">2 Таиланд, Индонезия</p>
         <ul class="trip-card__info">
           <li>1 попутчик</li>
@@ -161,14 +162,12 @@
             длительность.
           </p>
 
-          <div class="step-section">
-            <label for="plan-travelers">
-              <p class="step-section__title">
-                <p>Ищу попутчиков:</p>
-                <span>Чел.</span>
-              </p>
+          <div class="step__section counter-control">
+            <label class="counter-control__title" for="plan-travelers">
+              <span>Ищу попутчиков:</span>
+              <span>Чел.</span>
             </label>
-            <div class="counter-control">
+            <div class="counter-control__wrapper">
               <button class="counter-control__minus" type="button">-</button>
               <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
               <button class="counter-control__plus" type="button">+</button>
@@ -176,21 +175,19 @@
           </div>
 
 
-          <div class="step-section">
-            <label for="plan-duration">
-              <p class="step-section__title">
-                <p>Длительность:</p>
-                <span>дн.</span>
-              </p>
+          <div class="step__section counter-control">
+            <label class="counter-control__title" for="plan-duration">
+              <span>Длительность:</span>
+              <span>дн.</span>
             </label>
-            <div class="counter-control">
+            <div class="counter-control__wrapper">
               <button class="counter-control__minus" type="button">-</button>
               <input class="counter-control__input" type="text" value="1" name="duration" id="plan-duration" />
               <button class="counter-control__plus" type="button">+</button>
             </div>
           </div>
 
-          <div class="step-section">
+          <div class="step__section">
             <label>
               <input class="visually-hidden form-checkbox" type="checkbox" name="childs" />
               Можно с детьми
@@ -386,7 +383,7 @@
           </div>
 
           <button class="plan-form__button button" type="button">Следующий шаг</button>
-          <button class="plan-form__button button plan-form__button--nobg" type="button">На шаг назад</button>
+          <button class="plan-form__button button button--nobg" type="button">На шаг назад</button>
         </fieldset>
 
         <fieldset class="step">
@@ -395,33 +392,29 @@
             Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
           </p>
 
-          <div class="step__selected-countries">
+          <div class="step__selected-countries connected-textareas">
 
-            <div class="selected-country">
-              <label>
-                <p class="selected-country__name">Босния и Герцегови</p>
-                <img class="selected-country__flag" src="https://via.placeholder.com/150x150" width="50" height="50"
-                  alt="Флаг">
-                <textarea class="selected-country__textarea" placeholder="План действий" rows="10" cols="45"
-                  name="text"></textarea>
-              </label>
-            </div>
+            <label class="connected-textareas__item textarea">
+              <p class="textarea__name">
+                Босния и Герцегови
+                <img class="textarea__flag" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Флаг">
+              </p>
+              <textarea class="textarea__field" placeholder="План действий" rows="10" cols="45" name="text"></textarea>
+            </label>
 
-            <div class="selected-country">
-              <label>
-                <p class="selected-country__name">Чехия</p>
-                <img class="selected-country__flag" src="https://via.placeholder.com/150x150" width="50" height="50"
-                  alt="Флаг">
-                <textarea class="selected-country__textarea" placeholder="План действий" rows="10" cols="45"
-                  name="text"></textarea>
-              </label>
-            </div>
+            <label class="connected-textareas__item textarea">
+              <p class="textarea__name">
+                Чехия
+                <img class="textarea__flag" src="https://via.placeholder.com/150x150" width="50" height="50" alt="Флаг">
+              </p>
+              <textarea class="textarea__field" placeholder="План действий" rows="10" cols="45" name="text"></textarea>
+            </label>
 
           </div>
         </fieldset>
 
         <button class="plan-form__button button">Отправить</button>
-        <button class="plan-form__button button plan-form__button--nobg" type="button">На шаг назад</button>
+        <button class="plan-form__button button button--nobg" type="button">На шаг назад</button>
       </form>
 
     </div>

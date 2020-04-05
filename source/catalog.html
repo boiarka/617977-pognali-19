@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Погнали: Попутчики</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <li class="site-list__item"><a href="#">Попутчики</a></li>
       </ul>
 
-      <a class="main-nav__login user-login" href="#">Авторизация</a>
+      <a class="main-nav__link button" href="#">Авторизация</a>
 
       <ul class="main-nav__contacts contacts-list">
         <li class="contacts-list__item">
@@ -73,13 +74,21 @@
           <button class="country-filter__toggle" type="button"></button>
         </div>
 
-        <div class="countries-section visually-hidden">
+        <div class="country-filter__countries">
 
           <ul class="continents-list">
-            <li class="continents-list__item"><a href="#">Европа</a></li>
-            <li class="continents-list__item"><a href="#">Азия</a></li>
-            <li class="continents-list__item"><a href="#">Америка</a></li>
-            <li class="continents-list__item"><a href="#">Острова</a></li>
+            <li class="continents-list__item">
+              <button class="continents-list__button" type="button">Европа</button>
+            </li>
+            <li class="continents-list__item">
+              <button class="continents-list__button" type="button">Азия</button>
+            </li>
+            <li class="continents-list__item">
+              <button class="continents-list__button" type="button">Америка</button>
+            </li>
+            <li class="continents-list__item">
+              <button class="continents-list__button" type="button">Острова</button>
+            </li>
           </ul>
 
           <table class="alphabet">
@@ -187,29 +196,29 @@
           <div class="form-fieldset__inner">
             <ul class="form-fieldset__transport transport-list">
               <li class="transport-list__item transport-list__item--active">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="plane" />
+                <label class="transport-list__checkbox">
+                  <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
                   <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
                     alt="Иконка самолет">
                 </label>
               </li>
               <li class="transport-list__item">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="bus" />
+                <label class="transport-list__checkbox">
+                  <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
                   <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
                     alt="Иконка автобус">
                 </label>
               </li>
               <li class="transport-list__item">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="bike" />
+                <label class="transport-list__checkbox">
+                  <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
                   <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
                     alt="Иконка велосипед">
                 </label>
               </li>
               <li class="transport-list__item">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="foot" />
+                <label class="transport-list__checkbox">
+                  <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
                   <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
                     alt="Иконка пешком">
                 </label>
@@ -583,16 +592,16 @@
 
       <ul class="all-travelers__pagination pagination">
         <li class="pagination__item">
-          <button class="pagination-button" type="button">
+          <a class="pagination-button">
             <img class="pagination-button__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка влево">
-          </button>
+          </a>
         </li>
         <li class="pagination__item">
-          <button class="pagination-button" type="button">
+          <a class="pagination-button">
             <img class="pagination-button__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
               alt="Иконка вправо">
-          </button>
+          </a>
         </li>
       </ul>
     </section>
