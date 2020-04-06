@@ -1,3 +1,6 @@
 body {
-  background: blue;
+    background: blue;
 }
+
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
