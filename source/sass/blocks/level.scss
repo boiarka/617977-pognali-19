@@ -21,7 +21,7 @@
   stroke: $mango;
   transition: stroke-dashoffset 0.35s;
   transform: rotate(-90deg);
-  transform-origin: 50% 50%,
+  transform-origin: 50% 50%;
 }
 
 .level__wrapper {
@@ -46,7 +46,6 @@
   padding-top: 5px;
   text-align: center;
 }
-
 
 .level__text {
   font-size: 14px;
