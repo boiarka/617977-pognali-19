@@ -11,7 +11,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img class="page-header__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+        <img class="page-header__image" src="img/logo-mobile-white@1x.png" width="100" height="19"
           alt="Логотип сайта «Погнали?»">
       </a>
       <button class="page-header__toggle"></button>
@@ -62,6 +62,7 @@
     </div>
 
     <div class="page-header__title">В путешествие с крутыми попутчиками!</div>
+    <img src="img/traveller-illustration-mobile@1x.png" alt="" width="192" height="255">
   </header>
 
   <main class="page-main">
@@ -69,12 +70,12 @@
     <ul class="user-nav">
       <li class="user-nav__item">
         <a class="user-nav__link" href="#">
-          <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка телефона">
+          <img src="img/topmenu-phone.svg" width="18" height="18" alt="Иконка телефона">
         </a>
       </li>
       <li class="user-nav__item">
         <a class="user-nav__link" href="#">
-          <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка е-мейла">
+          <img src="img/topmenu-mail.svg" width="18" height="18" alt="Иконка е-мейла">
         </a>
       </li>
       <li class="user-nav__item">
@@ -88,10 +89,10 @@
     </div>
 
     <ol class="promo-list">
-      <li class="promo-list__item">Выберите направление</li>
-      <li class="promo-list__item">Изучите идеи путешественников</li>
-      <li class="promo-list__item">Находите тех, кто похож на вас</li>
-      <li class="promo-list__item">Путешествуйте вместе!</li>
+      <li class="promo-list__item promo-list__item--mango">Выберите направление</li>
+      <li class="promo-list__item promo-list__item--mango-three">Изучите идеи путешественников</li>
+      <li class="promo-list__item promo-list__item--mango-two">Находите тех, кто похож на вас</li>
+      <li class="promo-list__item promo-list__item--light-gold">Путешествуйте вместе!</li>
     </ol>
 
     <section class="about">
@@ -117,24 +118,24 @@
       </p>
 
       <article class="direction-card">
-        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Флаг страны">
+        <img class="direction-card__photo" src="img/thailand-mobile@1x.jpg" width="270" height="110"
+          alt="Изображение страны">
         <h3 class="direction-card__title">Таиланд</h3>
         <p class="direction-card__description">Джунгли зовут!</p>
         <p class="direction-card__counter">18321</p>
       </article>
 
       <article class="direction-card">
-        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Флаг страны">
+        <img class="direction-card__photo" src="img/france-mobile@1x.jpg" width="270" height="110"
+          alt="Изображение страны">
         <h3 class="direction-card__title">Франция</h3>
         <p class="direction-card__description">Трэ бьен, манифик!</p>
         <p class="direction-card__counter">12518</p>
       </article>
 
       <article class="direction-card">
-        <img class="direction-card__flag" src="https://via.placeholder.com/150x150" width="18" height="18"
-          alt="Флаг страны">
+        <img class="direction-card__photo" src="img/czech-mobile@1x.jpg" width="270" height="110"
+          alt="Изображение страны">
         <h3 class="direction-card__title">Чехия</h3>
         <p class="direction-card__description">Закоулки старой Европы</p>
         <p class="direction-card__counter">5326</p>
@@ -157,9 +158,20 @@
       </p>
 
       <article class="traveler-card">
-        <div class="level traveler-card__level">
-          <p class="level__count">99</p>
-          <span class="level__text">level</span>
+
+
+        <div class="traveler-card__photo">
+          <div class="level level--black traveler-card__level">
+            <svg class="level__ring" width="60" height="60">
+              <circle class="level__circle" stroke-dashoffset="5" stroke-width="3" fill="transparent" r="29" cx="30"
+                cy="30" />
+            </svg>
+            <div class="level_wrapper">
+              <p class="level__count">99</p>
+              <span class="level__text">level</span>
+            </div>
+          </div>
+          <img src="img/firsova-tablet@1x.jpg" width="270" height="270" alt="Фото юзера">
         </div>
         <ul class="traveler-card__countries">
           <li class="traveler-card__country">
@@ -179,38 +191,43 @@
 
 
         <ul class="tags traveler-card__tags">
-          <li><a href="#">#ЗОЖ</a></li>
-          <li><a href="#">#ПП</a></li>
-          <li><a href="#">#Фитнес</a></li>
-          <li><a href="#">#пляж</a></li>
-          <li><a href="#">#авокадо</a></li>
-          <li><a href="#">#смузи</a></li>
+          <li class="tags__item"><a href="#">#ЗОЖ</a></li>
+          <li class="tags__item"><a href="#">#ПП</a></li>
+          <li class="tags__item"><a href="#">#Фитнес</a></li>
+          <li class="tags__item"><a href="#">#пляж</a></li>
+          <li class="tags__item"><a href="#">#авокадо</a></li>
+          <li class="tags__item"><a href="#">#смузи</a></li>
         </ul>
 
         <ul class="transport-list">
           <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка самолет">
+            <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
           </li>
           <li class="transport-list__item">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка автобус">
+            <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
           </li>
           <li class="transport-list__item">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка велосипед">
+            <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
           </li>
           <li class="transport-list__item">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка пешком">
+            <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
           </li>
         </ul>
       </article>
 
       <article class="traveler-card">
-        <div class="level traveler-card__level">
-          <p class="level__count">80</p>
-          <span class="level__text">level</span>
+        <div class="traveler-card__photo">
+          <div class="level level--black traveler-card__level">
+            <svg class="level__ring" width="60" height="60">
+              <circle class="level__circle" stroke-dashoffset="25" stroke-width="3" fill="transparent" r="29" cx="30"
+                cy="30" />
+            </svg>
+            <div class="level_wrapper">
+              <p class="level__count">80</p>
+              <span class="level__text">level</span>
+            </div>
+          </div>
+          <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Фото юзера">
         </div>
         <ul class="traveler-card__countries">
           <li class="traveler-card__country">
@@ -236,20 +253,16 @@
 
         <ul class="transport-list">
           <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка самолет">
+            <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
           </li>
           <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка автобус">
+            <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
           </li>
           <li class="transport-list__item">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка велосипед">
+            <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
           </li>
           <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка пешком">
+            <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
           </li>
         </ul>
       </article>
@@ -309,7 +322,7 @@
     <section class="email-registration">
       <form class="email-registration__form email-form" method="post" action="https://echo.htmlacademy.ru">
         <h3 class="page-title">Заинтересовались?</h3>
-        <p>
+        <p class="page-text">
           Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="email-form__link"
             href="#">авторизуйтесь</a>.
         </p>
@@ -352,7 +365,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img class="page-footer__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" width="96" height="19"
         alt="Логотип сайта «Погнали?»">
     </a>
 

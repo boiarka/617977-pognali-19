@@ -1,0 +1,17 @@
+.arrow-button {
+  background-color: $light-gold;
+  border-radius: 10px;
+  border: none;
+  padding: 24px;
+  min-width: 270px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  text-align: left;
+}
+
+.arrow-button--bordered {
+  border: 3px solid $dark-blue-grey;
+}
