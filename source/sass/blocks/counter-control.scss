@@ -1,0 +1,17 @@
+.counter-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-control__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-control__title--gray {
+  color: $dark-slate-blue-30;
+}
+
+.counter-control__text {
+  text-transform: uppercase;
+}

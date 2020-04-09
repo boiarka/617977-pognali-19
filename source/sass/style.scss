@@ -1,4 +1,3 @@
-@import "normalize.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
@@ -39,7 +38,6 @@
 @import "blocks/email-registration.scss";
 @import "blocks/filter.scss";
 @import "blocks/form-checkbox.scss";
-@import "blocks/form-fieldset.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/pagination.scss";
 @import "blocks/plans.scss";
@@ -49,10 +47,10 @@
 @import "blocks/route-section.scss";
 @import "blocks/scale-control.scss";
 @import "blocks/step.scss";
-@import "blocks/text-input.scss";
 @import "blocks/trip-card.scss";
 @import "blocks/travelers.scss";
 @import "blocks/traveler-card.scss";
 @import "blocks/user-card.scss";
 @import "blocks/user-nav.scss";
 @import "blocks/user-profile.scss";
+@import "blocks/continents-list.scss";

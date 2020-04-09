@@ -1,6 +1,18 @@
 .button {
-  background-color: #ffd74b;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  background-color: $light-gold;
   font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 20px;
   padding: 10px;
+  border: none;
+}
+
+.button--turn {
+  background-color: $button-turn-color;
+}
+
+.button--white {
+  background-color: $white;
 }

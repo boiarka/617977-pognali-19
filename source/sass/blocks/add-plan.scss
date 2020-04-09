@@ -1,1 +1,11 @@
-// add-plan
+.add-plan {
+  padding: 25px;
+  border-radius: 20px 20px 0 0;
+  background-color: $light-blue-grey-five;
+}
+
+.add-plan__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: $dark-slate-blue;
+}
