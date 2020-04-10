@@ -1,0 +1,27 @@
+.promo-list {
+  padding: 0;
+  background-color: $dark-blue-grey;
+  list-style-position: inside;
+}
+
+.promo-list__item {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.promo-list__item--mango {
+  background-color: $mango;
+}
+
+.promo-list__item--mango-three {
+  background-color: $mango-three;
+}
+
+.promo-list__item--mango-two {
+  background-color: $mango-two;
+}
+
+.promo-list__item--light-gold {
+  background-color: $light-gold;
+}

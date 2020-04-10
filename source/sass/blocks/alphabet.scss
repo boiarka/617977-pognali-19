@@ -1,0 +1,32 @@
+.alphabet {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.alphabet__button {
+  font-size: 14px;
+  border: 1px solid $bluey-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 42px;
+  background-color: $white;
+  text-transform: uppercase;
+  margin: -2px -3px -1px 0;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.alphabet__button:hover {
+  border: 1px solid $dark-slate-blue;
+  z-index: 2;
+}
+
+.alphabet__button--active {
+  background-color: $dark-slate-blue;
+  border: 1px solid $dark-slate-blue;
+  color: $white;
+  z-index: 2;
+}

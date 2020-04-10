@@ -1,0 +1,20 @@
+.direction-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.direction-card__title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.direction-card__description {
+  opacity: 0.3;
+  line-height: 1.13;
+}
+
+.direction-card__counter {
+  opacity: 0.3;
+  line-height: 1.88;
+}

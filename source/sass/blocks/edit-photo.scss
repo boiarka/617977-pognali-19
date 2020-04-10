@@ -1,0 +1,16 @@
+.edit-photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.edit-photo__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.edit-photo__button {
+  width: 100%;
+}
