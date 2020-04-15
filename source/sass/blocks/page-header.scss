@@ -1,16 +1,23 @@
 .page-header {
-  padding: 20px 25px 10px 25px;
-  border-radius: 0 0 20px 20px;
   background-color: $dark-two;
+  position: relative;
+  padding-top: 25px;
 }
 
 .page-header__wrapper {
+  @include container();
   display: flex;
   justify-content: space-between;
 }
 
+.page-header--bradius {
+  border-radius: 0 0 20px 20px;
+}
+
 .page-header--bg {
-  background: url("../img/globe-back-mobile@1x.jpg") no-repeat center center;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .page-header__title {
@@ -65,4 +72,33 @@
   height: 3px;
   background-color: $white;
   border-radius: 2px;
+}
+
+.page-header__nav {
+  transform: translate(30px, -20px);
+}
+
+.page-header__illustration {
+  display: flex;
+  margin: 12px 50px 0 auto;
+  width: 192px;
+  height: 255px;
+}
+
+.page-header__promo {
+  background-color: $dark-blue-grey;
+  position: relative;
+}
+
+.page-header__promo::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $dark-two;
+}
+
+.page-header__quote {
+  padding-bottom: 33px;
 }

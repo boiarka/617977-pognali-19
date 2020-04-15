@@ -1,27 +1,58 @@
 .promo-list {
-  padding: 0;
-  background-color: $dark-blue-grey;
+  @include container();
   list-style-position: inside;
+  counter-reset: item;
 }
 
 .promo-list__item {
+  counter-increment: item;
+  display: flex;
+  align-items: center;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
+  padding: 0 25px;
+  height: 80px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.promo-list__item::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  content: counter(item);
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
 }
 
 .promo-list__item--mango {
   background-color: $mango;
 }
 
+.promo-list__item--mango::after {
+  @include promoListAfter($mango);
+}
+
 .promo-list__item--mango-three {
   background-color: $mango-three;
+}
+
+.promo-list__item--mango-three::after {
+  @include promoListAfter($mango-three);
 }
 
 .promo-list__item--mango-two {
   background-color: $mango-two;
 }
 
+.promo-list__item--mango-two::after {
+  @include promoListAfter($mango-two);
+}
+
 .promo-list__item--light-gold {
   background-color: $light-gold;
+  border-radius: 10px;
 }

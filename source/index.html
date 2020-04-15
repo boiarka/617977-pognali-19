@@ -61,15 +61,13 @@
       </ul>
     </div>
 
-    <div class="page-header__title">В путешествие с крутыми попутчиками!</div>
-    <img src="img/traveller-illustration-mobile@1x.png" alt="" width="192" height="255">
-  </header>
+    <div class="page-header__title">В путешествие с&nbsp;крутыми попутчиками!</div>
+    <img class="page-header__illustration" src="img/traveller-illustration-mobile@1x.png" alt="" width="192"
+      height="255">
 
-  <main class="page-main">
-
-    <ul class="user-nav">
+    <ul class="page-header__nav user-nav">
       <li class="user-nav__item">
-        <a class="user-nav__link" href="#">
+        <a class="user-nav__link user-nav__link--orange" href="#">
           <img src="img/topmenu-phone.svg" width="18" height="18" alt="Иконка телефона">
         </a>
       </li>
@@ -79,40 +77,46 @@
         </a>
       </li>
       <li class="user-nav__item">
-        <a class="user-nav__link button" href="#">Авторизация</a>
+        <a class="user-nav__link user-nav__link--big button" href="#">Авторизация</a>
       </li>
     </ul>
 
-    <div class="quote">
-      <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
-      <p class="quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+    <div class="page-header__quote quote">
+      <p class="quote__text page-text">«Лучшее&nbsp;приложение, что&nbsp;я&nbsp;видел&nbsp;в&nbsp;жизни!»</p>
+      <p class="quote__author page-text page-text--bold">Мурат&nbsp;Эльтазин главный&nbsp;редактор
+        газеты&nbsp;«гаджетлайф»</p>
     </div>
 
-    <ol class="promo-list">
-      <li class="promo-list__item promo-list__item--mango">Выберите направление</li>
-      <li class="promo-list__item promo-list__item--mango-three">Изучите идеи путешественников</li>
-      <li class="promo-list__item promo-list__item--mango-two">Находите тех, кто похож на вас</li>
-      <li class="promo-list__item promo-list__item--light-gold">Путешествуйте вместе!</li>
-    </ol>
+    <div class="page-header__promo">
+      <ol class="promo-list">
+        <li class="promo-list__item promo-list__item--mango">Выберите направление</li>
+        <li class="promo-list__item promo-list__item--mango-three">Изучите идеи путешественников</li>
+        <li class="promo-list__item promo-list__item--mango-two">Находите тех, кто похож на вас</li>
+        <li class="promo-list__item promo-list__item--light-gold">Путешествуйте вместе!</li>
+      </ol>
+    </div>
 
+  </header>
+
+  <main class="page-main">
     <section class="about">
-      <h3 class="page-title">
+      <h3 class="about__title page-title">
         О сервисе
       </h3>
-      <p class="page-text">
+      <p class="about__text page-text">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
         своими идеями путешествий и черпайте вдохновение в чужих.</p>
-      <p class="page-text page-text--bold">
+      <p class="about__text page-text page-text--bold">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
     </section>
 
 
     <section class="directions">
-      <h3 class="page-title">
+      <h3 class="directions__title page-title">
         Направления
       </h3>
-      <p class="page-text page-text--dark">
+      <p class="directions__text page-text page-text--brown">
         Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
         там заняться.
       </p>
@@ -120,25 +124,34 @@
       <article class="direction-card">
         <img class="direction-card__photo" src="img/thailand-mobile@1x.jpg" width="270" height="110"
           alt="Изображение страны">
+        <div class="direction-card__wrapper">
           <h3 class="direction-card__title">Таиланд</h3>
           <p class="direction-card__description">Джунгли зовут!</p>
           <p class="direction-card__counter">18321</p>
+          <span class="direction-card__flag"></span>
+        </div>
       </article>
 
       <article class="direction-card">
         <img class="direction-card__photo" src="img/france-mobile@1x.jpg" width="270" height="110"
           alt="Изображение страны">
-        <h3 class="direction-card__title">Франция</h3>
-        <p class="direction-card__description">Трэ бьен, манифик!</p>
-        <p class="direction-card__counter">12518</p>
+        <div class="direction-card__wrapper">
+          <h3 class="direction-card__title">Франция</h3>
+          <p class="direction-card__description">Трэ бьен, манифик!</p>
+          <p class="direction-card__counter">12518</p>
+          <span class="direction-card__flag"></span>
+        </div>
       </article>
 
       <article class="direction-card">
         <img class="direction-card__photo" src="img/czech-mobile@1x.jpg" width="270" height="110"
           alt="Изображение страны">
-        <h3 class="direction-card__title">Чехия</h3>
-        <p class="direction-card__description">Закоулки старой Европы</p>
-        <p class="direction-card__counter">5326</p>
+        <div class="direction-card__wrapper">
+          <h3 class="direction-card__title">Чехия</h3>
+          <p class="direction-card__description">Закоулки старой Европы</p>
+          <p class="direction-card__counter">5326</p>
+          <span class="direction-card__flag"></span>
+        </div>
       </article>
 
       <button class="directions__button arrow-button" type="button">Показать все</button>
@@ -150,16 +163,15 @@
         Попутчики
       </h3>
       <p class="page-text travelers__text">
-        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+        маршрут
         для хайкинга.
       </p>
-      <p class="page-text page-text--bold">
+      <p class="page-text page-text--bold travelers__text">
         Теперь можно легко найти единомышленников!
       </p>
 
-      <article class="traveler-card">
-
-
+      <article class="travelers__card traveler-card">
         <div class="traveler-card__photo">
           <div class="level level--black traveler-card__level">
             <svg class="level__ring" width="60" height="60">
@@ -172,50 +184,53 @@
             </div>
           </div>
           <img src="img/firsova-tablet@1x.jpg" width="270" height="270" alt="Фото юзера">
+          <ul class="traveler-card__countries">
+            <li class="traveler-card__country">
+              <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг страны">
+            </li>
+            <li class="traveler-card__country">
+              <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг страны">
+            </li>
+            <li class="traveler-card__country">
+              <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг страны">
+            </li>
+          </ul>
         </div>
-        <ul class="traveler-card__countries">
-          <li class="traveler-card__country">
-            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
-          </li>
-          <li class="traveler-card__country">
-            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
-          </li>
-          <li class="traveler-card__country">
-            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
-          </li>
-        </ul>
-        <h3 class="traveler-card__name">
-          <span class="traveler-card__status user-status user-status--online"></span>
-          Таня Фирсова
-        </h3>
+
+        <div class="traveler-card__wrapper">
+          <h3 class="traveler-card__name">
+            <span class="traveler-card__status user-status user-status--online"></span>
+            Таня Фирсова
+          </h3>
 
 
-        <ul class="tags traveler-card__tags">
-          <li class="tags__item"><a href="#">#ЗОЖ</a></li>
-          <li class="tags__item"><a href="#">#ПП</a></li>
-          <li class="tags__item"><a href="#">#Фитнес</a></li>
-          <li class="tags__item"><a href="#">#пляж</a></li>
-          <li class="tags__item"><a href="#">#авокадо</a></li>
-          <li class="tags__item"><a href="#">#смузи</a></li>
-        </ul>
+          <ul class="tags traveler-card__tags">
+            <li class="tags__item"><a class="tags__link" href="#">#ЗОЖ</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#ПП</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#Фитнес</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#пляж</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#авокадо</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#смузи</a></li>
+          </ul>
 
-        <ul class="transport-list">
-          <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
-          </li>
-          <li class="transport-list__item">
-            <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
-          </li>
-          <li class="transport-list__item">
-            <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
-          </li>
-          <li class="transport-list__item">
-            <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
-          </li>
-        </ul>
+          <ul class="transport-list traveler-card__transport">
+            <li class="transport-list__item transport-list__item--active">
+              <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
+            </li>
+          </ul>
+        </div>
       </article>
 
-      <article class="traveler-card">
+      <article class="travelers__card traveler-card">
         <div class="traveler-card__photo">
           <div class="level level--black traveler-card__level">
             <svg class="level__ring" width="60" height="60">
@@ -228,43 +243,45 @@
             </div>
           </div>
           <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Фото юзера">
+          <ul class="traveler-card__countries">
+            <li class="traveler-card__country">
+              <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+            </li>
+            <li class="traveler-card__country">
+              <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
+            </li>
+          </ul>
         </div>
-        <ul class="traveler-card__countries">
-          <li class="traveler-card__country">
-            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
-          </li>
-          <li class="traveler-card__country">
-            <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Флаг страны">
-          </li>
-        </ul>
-        <h3 class="traveler-card__name">
-          <span class="traveler-card__status user-status user-status--online"></span>
-          Петя Демин
-        </h3>
 
+        <div class="traveler-card__wrapper">
+          <h3 class="traveler-card__name">
+            <span class="traveler-card__status user-status user-status--online"></span>
+            Петя Демин
+          </h3>
 
-        <ul class="tags traveler-card__tags">
-          <li><a href="#">#бургер</a></li>
-          <li><a href="#">#бар</a></li>
-          <li><a href="#">#футбол</a></li>
-          <li><a href="#">#концерт</a></li>
-          <li><a href="#">#крафт</a></li>
-        </ul>
+          <ul class="tags traveler-card__tags">
+            <li class="tags__item"><a class="tags__link" href="#">#бургер</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#бар</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#футбол</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#концерт</a></li>
+            <li class="tags__item"><a class="tags__link" href="#">#крафт</a></li>
+          </ul>
 
-        <ul class="transport-list">
-          <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
-          </li>
-          <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
-          </li>
-          <li class="transport-list__item">
-            <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
-          </li>
-          <li class="transport-list__item transport-list__item--active">
-            <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
-          </li>
-        </ul>
+          <ul class="transport-list traveler-card__transport">
+            <li class="transport-list__item transport-list__item--active">
+              <img class="transport-list__icon" src="img/plane.svg" width="18" height="18" alt="Иконка самолет">
+            </li>
+            <li class="transport-list__item transport-list__item--active">
+              <img class="transport-list__icon" src="img/bus.svg" width="18" height="18" alt="Иконка автобус">
+            </li>
+            <li class="transport-list__item">
+              <img class="transport-list__icon" src="img/bike.svg" width="18" height="18" alt="Иконка велосипед">
+            </li>
+            <li class="transport-list__item transport-list__item--active">
+              <img class="transport-list__icon" src="img/run.svg" width="18" height="18" alt="Иконка пешком">
+            </li>
+          </ul>
+        </div>
       </article>
 
       <button class="travelers__button arrow-button" type="button">Показать всех</button>
@@ -272,22 +289,25 @@
 
 
     <section class="profile">
-      <h3 class="profile__title page-title">Добавьте свой профиль</h3>
-      <div class="profile__icon">
-        <img src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка телефонов">
+      <div class="profile__wrapper">
+        <h3 class="profile__title page-title">Добавьте свой профиль</h3>
+        <div class="profile__icon">
+          <img src="../img/rates@1x.png" width="99" height="99" alt="Иконка телефонов">
+        </div>
       </div>
-      <ol class="profile__list">
-        <li>
+
+      <ol class="profile__list profile-list">
+        <li class="profile-list__item profile-list__item--mango-three">
           Базовое размещение
-          <span>Бесплатно</span>
+          <span class="profile-list__price">Бесплатно</span>
         </li>
-        <li>
+        <li class="profile-list__item profile-list__item--mango-two">
           Вывод на первых позициях
-          <span>99 руб./мес</span>
+          <span class="profile-list__price">99 руб./мес</span>
         </li>
-        <li>
+        <li class="profile-list__item profile-list__item--light-gold">
           Кастомный цвет карточки
-          <span>59 руб./мес</span>
+          <span class="profile-list__price">59 руб./мес</span>
         </li>
       </ol>
       <button class="profile__button" type="button">Показать тарифы для бизнеса</button>
@@ -321,28 +341,58 @@
 
     <section class="email-registration">
       <form class="email-registration__form email-form" method="post" action="https://echo.htmlacademy.ru">
-        <h3 class="page-title">Заинтересовались?</h3>
-        <p class="page-text">
-          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="email-form__link"
-            href="#">авторизуйтесь</a>.
+        <h3 class="email-registration__title page-title">Заинтересовались?</h3>
+        <p class="email-registration__text page-text">
+          Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы?&nbsp;Тогда скорее&nbsp;<a
+            class="email-form__link" href="#">авторизуйтесь</a>.
         </p>
         <div class="email-form__input text-input">
           <input class="text-input__field" type="text" placeholder="E-mail" name="asd_email">
-          <button class="text-input__button"></button>
+          <button class="text-input__button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14"
+              style="enable-background:new 0 0 10 14" xml:space="preserve">
+              <polygon points="0,14 0,0.1 10,7.1 " />
+            </svg>
+          </button>
         </div>
-        <p class="page-text">
+        <p class="email-registration__text page-text">
           Остались вопросы?
           Мы с радостью на них ответим!
         </p>
         <ul class="email-form__contacts contacts-list">
           <li class="contacts-list__item">
-            <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка телефона">
+            <span class="contacts-list__icon">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36"
+                style="enable-background:new 0 0 36 36" xml:space="preserve">
+                <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
+              </svg>
+            </span>
             <a href="tel:+88005558628">8 800 555-86-28</a>
           </li>
           <li class="contacts-list__item">
-            <img class="contacts-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-              alt="Иконка письма">
+            <span class="contacts-list__icon">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26"
+                style="enable-background:new 0 0 36 26" xml:space="preserve">
+                <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z" />
+              </svg>
+            </span>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
@@ -350,15 +400,24 @@
     </section>
 
     <section class="address">
-      <div class="address__text">
-        <img class="address__icon" src="https://via.placeholder.com/150x150" width="18" height="18" alt="Иконка карты">
-        <p>ул. Большая Конюшенная, 19/8</p>
-      </div>
-      <button class="address__button arrow-button arrow-button--bordered" type="button">Проложить маршрут</button>
-      <div class="address__map">
-        <img src="https://via.placeholder.com/150x150" width="320" height="320" alt="Карта">
-      </div>
+        <div class="address__text">
+          <span class="address__icon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 43"
+              style="enable-background:new 0 0 28 43" xml:space="preserve">
+              <path d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
+c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
+c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
+c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z" />
+            </svg>
+          </span>
+          <p>ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <button class="address__button arrow-button arrow-button--bordered" type="button">Проложить маршрут</button>
     </section>
+    <div class="address-map">
+      <img src="https://via.placeholder.com/150x150" width="320" height="320" alt="Карта">
+    </div>
 
   </main>
 
@@ -372,19 +431,19 @@
     <ul class="page-footer__social socials">
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+          <img class="social-link__icon" src="../img/facebook.svg" width="11" height="21"
             alt="Facebook иконка">
         </a>
       </li>
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+          <img class="social-link__icon" src="../img/vk.svg" width="23" height="12"
             alt="VK иконка">
         </a>
       </li>
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+          <img class="social-link__icon" src="../img/instagram.svg" width="18" height="18"
             alt="Instagram иконка">
         </a>
       </li>
@@ -393,7 +452,7 @@
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
       <a href="#">
-        <img class="copyright__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
+        <img class="copyright__icon" src="../img/htmlacademy.svg" width="27" height="34"
           alt="Иконка академии">
       </a>
     </div>

@@ -1,0 +1,51 @@
+.profile-list {
+  list-style: none;
+  counter-reset: item;
+}
+
+.profile-list__item {
+  counter-increment: item;
+  font-size: 16px;
+  border-bottom: 1px solid $pale-grey-two;
+  color: $greyish-brown;
+  padding: 10px 0;
+  width: 191px;
+  position: relative;
+}
+
+.profile-list__item::before {
+  position: absolute;
+  top: 23px;
+  right: -50px;
+  transform: translate(0, -50%);
+  content: counter(item);
+  font-size: 16px;
+  color: $white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-list__item--mango-three::before {
+  background-color: $mango-three;
+}
+
+.profile-list__item--mango-two::before {
+  background-color: $mango-two;
+}
+
+.profile-list__item--light-gold::before {
+  background-color: $light-gold;
+}
+
+.profile-list__item:first-child {
+  border-top: 1px solid $pale-grey-two;
+}
+
+.profile-list__price {
+  margin-top: 5px;
+  display: block;
+}

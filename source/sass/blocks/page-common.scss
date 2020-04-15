@@ -5,6 +5,8 @@
   font-style: normal;
   line-height: 1;
   color: $mango;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .page-text {
@@ -14,6 +16,8 @@
   font-style: normal;
   line-height: 1.38;
   color: $white;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .page-text--bold {
@@ -22,4 +26,8 @@
 
 .page-text--dark {
   color: $page-text-dark;
+}
+
+.page-text--brown {
+  color: $greyish-brown;
 }

@@ -1,4 +1,17 @@
 .about {
-  padding: 25px;
-  background: $dark-blue-grey url("../img/about-mobile@1x.png") no-repeat;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 72px;
+  padding-bottom: 64px;
+  background: $dark-blue-grey url("../img/about-mobile@1x.png") no-repeat bottom center;
+
+  @include borderBottomRadius(30px);
+}
+
+.about__title {
+  margin-bottom: 23px;
+}
+
+.about__text {
+  margin-bottom: 25px;
 }

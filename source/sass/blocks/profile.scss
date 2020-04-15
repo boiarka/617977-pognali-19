@@ -1,3 +1,41 @@
 .profile {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
   background-color: $pale-grey;
+  position: relative;
+
+  @include borderBottomRadius(30px);
+}
+
+.profile::before {
+  @include borderRadiusTopBg(30px, $pale-grey);
+}
+
+.profile__wrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__title {
+  margin-top: 15px;
+  width: 101px;
+}
+
+.profile__list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+}
+
+.profile__button {
+  color: $dark-blue-grey;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  margin-left: 25px;
+  padding: 0;
+  margin-bottom: 30px;
 }

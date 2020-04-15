@@ -1,12 +1,22 @@
 .direction-card {
+  width: 270px;
+  height: 190px;
+  position: relative;
+}
+
+.direction-card:not(:first-child) {
+  margin-top: 10px;
+}
+
+.direction-card__photo {
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .direction-card__title {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
+  margin-bottom: 5px;
 }
 
 .direction-card__description {
@@ -15,6 +25,42 @@
 }
 
 .direction-card__counter {
-  opacity: 0.3;
+  color: $greyish-brown-30;
   line-height: 1.88;
+  position: absolute;
+  top: 21px;
+  right: 26px;
+}
+
+.direction-card__counter::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  width: 11px;
+  height: 11px;
+  opacity: 0.3;
+  background-image: url("../img/user.svg");
+}
+
+.direction-card__wrapper {
+  background-color: $white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.direction-card__flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  background-color: blue;
+  width: 35px;
+  height: 24px;
 }

@@ -2,3 +2,22 @@
   display: flex;
   list-style: none;
 }
+
+.transport-list__item {
+  width: 43px;
+  height: 43px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.transport-list__item--active {
+  opacity: 1;
+}
+
+.transport-list__icon {
+  fill: red;
+}
