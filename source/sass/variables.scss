@@ -7,6 +7,7 @@ $mango-two: #ffbd30;
 $mango-three: #ffa530;
 $light-gold: #ffd74b;
 $pale-grey: #edeff6;
+$macaroni-and-cheese: #f3c72b;
 $pale-grey-four: #e2e5f2;
 $pale-grey-two: #dfe3f0;
 $button-gray-color: #d6daed;
@@ -21,6 +22,8 @@ $dark-slate-blue-30: rgba(29, 46, 91, 0.3);
 $greyish-brown-30: rgba(68, 68, 68, 0.3);
 $greyish-brown: #444444;
 $dark-blue-grey-two: #121936;
+$salmon: #f97676;
+$green-apple: #81e31e;
 
 $mobilePadding: 25px;
 $tabletPadding: 30px;
@@ -53,6 +56,17 @@ $desktopPadding: 45px;
   width: 100%;
   height: $size;
   top: -$size;
+  left: 0;
+  background-color: $color;
+}
+
+@mixin borderRadiusBottomBg($size, $color) {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: $size;
+  bottom: -$size;
   left: 0;
   background-color: $color;
 }

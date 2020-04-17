@@ -1,3 +1,7 @@
 .filter {
-  background-color: $pale-grey-four;
+  background-color: $pale-grey;
+}
+
+.filter__search {
+  padding: $mobilePadding;
 }

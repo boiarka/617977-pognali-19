@@ -1,6 +1,11 @@
 .user-card {
   border-radius: 20px;
   background-color: $white;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .user-card__image {
@@ -17,8 +22,33 @@
   height: 31px;
   border: none;
   border-radius: 50%;
+  background-color: $pale-grey;
+}
+
+.user-card__like-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 11px;
+  background-image: url('../img/heart.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 13px 11px;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+.user-card__like-button--active {
   background-color: $very-light-pink-two;
 }
+
+.user-card__like-button--active::before {
+  background-image: url('../img/heart-active.svg');
+  opacity: 1;
+}
+
 
 .user-card__name {
   word-spacing: 100em;
@@ -36,6 +66,7 @@
 .user-card__info {
   display: flex;
   flex-direction: column;
+  padding-top: 3px;
   margin-left: 20px;
 }
 
@@ -47,10 +78,37 @@
 
 .user-card__distance {
   margin: 0;
-  margin-top: 4px;
+  margin-top: 5px;
   padding: 0;
+  font-weight: bold;
 }
 
 .user-card__tags {
   margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.user-card__wrapper {
+  position: relative;
+}
+
+.user-card__status {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.user-card__title {
+  color: $greyish-brown;
+  position: relative;
+}
+
+.user-card__title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  height: 1px;
+  width: calc(100% + 50px);
+  background-color: $pale-grey;
 }

@@ -11,7 +11,7 @@
   <header class="page-header page-header--bradius">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img class="page-header__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+        <img class="page-header__image" src="img/logo-mobile-white@1x.png" width="100" height="19"
           alt="Логотип сайта «Погнали?»">
       </a>
       <button class="page-header__toggle"></button>
@@ -76,7 +76,7 @@
 
         <div class="country-filter__countries">
 
-          <ul class="continents-list">
+          <ul class="country-filter__continents continents-list">
             <li class="continents-list__item">
               <button class="continents-list__button continents-list__button--active" type="button">Европа</button>
             </li>
@@ -91,7 +91,7 @@
             </li>
           </ul>
 
-          <table class="alphabet">
+          <table class="country-filter__alphabet alphabet">
             <tr>
               <td class="alphabet__item alphabet__item--blueborder">
                 <button class="alphabet__button alphabet__button--active" type="button">а</button>
@@ -131,7 +131,7 @@
             </tr>
           </table>
 
-          <ul class="countries-list">
+          <ul class="country-filter__list countries-list">
             <li class="countries-list__item"><a class="countries-list__link" href="#">Австралия</a></li>
             <li class="countries-list__item"><a class="countries-list__link" href="#">Австрия</a></li>
             <li class="countries-list__item"><a class="countries-list__link" href="#">Азербайджан</a></li>
@@ -150,115 +150,153 @@
 
       </div>
 
+      <div class="filter__search">
+        <form class="search" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="search__title">Подберите идеального попутчика</div>
 
-      <form class="search" method="post" action="https://echo.htmlacademy.ru/">
-        <div class="search__title">Подберите идеального попутчика</div>
+          <fieldset class="form-fieldset">
+            <button class="form-fieldset__toggle" type="button">Хобби</button>
+            <div class="visually-hidden form-fieldset__inner"></div>
+          </fieldset>
 
-        <fieldset class="form-fieldset">
-          <button class="form-fieldset__toggle" type="button">Хобби</button>
-          <div class="form-fieldset__inner"></div>
-        </fieldset>
-
-        <fieldset class="form-fieldset">
-          <button class="form-fieldset__toggle" type="button">Музыка</button>
-          <div class="form-fieldset__inner">
-            <ul class="form-fieldset__list">
-              <li class="form-fieldset__option">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="rock" />
-                  <span class="form-checkbox__icon"></span>
-                  <span class="form-checkbox__text">Тяжелый рок</span>
-                </label>
-              </li>
-              <li class="form-fieldset__option">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="rap" />
-                  <span class="form-checkbox__icon"></span>
-                  <span class="form-checkbox__text">Русский рэп</span>
-                </label>
-              </li>
-              <li class="form-fieldset__option">
-                <label class="form-checkbox">
-                  <input class="visually-hidden form-checkbox__input" type="checkbox" name="eurodance" />
-                  <span class="form-checkbox__icon"></span>
-                  <span class="form-checkbox__text">Евроденс</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-fieldset">
-          <button class="form-fieldset__toggle" type="button">Еда</button>
-          <div class="form-fieldset__inner"></div>
-        </fieldset>
-
-        <fieldset class="form-fieldset">
-          <button class="form-fieldset__toggle" type="button">Транспорт</button>
-          <div class="form-fieldset__inner">
-            <ul class="form-fieldset__transport transport-list">
-              <li class="transport-list__item transport-list__item--active">
-                <label class="transport-list__checkbox">
-                  <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
-                  <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                    alt="Иконка самолет">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <label class="transport-list__checkbox">
-                  <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
-                  <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                    alt="Иконка автобус">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <label class="transport-list__checkbox">
-                  <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
-                  <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                    alt="Иконка велосипед">
-                </label>
-              </li>
-              <li class="transport-list__item">
-                <label class="transport-list__checkbox">
-                  <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
-                  <img class="transport-list__icon" src="https://via.placeholder.com/150x150" width="18" height="18"
-                    alt="Иконка пешком">
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-fieldset">
-          <button class="form-fieldset__toggle" type="button">Левел</button>
-          <div class="form-fieldset__inner">
-
-            <div class="range-control">
-              <div class="range-control__inputs">
-                <label>
-                  <input class="range-control__input range-control__input--min" name="min-level" type="number"
-                    value="0">
-                </label>
-                <label>
-                  <input class="range-control__input range-control__input--max" name="max-level" type="number"
-                    value="100">
-                </label>
-              </div>
-
-              <div class="range-control__scale scale-control">
-                <div class="scale-control__line">
-                  <div class="scale-control__bar"></div>
-                </div>
-                <div class="scale-control__toggle scale-control__toggle--min"></div>
-                <div class="scale-control__toggle scale-control__toggle--max"></div>
-              </div>
+          <fieldset class="form-fieldset">
+            <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Музыка</button>
+            <div class="form-fieldset__inner">
+              <ul class="form-fieldset__list">
+                <li class="form-fieldset__option">
+                  <label class="form-checkbox">
+                    <input class="visually-hidden form-checkbox__input" type="checkbox" name="rock" />
+                    <span class="form-checkbox__text">Тяжелый рок</span>
+                  </label>
+                </li>
+                <li class="form-fieldset__option">
+                  <label class="form-checkbox">
+                    <input class="visually-hidden form-checkbox__input" type="checkbox" name="rap" />
+                    <span class="form-checkbox__text">Русский рэп</span>
+                  </label>
+                </li>
+                <li class="form-fieldset__option">
+                  <label class="form-checkbox">
+                    <input class="visually-hidden form-checkbox__input" type="checkbox" name="eurodance" />
+                    <span class="form-checkbox__text">Евроденс</span>
+                  </label>
+                </li>
+              </ul>
             </div>
+          </fieldset>
 
-          </div>
-        </fieldset>
+          <fieldset class="form-fieldset">
+            <button class="form-fieldset__toggle" type="button">Еда</button>
+            <div class="visually-hidden form-fieldset__inner"></div>
+          </fieldset>
 
-        <button class="search__button button button--white">Показать</button>
-      </form>
+          <fieldset class="form-fieldset">
+            <button class="form-fieldset__toggle" type="button">Транспорт</button>
+            <div class="form-fieldset__inner">
+              <ul class="form-fieldset__transport transport-list">
+                <li class="transport-list__item">
+                  <label class="transport-list__checkbox">
+                    <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
+                    <span class="transport-list__icon-wrapper">
+                      <svg class="transport-list__icon transport-list__icon--plane" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21" xml:space="preserve">
+                        <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <label class="transport-list__checkbox">
+                    <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
+                    <span class="transport-list__icon-wrapper">
+                      <svg class="transport-list__icon transport-list__icon--bus" version="1.1" id="svg2103"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21" xml:space="preserve">
+                        <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <label class="transport-list__checkbox">
+                    <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
+                    <span class="transport-list__icon-wrapper">
+                      <svg class="transport-list__icon transport-list__icon--bike" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21" xml:space="preserve">
+                        <path
+                          d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+                <li class="transport-list__item">
+                  <label class="transport-list__checkbox">
+                    <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
+                    <span class="transport-list__icon-wrapper">
+                      <svg class="transport-list__icon transport-list__icon--run" version="1.1" id="Icons_Run"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21" xml:space="preserve">
+                        <g>
+                          <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
+                          <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+z" />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <button class="form-fieldset__toggle" type="button">Левел</button>
+            <div class="form-fieldset__inner">
+
+              <div class="range-control">
+                <div class="range-control__inputs">
+                  <label>
+                    <input class="range-control__input range-control__input--min" name="min-level" type="number"
+                      value="0">
+                  </label>
+                  <label>
+                    <input class="range-control__input range-control__input--max" name="max-level" type="number"
+                      value="100">
+                  </label>
+                </div>
+
+                <div class="range-control__scale scale-control">
+                  <div class="scale-control__line">
+                    <div class="scale-control__bar"></div>
+                  </div>
+                  <div class="scale-control__toggle scale-control__toggle--min"></div>
+                  <div class="scale-control__toggle scale-control__toggle--max"></div>
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <button class="search__button button button--white">Показать</button>
+        </form>
+      </div>
+
+
 
       </div>
     </section>
@@ -279,12 +317,12 @@
         </div>
 
         <ul class="user-card__tags tags">
-          <li>#ЗОЖ</li>
-          <li>#ПП</li>
-          <li>#Фитнес</li>
-          <li>#пляж</li>
-          <li>#авокадо</li>
-          <li>#смузи</li>
+          <li class="tags__item">#ЗОЖ</li>
+          <li class="tags__item">#ПП</li>
+          <li class="tags__item">#Фитнес</li>
+          <li class="tags__item">#пляж</li>
+          <li class="tags__item">#авокадо</li>
+          <li class="tags__item">#смузи</li>
         </ul>
 
         <div class="user-card__section">
@@ -351,17 +389,19 @@
               alt="Фото юзера">
             <button class="user-card__like-button" type="button"></button>
           </div>
-          <h3 class="user-card__name">Петя Демин</h3>
-          <p class="user-card__distance">1500</p>
+          <div class="user-card__info">
+            <h3 class="user-card__name">Петя Демин</h3>
+            <p class="user-card__distance">1500</p>
+          </div>
           <span class="user-card__status user-status"></span>
         </div>
 
         <ul class="user-card__tags tags">
-          <li>#бургер</li>
-          <li>#бар</li>
-          <li>#футбол</li>
-          <li>#концерт</li>
-          <li>#крафт</li>
+          <li class="tags__item">#бургер</li>
+          <li class="tags__item">#бар</li>
+          <li class="tags__item">#футбол</li>
+          <li class="tags__item">#концерт</li>
+          <li class="tags__item">#крафт</li>
         </ul>
 
         <div class="user-card__section">
@@ -429,17 +469,19 @@
               alt="Фото юзера">
             <button class="user-card__like-button" type="button"></button>
           </div>
-          <h3 class="user-card__name">Марк Смолов</h3>
-          <p class="user-card__distance">170</p>
+          <div class="user-card__info">
+            <h3 class="user-card__name">Марк Смолов</h3>
+            <p class="user-card__distance">170</p>
+          </div>
           <span class="user-card__status user-status"></span>
         </div>
 
         <ul class="user-card__tags tags">
-          <li>#рэп</li>
-          <li>#тату</li>
-          <li>#хайпбист</li>
-          <li>#кроссовки</li>
-          <li>#суприм</li>
+          <li class="tags__item">#рэп</li>
+          <li class="tags__item">#тату</li>
+          <li class="tags__item">#хайпбист</li>
+          <li class="tags__item">#кроссовки</li>
+          <li class="tags__item">#суприм</li>
         </ul>
 
         <div class="user-card__section">
@@ -512,16 +554,18 @@
               alt="Фото юзера">
             <button class="user-card__like-button" type="button"></button>
           </div>
-          <h3 class="user-card__name">Лариса Роговая</h3>
-          <p class="user-card__distance">23</p>
+          <div class="user-card__info">
+            <h3 class="user-card__name">Лариса Роговая</h3>
+            <p class="user-card__distance">23</p>
+          </div>
           <span class="user-card__status user-status user-status--online"></span>
         </div>
 
         <ul class="user-card__tags tags">
-          <li>#образование</li>
-          <li>#карьера</li>
-          <li>#учеба</li>
-          <li>#линкедин</li>
+          <li class="tags__item">#образование</li>
+          <li class="tags__item">#карьера</li>
+          <li class="tags__item">#учеба</li>
+          <li class="tags__item">#линкедин</li>
         </ul>
 
         <div class="user-card__section">
@@ -607,27 +651,24 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img class="page-footer__image" src="https://via.placeholder.com/150x150" width="100" height="19"
+      <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" width="96" height="19"
         alt="Логотип сайта «Погнали?»">
     </a>
 
     <ul class="page-footer__social socials">
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
-            alt="Facebook иконка">
+          <img class="social-link__icon" src="img/facebook.svg" width="11" height="21" alt="Facebook иконка">
         </a>
       </li>
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
-            alt="VK иконка">
+          <img class="social-link__icon" src="img/vk.svg" width="23" height="12" alt="VK иконка">
         </a>
       </li>
       <li class="socials__item">
         <a class="social-link social-link--orange" href="#">
-          <img class="social-link__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
-            alt="Instagram иконка">
+          <img class="social-link__icon" src="img/instagram.svg" width="18" height="18" alt="Instagram иконка">
         </a>
       </li>
     </ul>
@@ -635,8 +676,7 @@
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
       <a href="#">
-        <img class="copyright__icon" src="https://via.placeholder.com/150x150" width="50" height="50"
-          alt="Иконка академии">
+        <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Иконка академии">
       </a>
     </div>
   </footer>

@@ -3,7 +3,14 @@
   list-style: none;
 }
 
-.transport-list__item {
+.transport-list__item {}
+
+
+.transport-list__item--active {
+  opacity: 1;
+}
+
+.transport-list__icon-wrapper {
   width: 43px;
   height: 43px;
   background-color: $white;
@@ -11,13 +18,63 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  opacity: 0.3;
-}
-
-.transport-list__item--active {
-  opacity: 1;
 }
 
 .transport-list__icon {
-  fill: red;
+  opacity: 0.15;
+}
+
+.transport-list__icon--bike {
+  width: 19px;
+  height: 17px;
+}
+
+.transport-list__icon--plane {
+  width: 14px;
+  height: 16px;
+}
+
+.transport-list__icon--bus {
+  width: 13px;
+  height: 16px;
+}
+
+.transport-list__icon--run {
+  width: 15px;
+  height: 17px;
+}
+
+.transport-list__checkbox {
+  cursor: pointer;
+}
+
+
+.transport-list__input:checked+.transport-list__icon-wrapper>.transport-list__icon {
+  opacity: 1;
+  fill: $dark-slate-blue;
+}
+
+.transport-list__icon--big-plane {
+  width: 19px;
+  height: 21px;
+}
+
+.transport-list__icon--big-bus {
+  width: 17px;
+  height: 21px;
+}
+
+.transport-list__icon--big-bike {
+  width: 24px;
+  height: 21px;
+}
+
+.transport-list__icon--big-run {
+  width: 20px;
+  height: 21px;
+}
+
+.transport-list__icon--active {
+  fill: $dark-slate-blue;
+  opacity: 1;
 }

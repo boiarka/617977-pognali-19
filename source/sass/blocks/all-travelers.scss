@@ -1,1 +1,10 @@
-// all-travelers
+.all-travelers {
+  background-color: $pale-grey;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  position: relative;
+}
+
+.all-travelers::before {
+  @include borderRadiusBottomBg(30px, $pale-grey);
+}

@@ -31,6 +31,9 @@
   line-height: 1.11;
 }
 
+.page-header__title--bordered {
+  margin-left: 27px;
+}
 
 .page-header__title--bordered::after {
   content: "";
@@ -39,7 +42,7 @@
   border-radius: 2.4px;
   background-color: $mango;
   position: absolute;
-  bottom: -12px;
+  bottom: -2.5px;
   left: 0;
 }
 
