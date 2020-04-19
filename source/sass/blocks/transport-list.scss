@@ -1,4 +1,6 @@
 .transport-list {
+  padding: 0;
+  margin: 0;
   display: flex;
   list-style: none;
 }
@@ -18,6 +20,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.transport-list__icon-wrapper--small {
+  width: 33px;
+  height: 33px;
+}
+
+.transport-list__icon-wrapper--grey {
+  background-color: $pale-grey;
 }
 
 .transport-list__icon {

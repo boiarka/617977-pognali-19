@@ -2,9 +2,18 @@
   background-color: $pale-grey;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
+  padding-bottom: 40px;
   position: relative;
 }
 
 .all-travelers::before {
   @include borderRadiusBottomBg(30px, $pale-grey);
+}
+
+.all-travelers__pagination {
+  margin-top: 20px;
+}
+
+.all-travelers__show-more {
+  margin-top: 20px;
 }

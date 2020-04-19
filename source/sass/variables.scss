@@ -29,6 +29,8 @@ $mobilePadding: 25px;
 $tabletPadding: 30px;
 $desktopPadding: 45px;
 
+$extraPadding: 25px;
+
 @mixin container() {
   margin: 0 auto;
   padding-left: $mobilePadding;

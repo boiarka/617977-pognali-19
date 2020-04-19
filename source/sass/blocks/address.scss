@@ -3,6 +3,7 @@
   position: relative;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
+  padding-top: 30px;
   padding-bottom: 30px;
 
   @include borderBottomRadius(30px);
@@ -13,7 +14,6 @@
 }
 
 .address__text {
-  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

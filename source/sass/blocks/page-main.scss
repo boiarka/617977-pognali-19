@@ -2,3 +2,38 @@
   margin: 0;
   padding: 0;
 }
+
+.page-main__about {
+  padding-left: $mobilePadding+$extraPadding;
+  padding-right: $mobilePadding+$extraPadding;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.page-main__directions {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.page-main__travelers {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 72px;
+  padding-bottom: 30px;
+}
+
+.page-main__profile {
+  padding-top: 40px;
+  padding-left: $mobilePadding+$extraPadding;
+  padding-right: $mobilePadding;
+  padding-bottom: 30px;
+}
+
+.page-main__email-registration {
+  padding-top: 40px;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-bottom: 30px;
+}

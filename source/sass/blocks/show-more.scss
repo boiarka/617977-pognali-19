@@ -1,0 +1,20 @@
+.show-more {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-more__icon {
+  width: 18px;
+  height: 18px;
+  fill: $dark-slate-blue;
+  margin-right: 15px;
+}
+
+.show-more__text {
+  color: $dark-slate-blue;
+  font-size: 17px;
+  font-weight: bold;
+}

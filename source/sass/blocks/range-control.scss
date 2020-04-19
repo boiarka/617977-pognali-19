@@ -1,3 +1,64 @@
-.range-control {
+.range-control__inputs {
+  border: 1px solid $cloudy-blue;
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.range-control__inputs {
   display: flex;
+}
+
+.range-control__input {
+  display: inline-block;
+  padding: 10px 0 8px 10px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: $dark-slate-blue;
+  font-size: 15px;
+}
+
+.range-control__label {
+  width: 50%;
+  position: relative;
+}
+
+.range-control__label--min::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: $cloudy-blue;
+}
+
+.range-control__label--min::before {
+  content: '';
+  transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  width: 16px;
+  height: 10px;
+  background-color: $white;
+  z-index: 1;
+}
+
+.range-control__label--max::after {
+  content: '';
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 1px;
+  background-color: $cloudy-blue;
+  z-index: 2;
+}
+
+.range-control__scale {
+  margin-top: 20px;
 }

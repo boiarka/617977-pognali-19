@@ -1,9 +1,6 @@
 .email-registration {
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
   background-color: $dark-blue-grey;
   position: relative;
-  padding-bottom: 20px;
 
   @include borderBottomRadius(30px);
 }
@@ -13,14 +10,14 @@
 }
 
 .email-registration__title {
-  padding-top: 70px;
   margin-bottom: 23px;
+  text-align: center;
+  padding: 0 25px;
 }
 
 .email-registration__text {
-  width: 240px;
   text-align: center;
-  margin: 0 auto;
+  padding: 0 37px;
 }
 
 .email-form__link {

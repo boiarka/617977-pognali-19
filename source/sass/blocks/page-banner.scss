@@ -1,0 +1,49 @@
+.page-banner {
+  padding-top: 50px;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page-banner__title {
+  display: inline-block;
+  font-size: 36px;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  line-height: 1.11;
+}
+
+
+.page-banner__illustration {
+  display: flex;
+  margin: 12px 50px 0 auto;
+  width: 192px;
+  height: 255px;
+}
+
+.page-banner__nav {
+  transform: translate(30px, -20px);
+}
+
+.page-banner__quote {
+  padding-top: 50px;
+  padding-bottom: 33px;
+  padding-left: $mobilePadding + $extraPadding;
+  padding-right: $mobilePadding + $extraPadding+50px;
+}
+
+.page-banner__promo {
+  background-color: $dark-blue-grey;
+  position: relative;
+}
+
+.page-banner__promo::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $dark-two;
+}

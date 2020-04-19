@@ -9,7 +9,22 @@
   align-items: center;
 }
 
+.level--small {
+  width: 45px;
+  height: 45px;
+}
+
 .level__ring {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.level__ring--small {
+  width: 45px;
+  height: 45px;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,6 +60,10 @@
   line-height: 1;
   padding-top: 5px;
   text-align: center;
+}
+
+.level__count--blue {
+  color: $dark-slate-blue;
 }
 
 .level__text {

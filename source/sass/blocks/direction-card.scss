@@ -1,6 +1,4 @@
 .direction-card {
-  width: 270px;
-  height: 190px;
   position: relative;
 }
 
@@ -9,17 +7,23 @@
 }
 
 .direction-card__photo {
-  border-radius: 10px;
+  display: block;
+  border-radius: 10px 10px 0 0;
 }
 
 .direction-card__title {
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
+  padding-right: 66px;
   margin-bottom: 5px;
 }
 
 .direction-card__description {
+  padding: 0;
+  margin: 0;
   opacity: 0.3;
   line-height: 1.13;
 }
@@ -28,7 +32,7 @@
   color: $greyish-brown-30;
   line-height: 1.88;
   position: absolute;
-  top: 21px;
+  top: 7px;
   right: 26px;
 }
 
@@ -44,13 +48,13 @@
 }
 
 .direction-card__wrapper {
+  position: relative;
+  margin-top: -10px;
+  z-index: 1;
   background-color: $white;
   border-radius: 10px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 90px;
-  padding: 0 24px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;

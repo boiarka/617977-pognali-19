@@ -1,49 +1,18 @@
 .page-header {
   background-color: $dark-two;
   position: relative;
-  padding-top: 25px;
 }
 
 .page-header__wrapper {
   @include container();
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
 }
 
 .page-header--bradius {
   border-radius: 0 0 20px 20px;
-}
-
-.page-header--bg {
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.page-header__title {
-  display: inline-block;
-  font-size: 36px;
-  color: $white;
-  font-weight: bold;
-  position: relative;
-  margin-top: 50px;
-  text-align: center;
-  line-height: 1.11;
-}
-
-.page-header__title--bordered {
-  margin-left: 27px;
-}
-
-.page-header__title--bordered::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  border-radius: 2.4px;
-  background-color: $mango;
-  position: absolute;
-  bottom: -2.5px;
-  left: 0;
 }
 
 .page-header__toggle {
@@ -77,31 +46,26 @@
   border-radius: 2px;
 }
 
-.page-header__nav {
-  transform: translate(30px, -20px);
-}
 
-.page-header__illustration {
-  display: flex;
-  margin: 12px 50px 0 auto;
-  width: 192px;
-  height: 255px;
-}
-
-.page-header__promo {
-  background-color: $dark-blue-grey;
+.page-header__title {
+  margin: 30px 25px 0 25px;
+  padding-bottom: 10px;
+  display: inline-block;
+  font-size: 36px;
+  color: $white;
+  font-weight: bold;
   position: relative;
+  line-height: 1.11;
 }
 
-.page-header__promo::before {
-  position: absolute;
+.page-header__title--bordered::after {
   content: "";
-  top: 0;
   width: 100%;
-  height: 80px;
-  background-color: $dark-two;
-}
-
-.page-header__quote {
-  padding-bottom: 33px;
+  height: 5px;
+  border-radius: 2.4px;
+  background-color: $mango;
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  z-index: 2;
 }

@@ -6,11 +6,21 @@
 }
 
 .traveler-card__name {
+  position: relative;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: $dark-slate-blue;
   margin-bottom: 16px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.traveler-card__status {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
 }
 
 .traveler-card__level {
@@ -20,6 +30,8 @@
 }
 
 .traveler-card__countries {
+  padding: 0;
+  margin: 0;
   list-style: none;
   position: absolute;
   width: 100%;
@@ -44,11 +56,15 @@
 }
 
 .traveler-card__tags {
-  max-width: 177px;
   text-align: center;
   margin-bottom: 7px;
+  padding: 0 40px;
 }
 
 .traveler-card__transport {
   margin-bottom: 5px;
+}
+
+.traveler-card__image {
+  display: block;
 }
