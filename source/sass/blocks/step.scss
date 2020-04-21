@@ -1,6 +1,9 @@
 .step {
   background-color: $white;
-  border-radius: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 25px;
+  margin-bottom: 10px;
 }
 
 .step__title {
@@ -11,4 +14,16 @@
 
 .step__description {
   color: $page-text-dark;
+}
+
+
+.step__checkbox {
+  padding: 6px 15px 6px 38px;
+  margin-bottom: 15px;
+}
+
+
+.step__button {
+  width: 100%;
+  margin-top: 20px;
 }

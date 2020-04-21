@@ -1,1 +1,29 @@
-// choose-country
+.choose-country {
+  display: flex;
+  position: relative;
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.choose-country__button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $dark-slate-blue;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.choose-country__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

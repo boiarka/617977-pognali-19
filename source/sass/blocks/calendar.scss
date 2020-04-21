@@ -1,1 +1,33 @@
 // calendar
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid $button-gray-color;
+  border-bottom: 1px solid $button-gray-color;
+}
+
+.calendar-nav__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.calendar-nav__icon {
+  width: 9px;
+  height: 17px;
+  fill: $button-gray-color;
+}
+
+.calendar-nav__date {
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark-slate-blue;
+}
+
+
+.calendar__table {
+  margin-top: 20px;
+}

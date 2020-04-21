@@ -9,11 +9,6 @@
   align-items: center;
 }
 
-.level--small {
-  width: 45px;
-  height: 45px;
-}
-
 .level__ring {
   width: 60px;
   height: 60px;
@@ -22,12 +17,27 @@
   left: 0;
 }
 
+.level--small {
+  width: 45px;
+  height: 45px;
+}
+
 .level__ring--small {
   width: 45px;
   height: 45px;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.level--big {
+  width: 100px;
+  height: 100px;
+}
+
+.level__ring--big {
+  width: 100px;
+  height: 100px;
 }
 
 .level__circle {

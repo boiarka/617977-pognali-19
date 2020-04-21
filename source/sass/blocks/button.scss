@@ -1,6 +1,7 @@
 .button {
   font-family: inherit;
   background-color: $light-gold;
+  color: $dark-two;
   font-size: 17px;
   text-transform: uppercase;
   border-radius: 20px;
@@ -18,4 +19,8 @@
 
 .button--white {
   background-color: $white;
+}
+
+.button--nobg {
+  background-color: transparent;
 }

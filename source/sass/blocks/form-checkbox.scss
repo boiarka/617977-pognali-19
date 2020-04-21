@@ -28,3 +28,27 @@
   background: url("../img/tick.svg") no-repeat center center;
   background-size: 9px 9px;
 }
+
+
+.form-checkbox__input--border+.form-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: $white;
+  border: 1px solid $cloudy-blue;
+}
+
+.form-checkbox__input--border:checked+.form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  background: url("../img/tick.svg") no-repeat center center;
+  background-size: 9px 9px;
+}
