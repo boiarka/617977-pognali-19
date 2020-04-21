@@ -1,6 +1,18 @@
 .added-country {
   display: flex;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.added-country::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: 51px;
+  width: 5px;
+  height: 10px;
+  background-image: url('../img/small-arrow.svg');
+  opacity: 0.3;
 }
 
 

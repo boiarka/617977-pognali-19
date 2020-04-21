@@ -1,1 +1,25 @@
-// connected-textareas
+.connected-textareas__item {
+  display: block;
+  position: relative;
+}
+
+.connected-textareas__item--start::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: -13px;
+  width: 2px;
+  height: 100%;
+  background-color: $dark-slate-blue;
+}
+
+
+.connected-textareas__item--end::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -13px;
+  width: 2px;
+  height: 23px;
+  background-color: $dark-slate-blue;
+}

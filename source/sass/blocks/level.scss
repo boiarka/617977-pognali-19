@@ -49,6 +49,10 @@
   transform-origin: 50% 50%;
 }
 
+.level__circle--big {
+  stroke-dasharray: 364, 182;
+}
+
 .level__wrapper {
   display: flex;
   flex-direction: column;

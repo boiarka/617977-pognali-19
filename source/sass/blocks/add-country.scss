@@ -1,0 +1,45 @@
+.add-country {}
+
+
+.add-country__button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $dark-slate-blue;
+  background-color: $pale-grey;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+}
+
+.add-country__button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  transform: translate(0, -50%);
+  background-image: url('../img/qty-plus-mobile.svg');
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.add-country__button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 45px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid $cloudy-blue;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
