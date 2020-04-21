@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.form-checkbox__input+.form-checkbox__text::before {
+.form-checkbox__input + .form-checkbox__text::before {
   content: "";
   position: absolute;
   left: -25px;
@@ -18,7 +18,7 @@
   background-color: $white;
 }
 
-.form-checkbox__input:checked+.form-checkbox__text::after {
+.form-checkbox__input:checked + .form-checkbox__text::after {
   content: "";
   position: absolute;
   left: -25px;
@@ -30,7 +30,7 @@
 }
 
 
-.form-checkbox__input--border+.form-checkbox__text::before {
+.form-checkbox__input--border + .form-checkbox__text::before {
   content: "";
   position: absolute;
   left: -38px;
@@ -42,7 +42,7 @@
   border: 1px solid $cloudy-blue;
 }
 
-.form-checkbox__input--border:checked+.form-checkbox__text::after {
+.form-checkbox__input--border:checked + .form-checkbox__text::after {
   content: "";
   position: absolute;
   left: -38px;

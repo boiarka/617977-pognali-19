@@ -5,9 +5,6 @@
   list-style: none;
 }
 
-.transport-list__item {}
-
-
 .transport-list__item--active {
   opacity: 1;
 }
@@ -60,7 +57,7 @@
 }
 
 
-.transport-list__input:checked+.transport-list__icon-wrapper>.transport-list__icon {
+.transport-list__input:checked + .transport-list__icon-wrapper > .transport-list__icon {
   opacity: 1;
   fill: $dark-slate-blue;
 }

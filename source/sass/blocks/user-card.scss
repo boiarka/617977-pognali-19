@@ -26,13 +26,13 @@
 }
 
 .user-card__like-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 13px;
   height: 11px;
-  background-image: url('../img/heart.svg');
+  background-image: url("../img/heart.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 13px 11px;
@@ -45,7 +45,7 @@
 }
 
 .user-card__like-button--active::before {
-  background-image: url('../img/heart-active.svg');
+  background-image: url("../img/heart-active.svg");
   opacity: 1;
 }
 
@@ -61,6 +61,7 @@
 
 .user-card__wrapper {
   display: flex;
+  position: relative;
 }
 
 .user-card__info {
@@ -89,10 +90,6 @@
   padding-right: 30px;
 }
 
-.user-card__wrapper {
-  position: relative;
-}
-
 .user-card__status {
   position: absolute;
   top: 2px;
@@ -107,7 +104,7 @@
 }
 
 .user-card__title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -25px;
