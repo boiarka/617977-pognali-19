@@ -1,0 +1,51 @@
+.form-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid $macaroni-and-cheese;
+}
+
+.form-fieldset__inner {
+  padding-bottom: 20px;
+}
+
+.form-fieldset__toggle {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  padding: 13px 0;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-fieldset__toggle::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  top: 50%;
+  right: 0;
+  background-image: url("../img/dropdown.svg");
+  transform: translate(0, -50%);
+}
+
+.form-fieldset__toggle--close::after {
+  transform: rotate(180deg);
+}
+
+.form-fieldset__option {
+  padding: 6px 25px;
+}
+
+
+.form-fieldset__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

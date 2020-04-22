@@ -1,4 +1,28 @@
 .directions {
-  padding: 25px;
   background-color: $pale-grey;
+
+  @include borderBottomRadius(30px);
+  position: relative;
+}
+
+.directions::before {
+  @include borderRadiusTopBg(30px, $pale-grey);
+}
+
+.directions__button {
+  margin-top: 25px;
+}
+
+.directions__title {
+  margin-bottom: 23px;
+}
+
+.directions__text {
+  margin-bottom: 42px;
+  padding-right: 20px;
+}
+
+.directions__wrapper {
+  padding-left: $extraPadding;
+  padding-right: $extraPadding;
 }

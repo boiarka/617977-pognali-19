@@ -1,8 +1,55 @@
 .address {
   background-color: $light-gold;
+  position: relative;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include borderBottomRadius(30px);
+}
+
+.address::before {
+  @include borderRadiusTopBg(30px, $light-gold);
 }
 
 .address__text {
-  font-weight: bold;
-  line-height: 1.38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.address__icon {
+  margin-right: 16px;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: $dark-blue-grey-two;
+  text-align: center;
+}
+
+.address__icon svg {
+  width: 14px;
+  height: 22px;
+  fill: $light-gold;
+}
+
+.address__button {
+  margin-top: 30px;
+}
+
+.address-map {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.address-map__iframe {
+  position: absolute;
+  top: -30px;
+  z-index: -1;
+  width: 100%;
+  height: 260px;
 }

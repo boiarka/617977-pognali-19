@@ -1,6 +1,11 @@
 .user-card {
   border-radius: 20px;
   background-color: $white;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .user-card__image {
@@ -17,8 +22,33 @@
   height: 31px;
   border: none;
   border-radius: 50%;
+  background-color: $pale-grey;
+}
+
+.user-card__like-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 11px;
+  background-image: url("../img/heart.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 13px 11px;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+.user-card__like-button--active {
   background-color: $very-light-pink-two;
 }
+
+.user-card__like-button--active::before {
+  background-image: url("../img/heart-active.svg");
+  opacity: 1;
+}
+
 
 .user-card__name {
   word-spacing: 100em;
@@ -31,11 +61,13 @@
 
 .user-card__wrapper {
   display: flex;
+  position: relative;
 }
 
 .user-card__info {
   display: flex;
   flex-direction: column;
+  padding-top: 3px;
   margin-left: 20px;
 }
 
@@ -47,10 +79,92 @@
 
 .user-card__distance {
   margin: 0;
-  margin-top: 4px;
+  margin-top: 5px;
   padding: 0;
+  font-weight: bold;
 }
 
 .user-card__tags {
   margin-top: 15px;
+  margin-bottom: 20px;
+  padding-right: 30px;
+}
+
+.user-card__status {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.user-card__title {
+  padding: 0;
+  margin: 0;
+  color: $greyish-brown;
+  position: relative;
+}
+
+.user-card__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  height: 1px;
+  width: calc(100% + 50px);
+  background-color: $pale-grey;
+  z-index: 1;
+}
+
+.user-card__title-text {
+  position: relative;
+  display: inline-block;
+  background-color: $white;
+  padding: 0 10px;
+  margin: 0 -10px;
+  z-index: 2;
+}
+
+.user-card__title-level {
+  margin-right: -20px;
+}
+
+.user-card__section-wrapper {
+  display: flex;
+}
+
+.user-card__section-level {
+  margin-left: auto;
+}
+
+.user-card__button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.user-card__transport {
+  margin-top: 15px;
+}
+
+.user-card__level {
+  margin-top: 10px;
+}
+
+.user-card__countries {
+  padding: 0;
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.user-card__item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.user-card__flag {
+  display: inline-block;
+  width: 26px;
+  height: 18px;
+  margin-right: 15px;
+  background-color: blue;
 }

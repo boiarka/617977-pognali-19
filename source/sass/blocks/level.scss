@@ -10,9 +10,34 @@
 }
 
 .level__ring {
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.level--small {
+  width: 45px;
+  height: 45px;
+}
+
+.level__ring--small {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.level--big {
+  width: 100px;
+  height: 100px;
+}
+
+.level__ring--big {
+  width: 100px;
+  height: 100px;
 }
 
 .level__circle {
@@ -22,6 +47,10 @@
   transition: stroke-dashoffset 0.35s;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+}
+
+.level__circle--big {
+  stroke-dasharray: 364, 182;
 }
 
 .level__wrapper {
@@ -45,6 +74,10 @@
   line-height: 1;
   padding-top: 5px;
   text-align: center;
+}
+
+.level__count--blue {
+  color: $dark-slate-blue;
 }
 
 .level__text {

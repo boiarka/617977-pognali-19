@@ -1,20 +1,70 @@
 .direction-card {
-  border-radius: 10px;
-  overflow: hidden;
+  position: relative;
+}
+
+.direction-card:not(:first-child) {
+  margin-top: 10px;
+}
+
+.direction-card__photo {
+  display: block;
+  border-radius: 10px 10px 0 0;
 }
 
 .direction-card__title {
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
+  padding-right: 66px;
+  margin-bottom: 5px;
 }
 
 .direction-card__description {
+  padding: 0;
+  margin: 0;
   opacity: 0.3;
   line-height: 1.13;
 }
 
 .direction-card__counter {
-  opacity: 0.3;
+  color: $greyish-brown-30;
   line-height: 1.88;
+  position: absolute;
+  top: 7px;
+  right: 26px;
+}
+
+.direction-card__counter::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -16px;
+  width: 11px;
+  height: 11px;
+  opacity: 0.3;
+  background-image: url("../img/user.svg");
+}
+
+.direction-card__wrapper {
+  position: relative;
+  margin-top: -10px;
+  z-index: 1;
+  background-color: $white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.direction-card__flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  background-color: blue;
+  width: 35px;
+  height: 24px;
 }

@@ -1,10 +1,70 @@
 .traveler-card {
   background-color: $white;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .traveler-card__name {
+  position: relative;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: $dark-slate-blue;
+  margin-bottom: 16px;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.traveler-card__status {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+
+.traveler-card__level {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.traveler-card__countries {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+}
+
+.traveler-card__country {
+  margin-right: 19px;
+}
+
+.traveler-card__country:last-child {
+  margin-right: 0;
+}
+
+.traveler-card__wrapper {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traveler-card__tags {
+  text-align: center;
+  margin-bottom: 7px;
+  padding: 0 40px;
+}
+
+.traveler-card__transport {
+  margin-bottom: 5px;
+}
+
+.traveler-card__image {
+  display: block;
 }

@@ -9,3 +9,9 @@
   font-weight: bold;
   color: $dark-slate-blue;
 }
+
+.add-plan__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

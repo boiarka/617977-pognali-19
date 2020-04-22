@@ -1,3 +1,35 @@
 .email-registration {
   background-color: $dark-blue-grey;
+  position: relative;
+
+  @include borderBottomRadius(30px);
+}
+
+.email-registration::before {
+  @include borderRadiusTopBg(30px, $dark-blue-grey);
+}
+
+.email-registration__title {
+  margin-bottom: 23px;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.email-registration__text {
+  text-align: center;
+  padding: 0 37px;
+}
+
+.email-form__link {
+  color: $light-gold;
+  text-decoration: underline;
+}
+
+.email-form__input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.email-form__contacts {
+  margin-top: 20px;
 }

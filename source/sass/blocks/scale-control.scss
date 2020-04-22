@@ -1,3 +1,33 @@
 .scale-control {
-  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: $dark-slate-blue-30;
+  position: relative;
+}
+
+.scale-control__bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 1px;
+  background-color: $dark-slate-blue;
+}
+
+.scale-control__toggle {
+  position: absolute;
+  top: -5px;
+  transform: translate(-50%, 0);
+  width: 10px;
+  height: 10px;
+  background-color: $dark-slate-blue;
+  border-radius: 50%;
+}
+
+.scale-control__toggle--min {
+  left: 30%;
+}
+
+.scale-control__toggle--max {
+  right: -5px;
 }

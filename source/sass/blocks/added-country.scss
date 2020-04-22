@@ -1,1 +1,97 @@
-// added-country
+.added-country {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.added-country::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 51px;
+  width: 5px;
+  height: 10px;
+  background-image: url("../img/small-arrow.svg");
+  opacity: 0.3;
+}
+
+
+.added-country__flag {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  margin-right: -1px;
+  position: relative;
+}
+
+.added-country__flag::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: $dark-slate-blue;
+  z-index: 3;
+}
+
+.added-country__close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.close-button__icon {
+  width: 9px;
+  height: 9px;
+  fill: $bluey-grey;
+}
+
+.added-country__button {
+  width: 168px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  border: 1px solid $cloudy-blue;
+  background-color: transparent;
+  border-radius: 4px;
+  flex: 1;
+  color: $dark-slate-blue;
+  font-weight: 500;
+  margin-right: -1px;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.added-country__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 49px;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+.added-country__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 49px;
+  height: 100%;
+  background-image: url("../img/dropdown-form.svg");
+  background-size: 12px 7px, 100% 100%;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  opacity: 0.3;
+}

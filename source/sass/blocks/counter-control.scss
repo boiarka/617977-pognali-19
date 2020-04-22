@@ -6,6 +6,7 @@
 .counter-control__title {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .counter-control__title--gray {
@@ -13,5 +14,53 @@
 }
 
 .counter-control__text {
+  font-weight: 500;
+  color: $dark-slate-blue;
   text-transform: uppercase;
+}
+
+.counter-control__wrapper {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+}
+
+.counter-control__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.counter-control__input {
+  width: 50%;
+  padding: 10px 0;
+  margin: 0;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  color: $dark-slate-blue;
+}
+
+
+.counter-control__icon {
+  opacity: 0.3;
+}
+
+.counter-control__icon--minus {
+  width: 14px;
+  height: 2px;
+}
+
+
+.counter-control__icon--plus {
+  width: 14px;
+  height: 14px;
 }

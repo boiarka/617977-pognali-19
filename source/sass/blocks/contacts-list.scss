@@ -1,3 +1,25 @@
 .contacts-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.contacts-list__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list__icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 13px;
+  background-color: $dark-blue-grey-two;
+  margin-right: 16px;
+}
+
+.contacts-list__icon svg {
+  fill: $light-gold;
 }

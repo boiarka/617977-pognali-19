@@ -1,3 +1,62 @@
 .days-table {
   display: flex;
+  border-collapse: collapse;
+}
+
+.days-table__day {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 12px;
+}
+
+.days-table__day--weekend {
+  color: $orange-red;
+}
+
+
+.days-table__button {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid $pale-grey-two;
+  color: $pale-grey-two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  text-transform: uppercase;
+  margin: -2px -2px -1px -1px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.days-table__button:hover {
+  border: 1px solid $dark-slate-blue;
+  z-index: 2;
+}
+
+.days-table__button--available {
+  background-color: $pale-grey;
+  color: $greyish-brown;
+}
+
+.days-table__button--selected {
+  background-color: $dark-slate-blue;
+  color: $white;
+}
+
+.days-table__button--active {
+  position: relative;
+}
+
+
+.days-table__button--active::before {
+  content: "";
+  border: 2px solid $orange-red;
+  position: absolute;
+  width: 28px;
+  height: 28px;
 }

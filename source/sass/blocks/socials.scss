@@ -1,3 +1,15 @@
 .socials {
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.socials__item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $light-gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

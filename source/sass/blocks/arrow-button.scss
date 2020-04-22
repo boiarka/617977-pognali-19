@@ -1,15 +1,29 @@
 .arrow-button {
+  font-family: inherit;
   background-color: $light-gold;
   border-radius: 10px;
   border: none;
-  padding: 24px;
+  padding: 20px 24px;
   min-width: 270px;
   font-size: 18px;
+  color: $dark-slate-blue;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
   text-align: left;
+  position: relative;
+}
+
+.arrow-button::after {
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 23px;
+  transform: translate(0, -50%);
+  background-image: url("../img/triangle-arrow-right.svg");
 }
 
 .arrow-button--bordered {

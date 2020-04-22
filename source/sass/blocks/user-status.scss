@@ -1,0 +1,10 @@
+.user-status {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $salmon;
+}
+
+.user-status--online {
+  background-color: $green-apple;
+}

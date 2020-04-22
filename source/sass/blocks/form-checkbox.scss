@@ -1,3 +1,54 @@
 .form-checkbox {
   display: flex;
+  cursor: pointer;
+}
+
+.form-checkbox__text {
+  position: relative;
+}
+
+.form-checkbox__input + .form-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: $white;
+}
+
+.form-checkbox__input:checked + .form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/tick.svg") no-repeat center center;
+  background-size: 9px 9px;
+}
+
+
+.form-checkbox__input--border + .form-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background-color: $white;
+  border: 1px solid $cloudy-blue;
+}
+
+.form-checkbox__input--border:checked + .form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  background: url("../img/tick.svg") no-repeat center center;
+  background-size: 9px 9px;
 }
