@@ -1,5 +1,6 @@
 .socials {
   padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
 }
@@ -20,4 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-link--nobg {
+  background-color: transparent;
 }
