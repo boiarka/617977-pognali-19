@@ -1,8 +1,15 @@
 .traveler-card {
+  width: 100%;
   background-color: $white;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.traveler-card:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 45px;
+  }
 }
 
 .traveler-card__name {
@@ -66,5 +73,7 @@
 }
 
 .traveler-card__image {
+  width: 100%;
+  height: auto;
   display: block;
 }

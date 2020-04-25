@@ -34,3 +34,11 @@
   font-family: inherit;
   padding: 0;
 }
+
+.profile__icon {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+  }
+}

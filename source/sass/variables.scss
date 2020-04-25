@@ -28,8 +28,12 @@ $black-30: rgba(0, 0, 0, 0.3);
 $steel-grey: #808285;
 $orange-red: #ff5c23;
 
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
 $mobilePadding: 25px;
-$tabletPadding: 30px;
+$tabletPadding: 75px;
 $desktopPadding: 45px;
 
 $extraPadding: 25px;
@@ -47,6 +51,18 @@ $extraPadding: 25px;
   height: 10px;
   bottom: -10px;
   left: 0;
+  background-color: $color;
+}
+
+@mixin promoListRightRadiusAfter($color) {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 0;
+  right: -10px;
+  bottom: auto;
+  left: auto;
   background-color: $color;
 }
 

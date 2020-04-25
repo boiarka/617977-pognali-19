@@ -13,6 +13,16 @@
   padding: 13px 0;
   margin-right: 45px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    padding: 16px 0;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .profile-list__item::before {
@@ -29,6 +39,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    width: 67px;
+    height: 67px;
+    top: 32px;
+    right: none;
+    left: -80px;
+  }
 }
 
 .profile-list__item--mango-three::before {
@@ -50,4 +69,8 @@
 .profile-list__price {
   margin-top: 5px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

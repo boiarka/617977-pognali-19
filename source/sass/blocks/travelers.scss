@@ -14,6 +14,13 @@
   @include borderRadiusTopBg(30px, $dark-blue-grey);
 }
 
+.travelers__cards {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 
 .travelers__title {
   padding: 0;

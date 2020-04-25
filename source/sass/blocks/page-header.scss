@@ -9,10 +9,17 @@
   padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header--bradius {
   border-radius: 0 0 20px 20px;
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
 }
 
 .page-header__toggle {
@@ -22,6 +29,10 @@
   background-color: transparent;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .page-header__toggle::before {
@@ -68,4 +79,14 @@
   bottom: -2.5px;
   left: 0;
   z-index: 2;
+}
+
+
+.page-header__nav {
+  position: absolute;
+  bottom: -375px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }

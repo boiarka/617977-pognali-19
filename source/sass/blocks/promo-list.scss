@@ -2,6 +2,13 @@
   @include container();
   list-style-position: inside;
   counter-reset: item;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .promo-list__item {
@@ -15,6 +22,14 @@
   height: 80px;
   border-radius: 10px 10px 0 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .promo-list__item::before {
@@ -30,29 +45,73 @@
 
 .promo-list__item--mango {
   background-color: $mango;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .promo-list__item--mango::after {
   @include promoListAfter($mango);
+
+  @media (min-width: $tablet-width) {
+    @include promoListRightRadiusAfter($mango);
+  }
 }
 
 .promo-list__item--mango-three {
   background-color: $mango-three;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .promo-list__item--mango-three::after {
   @include promoListAfter($mango-three);
+
+  @media (min-width: $desktop-width) {
+    @include promoListRightRadiusAfter($mango-three);
+  }
 }
 
 .promo-list__item--mango-two {
   background-color: $mango-two;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .promo-list__item--mango-two::after {
   @include promoListAfter($mango-two);
+
+  @media (min-width: $tablet-width) {
+    @include promoListRightRadiusAfter($mango-two);
+  }
 }
 
 .promo-list__item--light-gold {
   background-color: $light-gold;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 10px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 10px;
+  }
 }
