@@ -2,17 +2,31 @@
   background-color: $dark-two;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: $mobilePadding;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-header__wrapper {
-  @include container();
-  padding-top: 25px;
-  padding-bottom: 25px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+  }
 }
 
 .page-header--bradius {
@@ -20,6 +34,10 @@
 }
 
 .page-header__logo {
+  @media (min-width: $tablet-width) {
+    width: 188px;
+  }
+
 }
 
 .page-header__toggle {
@@ -29,6 +47,14 @@
   background-color: transparent;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__toggle::before {

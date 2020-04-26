@@ -9,6 +9,7 @@
   @include borderRadiusTopBg(30px, $pale-grey);
 }
 
+
 .directions__button {
   margin-top: 25px;
 }
@@ -25,4 +26,5 @@
 .directions__wrapper {
   padding-left: $extraPadding;
   padding-right: $extraPadding;
+
 }
