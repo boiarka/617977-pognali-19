@@ -1,5 +1,7 @@
 .quote {
   background-color: $dark-two;
+  position: relative;
+  z-index: 1;
 }
 
 .quote__text {
@@ -12,5 +14,5 @@
   font-weight: bold;
   line-height: 1.38;
   color: $white;
-  margin-top: 25px;
+  margin-top: 20px;
 }

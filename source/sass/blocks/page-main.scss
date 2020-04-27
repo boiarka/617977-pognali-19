@@ -6,15 +6,15 @@
 .page-main__about {
   padding-left: $mobilePadding+$extraPadding;
   padding-right: $mobilePadding+$extraPadding;
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 63px;
 }
 
 .page-main__directions {
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     padding-left: $tabletPadding;
@@ -38,7 +38,7 @@
   padding-top: 40px;
   padding-left: $mobilePadding+$extraPadding;
   padding-right: $mobilePadding;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
@@ -46,10 +46,10 @@
 }
 
 .page-main__email-registration {
-  padding-top: 40px;
+  padding-top: 72px;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     padding-left: $tabletPadding;
@@ -60,7 +60,7 @@
 .page-main__addres {
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -84,6 +84,9 @@
 }
 
 .page-main__promo {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
   background-color: $dark-blue-grey;
   position: relative;
+  z-index: 2;
 }

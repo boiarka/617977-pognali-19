@@ -2,8 +2,8 @@
   background-color: $white;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
-  padding-top: 30px;
-  padding-bottom: 14px;
+  padding-top: 38px;
+  padding-bottom: 8px;
   border-radius: 30px 30px 0 0;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,11 @@
 }
 
 .page-footer__social {
-  margin-top: 30px;
+  margin: 0;
+  margin-top: 33px;
   margin-bottom: 30px;
+}
+
+.page-footer__copyright {
+  margin-top: 13px;
 }

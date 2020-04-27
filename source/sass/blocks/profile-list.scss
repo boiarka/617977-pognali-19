@@ -1,6 +1,5 @@
 .profile-list {
   padding: 0;
-  margin: 0;
   list-style: none;
   counter-reset: item;
 }
@@ -10,7 +9,7 @@
   font-size: 16px;
   border-bottom: 1px solid $pale-grey-two;
   color: $greyish-brown;
-  padding: 13px 0;
+  padding: 14px 0;
   margin-right: 45px;
   position: relative;
 
@@ -27,7 +26,7 @@
 
 .profile-list__item::before {
   position: absolute;
-  top: 23px;
+  top: 20px;
   right: -45px;
   transform: translate(0, -50%);
   content: counter(item);

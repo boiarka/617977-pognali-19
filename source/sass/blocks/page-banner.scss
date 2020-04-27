@@ -1,12 +1,24 @@
 .page-banner {
-  padding-top: 50px;
+  padding-top: 20px;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -73px;
   background-color: $dark-two;
 
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.page-banner__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
@@ -30,35 +42,26 @@
 
 .page-banner__illustration {
   display: flex;
-  margin: 12px 50px 0 auto;
+  margin: 11px 50px 0 auto;
   width: 192px;
   height: 255px;
 }
 
 
 .page-banner__quote {
-  padding-top: 50px;
-  padding-bottom: 33px;
+  margin-top: -39px;
+  padding-top: 45px;
+  padding-bottom: 30px;
   padding-left: $mobilePadding + $extraPadding;
-  padding-right: $mobilePadding + $extraPadding+50px;
-}
-
-.page-banner__promo::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 100%;
-  height: 80px;
+  padding-right: $mobilePadding + $extraPadding + 50px;
   background-color: $dark-two;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
-.page-banner__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
+.page-banner__nav {
+  position: relative;
+  z-index: 2;
 }

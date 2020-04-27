@@ -39,9 +39,12 @@ $desktopPadding: 45px;
 $extraPadding: 25px;
 
 @mixin container() {
+  width: 100%;
   margin: 0 auto;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 @mixin promoListAfter($color) {

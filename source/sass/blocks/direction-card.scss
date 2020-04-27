@@ -30,7 +30,7 @@
   font-weight: bold;
   line-height: 1;
   padding-right: 66px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .direction-card__description {
@@ -46,8 +46,8 @@
   color: $greyish-brown-30;
   line-height: 1.88;
   position: absolute;
-  top: 7px;
-  right: 26px;
+  top: 11px;
+  right: 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -71,12 +71,12 @@
 
 .direction-card__wrapper {
   position: relative;
-  margin-top: -10px;
+  margin-top: -12px;
   z-index: 1;
   background-color: $white;
   border-radius: 10px;
   width: 100%;
-  padding: 24px;
+  padding: 27px 24px 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;

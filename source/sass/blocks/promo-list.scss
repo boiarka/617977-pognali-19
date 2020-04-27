@@ -1,5 +1,6 @@
 .promo-list {
-  @include container();
+  padding: 0;
+  margin: 0;
   list-style-position: inside;
   counter-reset: item;
   display: flex;
@@ -34,7 +35,7 @@
 
 .promo-list__item::before {
   position: absolute;
-  top: 50%;
+  top: 30px;
   right: 20px;
   transform: translate(0, -50%);
   content: counter(item);

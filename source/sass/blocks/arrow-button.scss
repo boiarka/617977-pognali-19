@@ -4,7 +4,7 @@
   background-color: $light-gold;
   border-radius: 10px;
   border: none;
-  padding: 20px 24px;
+  padding: 24px 24px 20px;
   min-width: 270px;
   font-size: 18px;
   color: $dark-slate-blue;
@@ -29,4 +29,5 @@
 
 .arrow-button--bordered {
   border: 3px solid $dark-blue-grey;
+  padding: 22px 21px 17px 21px;
 }

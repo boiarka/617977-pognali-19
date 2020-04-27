@@ -11,86 +11,89 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__image" src="img/logo-mobile-white@1x.png" width="100" height="19"
-          alt="Логотип сайта «Погнали?»">
-      </a>
-      <button class="page-header__toggle"></button>
+    <div class="page-header__main">
+
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__image" src="img/logo-mobile-white@1x.png" width="100" height="19"
+            alt="Логотип сайта «Погнали?»">
+        </a>
+        <button class="page-header__toggle"></button>
+      </div>
+
+      <div class="main-nav main-nav--opened">
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="#">О сервисе</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Попутчики</a></li>
+        </ul>
+
+        <a class="main-nav__link button" href="#">Авторизация</a>
+
+        <ul class="main-nav__contacts header-contacts">
+          <li class="header-contacts__item">
+            <span class="header-contacts__icon header-contacts__icon--mango">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+              <svg class="header-contacts__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36"
+                style="enable-background:new 0 0 36 36" xml:space="preserve">
+                <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+    c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+    c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+    c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+    M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+    c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+    c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
+              </svg>
+            </span>
+            <a class="header-contacts__link" href="tel:+88005558628">8 800
+              555-86-28</a>
+          </li>
+          <li class="header-contacts__item">
+            <span class="header-contacts__icon header-contacts__icon--mangotwo">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
+              <svg class="header-contacts__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26"
+                style="enable-background:new 0 0 36 26" xml:space="preserve">
+                <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+    c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+    L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+    c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z" />
+              </svg>
+            </span>
+            <a class="header-contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__social socials">
+          <li class="socials__item">
+            <a class="social-link social-link--nobg" href="#">
+              <img class="social-link__icon" src="img/facebook.svg" width="11" height="21" alt="Facebook иконка">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="social-link social-link--nobg" href="#">
+              <img class="social-link__icon" src="img/vk.svg" width="23" height="12" alt="VK иконка">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="social-link social-link--nobg" href="#">
+              <img class="social-link__icon" src="img/instagram.svg" width="18" height="18" alt="Instagram иконка">
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-
-    <div class="main-nav">
-
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="#">О сервисе</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="#">Попутчики</a></li>
-      </ul>
-
-      <a class="main-nav__link button" href="#">Авторизация</a>
-
-      <ul class="main-nav__contacts contacts-list">
-        <li class="contacts-list__item">
-          <span class="contacts-list__icon">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36"
-              style="enable-background:new 0 0 36 36" xml:space="preserve">
-              <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-  c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-  c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-  c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-  M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-  c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-  c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-  c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
-            </svg>
-          </span>
-          <a class="main-nav__contacts-link contacts-list__link contacts-list__link--blue" href="tel:+88005558628">8 800
-            555-86-28</a>
-        </li>
-        <li class="contacts-list__item">
-          <span class="contacts-list__icon">
-            <?xml version="1.0" encoding="utf-8"?>
-            <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26"
-              style="enable-background:new 0 0 36 26" xml:space="preserve">
-              <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-  c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-  L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-  c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z" />
-            </svg>
-          </span>
-          <a class="main-nav__contacts-link contacts-list__link contacts-list__link--blue"
-            href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__social socials">
-        <li class="socials__item">
-          <a class="social-link social-link--nobg" href="#">
-            <img class="social-link__icon" src="img/facebook.svg" width="11" height="21" alt="Facebook иконка">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="social-link social-link--nobg" href="#">
-            <img class="social-link__icon" src="img/vk.svg" width="23" height="12" alt="VK иконка">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="social-link social-link--nobg" href="#">
-            <img class="social-link__icon" src="img/instagram.svg" width="18" height="18" alt="Instagram иконка">
-          </a>
-        </li>
-      </ul>
-    </div>
-
   </header>
 
   <main class="page-main">
     <div class="page-banner">
+
       <div class="page-banner__title">В путешествие с&nbsp;крутыми попутчиками!</div>
 
       <div class="page-banner__wrapper">
@@ -136,7 +139,7 @@
           О сервисе
         </h3>
         <p class="about__text page-text">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+          Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь
           своими идеями путешествий и черпайте вдохновение в чужих.</p>
         <p class="about__text page-text page-text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
@@ -155,7 +158,8 @@
           Направления
         </h3>
         <p class="directions__text page-text page-text--brown">
-          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно
+          Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
+          можно
           там заняться.
         </p>
       </div>
@@ -260,7 +264,7 @@
 
             <ul class="transport-list traveler-card__transport">
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-plane transport-list__icon--active"
                     version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21"
@@ -276,7 +280,7 @@ c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-bus" version="1.1" id="svg2103"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 17 21" style="enable-background:new 0 0 17 21" xml:space="preserve">
@@ -289,7 +293,7 @@ H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-bike" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 24 21" style="enable-background:new 0 0 24 21" xml:space="preserve">
@@ -299,7 +303,7 @@ H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-run" version="1.1" id="Icons_Run"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 20 21" style="enable-background:new 0 0 20 21" xml:space="preserve">
@@ -357,7 +361,7 @@ z" />
 
             <ul class="transport-list traveler-card__transport">
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-plane transport-list__icon--active"
                     version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21"
@@ -373,7 +377,7 @@ c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-bus transport-list__icon--active"
                     version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21"
@@ -387,7 +391,7 @@ H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-bike" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 24 21" style="enable-background:new 0 0 24 21" xml:space="preserve">
@@ -397,7 +401,7 @@ H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,
                 </span>
               </li>
               <li class="transport-list__item">
-                <span class="transport-list__icon-wrapper">
+                <span class="transport-list__icon-wrapper transport-list__icon-wrapper--small">
                   <svg class="transport-list__icon transport-list__icon--big-run transport-list__icon--active"
                     version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
@@ -477,7 +481,7 @@ z" />
       <form class="email-registration__form email-form" method="post" action="https://echo.htmlacademy.ru">
         <h3 class="email-registration__title page-title">Заинтересовались?</h3>
         <p class="email-registration__text page-text">
-          Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a
+          Зарегистрируйтесь, <br> это быстро и бесплатно! <br> Уже зарегистрированы? Тогда <br> скорее <a
             class="email-form__link" href="#">авторизуйтесь</a>.
         </p>
         <div class="email-form__input text-input">
@@ -491,15 +495,15 @@ z" />
           </button>
         </div>
         <p class="email-registration__text page-text">
-          Остались вопросы?
-          Мы&nbsp;с&nbsp;радостью на них ответим!
+          Остались вопросы? <br>
+          Мы с радостью на них ответим!
         </p>
         <ul class="email-form__contacts contacts-list">
           <li class="contacts-list__item">
             <span class="contacts-list__icon">
               <?xml version="1.0" encoding="utf-8"?>
               <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="contacts-list__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36"
                 style="enable-background:new 0 0 36 36" xml:space="preserve">
                 <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -518,7 +522,7 @@ c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z" />
             <span class="contacts-list__icon">
               <?xml version="1.0" encoding="utf-8"?>
               <!--Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)-->
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="contacts-list__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26"
                 style="enable-background:new 0 0 36 26" xml:space="preserve">
                 <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
@@ -536,15 +540,16 @@ c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-
     <section class="page-main__addres address">
       <div class="address__text">
         <span class="address__icon">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 28 43" style="enable-background:new 0 0 28 43" xml:space="preserve">
+          <svg class="address__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 43"
+            style="enable-background:new 0 0 28 43" xml:space="preserve">
             <path d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
 c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
 c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
 c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z" />
           </svg>
         </span>
-        <p>ул. Большая Конюшенная, 19/8</p>
+        <p class="address__info">ул. Большая Конюшенная, 19/8</p>
       </div>
       <button class="address__button arrow-button arrow-button--bordered" type="button">Проложить маршрут</button>
     </section>
@@ -581,9 +586,9 @@ c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14
       </li>
     </ul>
 
-    <div class="copyright">
+    <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a href="#">
+      <a class="copyright__link" href="#">
         <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Иконка академии">
       </a>
     </div>

@@ -1,6 +1,6 @@
 .copyright {
   border-top: 1px solid $pale-grey;
-  padding-top: 20px;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -13,4 +13,9 @@
 
 .copyright__text {
   color: $greyish-brown;
+}
+
+
+.copyright__link {
+  padding-top: 5px;
 }

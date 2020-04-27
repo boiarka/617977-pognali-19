@@ -22,9 +22,13 @@
   padding: 13px;
   background-color: $dark-blue-grey-two;
   margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contacts-list__icon svg {
+.contacts-list__svg {
+  width: 18px;
   fill: $light-gold;
 }
 

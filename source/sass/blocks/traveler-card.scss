@@ -4,6 +4,7 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  padding-bottom: 11px;
 }
 
 .traveler-card:first-child {
@@ -18,7 +19,8 @@
   font-weight: bold;
   line-height: 1;
   color: $dark-slate-blue;
-  margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 15px;
   padding: 0 40px;
   text-align: center;
 }
@@ -26,7 +28,7 @@
 .traveler-card__status {
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 23px;
   transform: translate(0, -50%);
 }
 
@@ -64,8 +66,8 @@
 
 .traveler-card__tags {
   text-align: center;
-  margin-bottom: 7px;
-  padding: 0 40px;
+  margin-bottom: 9px;
+  padding: 0 30px;
 }
 
 .traveler-card__transport {

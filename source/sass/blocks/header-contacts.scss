@@ -1,0 +1,58 @@
+.header-contacts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header-contacts__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $dark-blue-grey-two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.header-contacts__icon--mango {
+  @media (min-width: $desktop-width) {
+    background-color: $mango;
+  }
+}
+
+.header-contacts__icon--mangotwo {
+  @media (min-width: $desktop-width) {
+    background-color: $mango-two;
+  }
+}
+
+.header-contacts__svg {
+  width: 18px;
+  fill: $light-gold;
+
+  @media (min-width: $desktop-width) {
+    fill: $dark-blue-grey-two;
+  }
+}
+
+.header-contacts__link {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
