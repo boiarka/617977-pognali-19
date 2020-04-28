@@ -4,6 +4,12 @@
   @include borderBottomRadius(30px);
 
   @media (min-width: $tablet-width) {
+    background: $dark-blue-grey url("../img/about-tablet@1x.png") no-repeat 384px 144px;
+  }
+}
+
+.about__content {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -13,27 +19,55 @@
   padding: 0;
   margin: 0;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
 }
 
 .about__text {
   padding: 0;
   margin: 0;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 33px;
+  }
+}
+
+.about__text-bold {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.19;
+    margin-bottom: 50px;
+  }
 }
 
 .about__button {
   display: none;
 
   @media (min-width: $tablet-width) {
+    width: 274px;
     display: block;
+    padding: 32px 12px 26px 34px;
   }
 }
 
 .about_left-wrapper {
   @media (min-width: $tablet-width) {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding-right: 60px;
+    padding-right: 8px;
+    padding-left: 24px;
   }
 }
 

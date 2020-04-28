@@ -8,6 +8,10 @@
   padding-right: $mobilePadding+$extraPadding;
   padding-top: 72px;
   padding-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 138px;
+  }
 }
 
 .page-main__directions {

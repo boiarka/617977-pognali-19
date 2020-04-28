@@ -41,7 +41,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  // display: none;
+  display: none;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  // display: none;
+  display: none;
 
   @media (min-width: $tablet-width) {
     order: 4;
@@ -76,17 +76,21 @@
 
 .main-nav__link {
   margin-bottom: 50px;
-  // display: none;
+  display: none;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-radius: 25px;
+    line-height: 1.5;
     order: 1;
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 13px 12px 7px 10px;
     width: 188px;
     position: absolute;
-    top: -55px;
-    right: 25px;
+    top: -38px;
+    right: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +109,7 @@
 .main-nav__contacts {
   margin-bottom: 40px;
   order: 3;
-  // display: none;
+  display: none;
 
   @media (min-width: $tablet-width) {
     order: 3;

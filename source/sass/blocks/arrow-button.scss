@@ -14,6 +14,11 @@
   line-height: 1;
   text-align: left;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    border-radius: 20px;
+  }
 }
 
 .arrow-button::after {
@@ -25,6 +30,10 @@
   right: 23px;
   transform: translate(0, -50%);
   background-image: url("../img/triangle-arrow-right.svg");
+
+  @media (min-width: $tablet-width) {
+    right: 35px;
+  }
 }
 
 .arrow-button--bordered {

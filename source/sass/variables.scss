@@ -13,6 +13,7 @@ $pale-grey-two: #dfe3f0;
 $button-gray-color: #d6daed;
 $page-text-dark: #444444;
 $dark-blue-grey-30: rgba(25, 33, 68, 0.3);
+$dark-blue-grey-90: #192142;
 $dark-black-30: rgba(0, 0, 0, 0.3);
 $cloudy-blue: #cbced9;
 $bluey-grey: #959bb2;
@@ -30,21 +31,18 @@ $orange-red: #ff5c23;
 
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1440px;
 
 $mobilePadding: 25px;
-$tabletPadding: 75px;
-$desktopPadding: 45px;
+$tabletPadding: 40px;
+$desktopPadding: 60px;
 
 $extraPadding: 25px;
 
 @mixin container() {
   width: 100%;
   margin: 0 auto;
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+  max-width: $desktop-width;
 }
 
 @mixin promoListAfter($color) {
@@ -57,13 +55,13 @@ $extraPadding: 25px;
   background-color: $color;
 }
 
-@mixin promoListRightRadiusAfter($color) {
+@mixin promoListRightRadiusAfter($color, $width: 10px) {
   content: "";
   position: absolute;
-  width: 10px;
+  width: $width;
   height: 100%;
   top: 0;
-  right: -10px;
+  right: -$width;
   bottom: auto;
   left: auto;
   background-color: $color;
