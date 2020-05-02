@@ -9,9 +9,22 @@
   @include borderRadiusTopBg(30px, $pale-grey);
 }
 
+.directions__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 
 .directions__button {
   margin-top: 28px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 20px;
+    width: 274px;
+  }
 }
 
 .directions__title {
@@ -27,8 +40,15 @@
   padding-left: $extraPadding;
   padding-right: $extraPadding;
 
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .directions-cards {
   padding-top: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }

@@ -14,8 +14,16 @@
   @include borderRadiusTopBg(30px, $dark-blue-grey);
 }
 
+.travelers__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .travelers__cards {
   margin-top: 56px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -39,6 +47,12 @@
 
 .travelers__button {
   margin-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 20px;
+    width: 274px;
+  }
 }
 
 .travelers__wrapper {
