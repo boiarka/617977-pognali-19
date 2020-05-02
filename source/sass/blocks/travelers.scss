@@ -15,14 +15,19 @@
 }
 
 .travelers__content {
+  @include container();
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
   @media (min-width: $desktop-width) {
-    display: flex;
     justify-content: space-between;
   }
 }
 
 .travelers__cards {
-  margin-top: 56px;
+  margin-top: 35px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -34,7 +39,7 @@
 .travelers__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .travelers__text {
@@ -46,6 +51,7 @@
 }
 
 .travelers__button {
+  order: 2;
   margin-top: 10px;
 
   @media (min-width: $desktop-width) {
@@ -56,6 +62,5 @@
 }
 
 .travelers__wrapper {
-  padding-left: $extraPadding;
-  padding-right: $extraPadding;
+  padding: 0 25px;
 }

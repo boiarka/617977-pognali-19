@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     width: 186px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
   }
 }
 
@@ -30,7 +30,11 @@
   font-weight: bold;
   line-height: 1;
   padding-right: 66px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .direction-card__description {
@@ -38,6 +42,12 @@
   margin: 0;
   opacity: 0.3;
   line-height: 1.13;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    line-height: 0.88;
+    font-size: 20px;
+  }
 }
 
 .direction-card__counter {
@@ -51,10 +61,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: -8px;
     margin-left: 15px;
     padding-left: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
   }
 }
 
@@ -67,6 +80,13 @@
   height: 11px;
   opacity: 0.3;
   background-image: url("../img/user.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 21px;
+    height: 20px;
+    top: 2px;
+    left: -23px;
+  }
 }
 
 .direction-card__wrapper {
@@ -83,7 +103,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
+    padding: 32px 30px 18px;
   }
 }
 

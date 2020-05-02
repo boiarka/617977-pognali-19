@@ -1,6 +1,6 @@
 .copyright {
   border-top: 1px solid $pale-grey;
-  padding: 0;
+  padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -12,10 +12,15 @@
 }
 
 .copyright__text {
+  padding: 0;
+  margin: 0;
   color: $greyish-brown;
 }
 
-
 .copyright__link {
   padding-top: 5px;
+}
+
+.copyright__icon {
+  display: block;
 }

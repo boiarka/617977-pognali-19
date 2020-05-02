@@ -3,22 +3,43 @@
 
   @include borderBottomRadius(30px);
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
+  }
 }
 
 .directions::before {
   @include borderRadiusTopBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey);
+  }
 }
 
 .directions__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include container();
+
+  @media (min-width: $tablet-width) {
+    @include extra-container();
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
 
 .directions__button {
-  margin-top: 28px;
+  margin-top: 25px;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -29,16 +50,29 @@
 
 .directions__title {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .directions__text {
-  margin-bottom: 42px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 270px;
+  }
 }
 
 .directions__wrapper {
-  padding-left: $extraPadding;
-  padding-right: $extraPadding;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 87px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 50%;

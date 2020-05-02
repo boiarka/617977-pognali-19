@@ -9,6 +9,10 @@
   @include borderRadiusTopBg(30px, $light-gold);
 }
 
+.address__content {
+  @include container();
+}
+
 .address__text {
   display: flex;
   align-items: center;

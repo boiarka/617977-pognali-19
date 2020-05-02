@@ -4,11 +4,14 @@
   @include borderBottomRadius(30px);
 
   @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
     background: $dark-blue-grey url("../img/about-tablet@1x.png") no-repeat 384px 144px;
   }
 }
 
 .about__content {
+  @include extra-container();
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -21,7 +24,6 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    font-size: 45px;
     margin-bottom: 40px;
   }
 }
@@ -29,11 +31,9 @@
 .about__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    font-size: 28px;
-    line-height: 1.18;
     margin-bottom: 33px;
   }
 }
@@ -61,13 +61,12 @@
   }
 }
 
-.about_left-wrapper {
+.about__wrapper {
   @media (min-width: $tablet-width) {
     width: 50%;
     display: flex;
     flex-direction: column;
     padding-right: 8px;
-    padding-left: 24px;
   }
 }
 

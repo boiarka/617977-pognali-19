@@ -42,6 +42,7 @@
 
 .page-banner__wrapper {
   background-color: $dark-two;
+  margin: 0 -25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
@@ -63,11 +64,10 @@
   position: relative;
   text-align: center;
   line-height: 1.11;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     height: auto;
-    padding: 0 178px;
+    padding: 0 140px;
     font-size: 60px;
     line-height: 1.17;
   }
@@ -83,24 +83,16 @@
 }
 
 
-.page-banner__illustration {
-  display: flex;
-  margin: 11px 50px 0 auto;
-  width: 192px;
-  height: 255px;
-}
-
-
 .page-banner__quote {
   margin-top: 0;
   padding-top: 6px;
   padding-bottom: 30px;
-  padding-left: $mobilePadding + $extraPadding;
-  padding-right: $mobilePadding + $extraPadding + 50px;
+  padding-left: $mobileExtraPadding;
+  padding-right: 100px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-left: 74px;
+    padding-left: 59px;
     padding-right: 400px;
   }
 
@@ -124,18 +116,12 @@
 
 .page-banner__promo {
   width: 100%;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
 
   @media (min-width: $tablet-width) {
     margin-top: 181px;
-    padding-left: $tabletPadding;
-    padding-right: $tabletPadding;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 100px;
-    padding-left: $desktopPadding;
-    padding-right: $desktopPadding;
   }
 }

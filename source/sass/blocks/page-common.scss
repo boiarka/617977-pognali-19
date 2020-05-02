@@ -11,6 +11,10 @@
   font-style: normal;
   line-height: 1;
   color: $mango;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+  }
 }
 
 .page-text {
@@ -22,6 +26,11 @@
   font-style: normal;
   line-height: 1.38;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .page-text--bold {

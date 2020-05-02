@@ -13,7 +13,8 @@
 .page-header__main {
   @include container();
 
-  padding: $mobilePadding;
+  padding-top: 25px;
+  padding-bottom: 25px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
