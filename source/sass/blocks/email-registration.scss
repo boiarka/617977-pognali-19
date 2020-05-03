@@ -1,27 +1,48 @@
 .email-registration {
   background-color: $dark-blue-grey;
   position: relative;
+  z-index: 3;
 
   @include borderBottomRadius(30px);
+
+  @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
+  }
 }
 
 .email-registration::before {
   @include borderRadiusTopBg(30px, $dark-blue-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $dark-blue-grey);
+  }
 }
 
 .email-registration__content {
   @include container();
+
+  @media (min-width: $tablet-width) {
+    @include extra-container();
+  }
 }
 
 .email-registration__title {
   margin-bottom: 20px;
   text-align: center;
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .email-registration__text {
   text-align: center;
-  padding: 0;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .email-form__link {
@@ -35,5 +56,18 @@
 }
 
 .email-form__contacts {
+  margin: 0;
   margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
+}
+
+
+.email-registration__input {
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    margin-bottom: 58px;
+  }
 }

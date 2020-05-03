@@ -16,11 +16,19 @@
 .page-main__directions {
   padding-top: 72px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .page-main__travelers {
   padding-top: 72px;
   padding-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    padding-top: 141px;
+    padding-bottom: 89px;
+  }
 }
 
 .page-main__profile {
@@ -28,18 +36,29 @@
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 84px;
   }
 }
 
 .page-main__email-registration {
   padding-top: 72px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 60px;
+  }
 }
 
-.page-main__addres {
+.page-main__address {
   padding-top: 32px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 85px;
+  }
 }
 
 .page-main__user-profile {

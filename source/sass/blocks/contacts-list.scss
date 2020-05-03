@@ -1,6 +1,5 @@
 .contacts-list {
   padding: 0;
-  margin: 0;
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -13,6 +12,10 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  }
 }
 
 .contacts-list__icon {
@@ -25,11 +28,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .contacts-list__svg {
   width: 18px;
   fill: $light-gold;
+
+  @media (min-width: $tablet-width) {
+    width: 27px;
+  }
 }
 
 .contacts-list__link--blue {

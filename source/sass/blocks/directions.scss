@@ -3,6 +3,7 @@
 
   @include borderBottomRadius(30px);
   position: relative;
+  z-index: 6;
 
   @media (min-width: $tablet-width) {
     @include borderBottomRadius(60px);
@@ -39,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
