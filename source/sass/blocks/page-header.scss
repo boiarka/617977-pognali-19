@@ -34,6 +34,10 @@
   }
 }
 
+.page-header__main--page {
+  padding-top: 19px;
+}
+
 .page-header__wrapper {
   width: 100%;
   display: flex;
@@ -51,13 +55,16 @@
 
 .page-header--bradius {
   border-radius: 0 0 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .page-header__logo {
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
-
 }
 
 .page-header__toggle {
@@ -99,9 +106,12 @@
   border-radius: 2px;
 }
 
+.page-header__page-name {
+  @include container();
+}
 
 .page-header__title {
-  margin: 30px 25px 0 25px;
+  margin: 27px 25px 0 25px;
   padding-bottom: 10px;
   display: inline-block;
   font-size: 36px;

@@ -3,8 +3,39 @@
   padding: 0;
 }
 
-.page-main__about {
+.page-main--catalog {
+  background-color: $pale-grey;
+  position: relative;
 }
+
+.page-main--catalog::before {
+  @include borderRadiusTopBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey);
+  }
+}
+
+.page-main__catalog-content {
+  @include container();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.page-main__filter {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
+}
+
+.page-main__about {}
 
 .page-main__directions {
   padding-top: 72px;

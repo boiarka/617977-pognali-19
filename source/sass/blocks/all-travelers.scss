@@ -1,9 +1,11 @@
 .all-travelers {
   background-color: $pale-grey;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
   padding-bottom: 40px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .all-travelers::before {

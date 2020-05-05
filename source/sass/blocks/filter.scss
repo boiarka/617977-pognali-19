@@ -1,5 +1,20 @@
 .filter {
-  background-color: $pale-grey;
+  background-color: $pale-grey-four;
+  position: relative;
+
+  @include borderBottomRadius(30px);
+
+  @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
+  }
+}
+
+.filter:before {
+  @include borderRadiusTopBg(30px, $pale-grey-four);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey-four);
+  }
 }
 
 .filter__search {

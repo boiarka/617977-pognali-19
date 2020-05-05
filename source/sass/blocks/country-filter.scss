@@ -1,16 +1,9 @@
 .country-filter {
-  background-color: $pale-grey-four;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
   position: relative;
 
-  @include borderBottomRadius(30px);
-}
-
-.country-filter::before {
-  @include borderRadiusTopBg(30px, $pale-grey-four);
+  @include container();
 }
 
 .country-filter__wrapper {
