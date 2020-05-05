@@ -9,7 +9,7 @@
   }
 }
 
-.filter:before {
+.filter::before {
   @include borderRadiusTopBg(30px, $pale-grey-four);
 
   @media (min-width: $tablet-width) {

@@ -19,7 +19,7 @@
 
 .main-nav--opened {
   padding: 25px;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   top: 70px;
   z-index: 999;
@@ -60,7 +60,6 @@
 }
 
 .main-nav__social {
-  display: flex;
   justify-content: center;
   width: 100%;
   display: none;
