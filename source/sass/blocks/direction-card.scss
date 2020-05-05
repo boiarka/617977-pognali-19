@@ -69,6 +69,10 @@
     line-height: 1.5;
     font-weight: bold;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 7px;
+  }
 }
 
 .direction-card__counter::after {
@@ -106,6 +110,10 @@
     border-radius: 20px 0 0 20px;
     padding: 32px 30px 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 31px 24px;
+  }
 }
 
 .direction-card__flag {
@@ -121,5 +129,9 @@
     height: 47px;
     top: 15px;
     left: calc(100% - 35px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
   }
 }

@@ -4,30 +4,34 @@
 }
 
 .page-main__about {
-  padding-top: 72px;
-  padding-bottom: 63px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 138px;
-    padding-bottom: 88px;
-  }
 }
 
 .page-main__directions {
   padding-top: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 117px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
+    padding-bottom: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 161px;
+    padding-bottom: 53px;
   }
 }
 
 .page-main__travelers {
   padding-top: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 102px;
+
   @media (min-width: $tablet-width) {
     padding-top: 141px;
-    padding-bottom: 89px;
+    padding-bottom: 239px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+    padding-bottom: 124px;
   }
 }
 
@@ -39,6 +43,11 @@
     padding-top: 75px;
     padding-bottom: 84px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 107px;
+    padding-bottom: 184px;
+  }
 }
 
 .page-main__email-registration {
@@ -48,6 +57,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 76px;
     padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    padding-bottom: 102px;
   }
 }
 

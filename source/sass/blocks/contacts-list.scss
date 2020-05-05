@@ -4,6 +4,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -15,6 +16,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 59px;
+    margin-left: 55px;
   }
 }
 
@@ -34,6 +40,12 @@
     width: 67px;
     height: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .contacts-list__svg {
@@ -42,6 +54,10 @@
 
   @media (min-width: $tablet-width) {
     width: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 36px;
   }
 }
 

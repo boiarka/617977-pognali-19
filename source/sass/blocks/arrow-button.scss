@@ -20,6 +20,13 @@
     border-radius: 20px;
     padding: 29px 33px 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 274px;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 29px 34px 26px;
+  }
 }
 
 .arrow-button::after {

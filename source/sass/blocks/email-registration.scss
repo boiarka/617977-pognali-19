@@ -43,6 +43,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 270px;
+  }
 }
 
 .email-form__link {
@@ -62,6 +66,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 
@@ -69,5 +77,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 64px;
     margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+    margin-bottom: 67px;
   }
 }

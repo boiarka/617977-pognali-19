@@ -39,6 +39,7 @@ $desktopPadding: 60px;
 
 $mobileExtraPadding: 50px;
 $tabletExtraPadding: 75px;
+$desktopExtraPadding: 130px;
 
 $extraPadding: 25px;
 
@@ -68,6 +69,11 @@ $extraPadding: 25px;
   @media (min-width: $tablet-width) {
     padding-left: $tabletExtraPadding;
     padding-right: $tabletExtraPadding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktopExtraPadding;
+    padding-right: $desktopExtraPadding;
   }
 }
 
