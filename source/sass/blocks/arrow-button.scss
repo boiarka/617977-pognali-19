@@ -1,9 +1,10 @@
 .arrow-button {
+  width: 100%;
   font-family: inherit;
   background-color: $light-gold;
   border-radius: 10px;
   border: none;
-  padding: 20px 24px;
+  padding: 24px 24px 20px;
   min-width: 270px;
   font-size: 18px;
   color: $dark-slate-blue;
@@ -13,6 +14,19 @@
   line-height: 1;
   text-align: left;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 29px 33px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 274px;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 29px 34px 26px;
+  }
 }
 
 .arrow-button::after {
@@ -24,8 +38,19 @@
   right: 23px;
   transform: translate(0, -50%);
   background-image: url("../img/triangle-arrow-right.svg");
+
+  @media (min-width: $tablet-width) {
+    right: 35px;
+  }
 }
 
 .arrow-button--bordered {
   border: 3px solid $dark-blue-grey;
+  padding: 22px 21px 17px 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 27px 33px 24px;
+  }
 }

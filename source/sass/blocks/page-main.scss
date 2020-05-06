@@ -3,45 +3,109 @@
   padding: 0;
 }
 
-.page-main__about {
-  padding-left: $mobilePadding+$extraPadding;
-  padding-right: $mobilePadding+$extraPadding;
-  padding-top: 32px;
-  padding-bottom: 64px;
+.page-main--catalog {
+  background-color: $pale-grey;
+  position: relative;
+}
+
+.page-main--catalog::before {
+  @include borderRadiusTopBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey);
+  }
+}
+
+.page-main__catalog-content {
+  @include container();
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.page-main__filter {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
 
 .page-main__directions {
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 117px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 161px;
+    padding-bottom: 53px;
+  }
 }
 
 .page-main__travelers {
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
   padding-top: 72px;
-  padding-bottom: 30px;
+  padding-bottom: 102px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 141px;
+    padding-bottom: 239px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+    padding-bottom: 124px;
+  }
 }
 
 .page-main__profile {
-  padding-top: 40px;
-  padding-left: $mobilePadding+$extraPadding;
-  padding-right: $mobilePadding;
-  padding-bottom: 30px;
+  padding-top: 52px;
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 107px;
+    padding-bottom: 184px;
+  }
 }
 
 .page-main__email-registration {
-  padding-top: 40px;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
+  padding-top: 72px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 106px;
+    padding-bottom: 102px;
+  }
+}
+
+.page-main__address {
+  padding-top: 32px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 85px;
+  }
 }
 
 .page-main__user-profile {
   padding-top: 20px;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
   padding-bottom: 30px;
 }
 
@@ -50,4 +114,12 @@
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
   padding-bottom: 30px;
+}
+
+.page-main__promo {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  background-color: $dark-blue-grey;
+  position: relative;
+  z-index: 2;
 }

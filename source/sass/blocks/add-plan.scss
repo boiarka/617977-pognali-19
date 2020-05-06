@@ -1,7 +1,11 @@
 .add-plan {
-  padding: 25px;
+  padding: 25px 0;
   border-radius: 20px 20px 0 0;
   background-color: $light-blue-grey-five;
+}
+
+.add-plan__content {
+  @include container();
 }
 
 .add-plan__title {

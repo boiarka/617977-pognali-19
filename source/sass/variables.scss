@@ -13,6 +13,7 @@ $pale-grey-two: #dfe3f0;
 $button-gray-color: #d6daed;
 $page-text-dark: #444444;
 $dark-blue-grey-30: rgba(25, 33, 68, 0.3);
+$dark-blue-grey-90: #192142;
 $dark-black-30: rgba(0, 0, 0, 0.3);
 $cloudy-blue: #cbced9;
 $bluey-grey: #959bb2;
@@ -28,16 +29,52 @@ $black-30: rgba(0, 0, 0, 0.3);
 $steel-grey: #808285;
 $orange-red: #ff5c23;
 
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 $mobilePadding: 25px;
-$tabletPadding: 30px;
-$desktopPadding: 45px;
+$tabletPadding: 40px;
+$desktopPadding: 60px;
+
+$mobileExtraPadding: 50px;
+$tabletExtraPadding: 75px;
+$desktopExtraPadding: 130px;
 
 $extraPadding: 25px;
 
 @mixin container() {
+  width: 100%;
   margin: 0 auto;
+  max-width: $desktop-width;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tabletPadding;
+    padding-right: $tabletPadding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktopPadding;
+    padding-right: $desktopPadding;
+  }
+}
+
+@mixin extra-container() {
+  @include container();
+  padding-left: $mobileExtraPadding;
+  padding-right: $mobileExtraPadding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tabletExtraPadding;
+    padding-right: $tabletExtraPadding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktopExtraPadding;
+    padding-right: $desktopExtraPadding;
+  }
 }
 
 @mixin promoListAfter($color) {
@@ -47,6 +84,18 @@ $extraPadding: 25px;
   height: 10px;
   bottom: -10px;
   left: 0;
+  background-color: $color;
+}
+
+@mixin promoListRightRadiusAfter($color, $width: 10px) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: 100%;
+  top: 0;
+  right: -$width;
+  bottom: auto;
+  left: auto;
   background-color: $color;
 }
 

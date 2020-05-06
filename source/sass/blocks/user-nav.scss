@@ -1,16 +1,21 @@
 .user-nav {
   display: flex;
+  justify-content: center;
   list-style: none;
-  position: absolute;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-nav__link {
   background-color: $light-gold;
   font-size: 17px;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 50%;
+  padding: 11px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -20,7 +25,11 @@
 }
 
 .user-nav__link--big {
-  padding: 10px 40px;
+  width: 189px;
+  padding: 7px 40px 3px;
+  font-size: 17px;
+  border-radius: 20px;
+  line-height: 1.76;
 }
 
 .user-nav__link--orange {

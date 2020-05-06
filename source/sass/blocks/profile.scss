@@ -1,12 +1,33 @@
 .profile {
   background-color: $pale-grey;
   position: relative;
+  z-index: 4;
 
   @include borderBottomRadius(30px);
+
+  @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
+  }
 }
 
 .profile::before {
   @include borderRadiusTopBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey);
+  }
+}
+
+.profile__content {
+  @include extra-container();
+
+  @media (min-width: $tablet-width) {
+    @include container();
+  }
+
+  @media (min-width: $desktop-width) {
+    @include extra-container();
+  }
 }
 
 .profile__wrapper {
@@ -15,17 +36,33 @@
 }
 
 .profile__title {
-  margin-top: 15px;
+  margin: 0;
   width: 101px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -5px;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .profile__list {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-top: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 240px;
+    margin-top: 133px;
+  }
 }
 
 .profile__button {
-  margin-top: 25px;
+  margin-top: 30px;
   color: $dark-blue-grey;
   background-color: transparent;
   border: none;
@@ -33,4 +70,37 @@
   font-weight: bold;
   font-family: inherit;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+    margin-left: 88px;
+    font-size: 20px;
+  }
+}
+
+.profile__icon {
+  position: absolute;
+  top: 37px;
+  right: 26px;
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+    bottom: 44px;
+    right: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 286px;
+    right: 134px;
+    bottom: auto;
+  }
+}
+
+.profile__image {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 198px;
+    height: 198px;
+  }
 }

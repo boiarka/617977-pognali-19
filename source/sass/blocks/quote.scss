@@ -1,16 +1,29 @@
 .quote {
-  background-color: $dark-two;
+  position: relative;
+  z-index: 1;
 }
 
 .quote__text {
   font-weight: 300;
   line-height: 1.38;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .quote__author {
   font-weight: bold;
   line-height: 1.38;
   color: $white;
-  margin-top: 25px;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    font-size: 21px;
+    line-height: 1.19;
+    padding-right: 20px;
+  }
 }

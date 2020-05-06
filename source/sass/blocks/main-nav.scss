@@ -1,4 +1,130 @@
 .main-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.main-nav--opened {
+  padding: 25px;
   background-color: $white;
+  position: absolute;
+  top: 70px;
+  z-index: 999;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    flex-grow: 1;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.main-nav__list {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 1;
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    padding-left: 227px;
+    padding-top: 6px;
+  }
+}
+
+.main-nav__social {
+  justify-content: center;
+  width: 100%;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  margin-bottom: 50px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    border-radius: 25px;
+    line-height: 1.5;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 13px 12px 7px 10px;
+    width: 188px;
+    position: absolute;
+    top: -38px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 189px;
+    align-items: center;
+    height: 50px;
+    position: static;
+    order: 3;
+  }
+}
+
+.main-nav__contacts {
+  margin-bottom: 40px;
+  order: 3;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    order: 2;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.main-nav__contacts-link {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

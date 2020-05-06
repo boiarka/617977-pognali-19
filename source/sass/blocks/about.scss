@@ -1,17 +1,111 @@
 .about {
-  background: $dark-blue-grey url("../img/about-mobile@1x.png") no-repeat bottom center;
-
   @include borderBottomRadius(30px);
+
+  background-color: $dark-blue-grey;
+  overflow: hidden;
+  position: relative;
+  z-index: 7;
+
+  @media (min-width: $tablet-width) {
+    @include borderBottomRadius(60px);
+  }
+}
+
+.about__content {
+  @include extra-container();
+
+  background: $dark-blue-grey url("../img/about-mobile@1x.png") no-repeat 20px 40px;
+  padding-top: 72px;
+  padding-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    background: $dark-blue-grey url("../img/about-tablet@1x.png") no-repeat 384px 144px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 138px;
+    padding-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $dark-blue-grey url("../img/about-desktop@1x.png") no-repeat 750px 86px;
+    padding-top: 133px;
+    padding-bottom: 163px;
+  }
 }
 
 .about__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .about__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__text-bold {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.19;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+    margin-bottom: 83px;
+  }
+}
+
+.about__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 274px;
+    display: block;
+    padding: 32px 12px 26px 34px;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+  }
+}
+
+.about__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

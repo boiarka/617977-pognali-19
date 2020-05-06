@@ -6,18 +6,103 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
-.user-card__image {
-  position: relative;
+.user-card__photo {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
   width: 70px;
   height: 70px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.user-card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: 600px;
+  }
+}
+
+.user-card__top {
+  @media (min-width: $tablet-width) {
+    padding-left: 220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50%;
+  }
+}
+
+.user-card__name {
+  word-spacing: 100em;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.user-card__like {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  left: 70px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.user-card__tags {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding-right: 30px;
 }
 
 .user-card__like-button {
-  position: absolute;
-  bottom: 0;
-  right: -14px;
+  position: relative;
   width: 31px;
   height: 31px;
   border: none;
@@ -49,32 +134,26 @@
   opacity: 1;
 }
 
-
-.user-card__name {
-  word-spacing: 100em;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: $dark-slate-blue;
-}
-
 .user-card__wrapper {
   display: flex;
   position: relative;
 }
 
-.user-card__info {
+.user-card__buttons {
   display: flex;
-  flex-direction: column;
-  padding-top: 3px;
-  margin-left: 20px;
-}
 
-.user-card__photo {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  @media (min-width: $tablet-width) {
+    padding-left: 220px;
+    order: 4;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50%;
+    order: 3;
+  }
 }
 
 .user-card__distance {
@@ -84,16 +163,11 @@
   font-weight: bold;
 }
 
-.user-card__tags {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  padding-right: 30px;
-}
 
 .user-card__status {
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 25px;
+  right: 25px;
 }
 
 .user-card__title {
@@ -131,17 +205,13 @@
   display: flex;
 }
 
-.user-card__section-level {
-  margin-left: auto;
-}
-
 .user-card__button {
   width: 100%;
   margin-top: 15px;
-}
 
-.user-card__transport {
-  margin-top: 15px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .user-card__level {
@@ -153,6 +223,16 @@
   margin: 15px 0;
   text-transform: uppercase;
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .user-card__item {
@@ -167,4 +247,55 @@
   height: 18px;
   margin-right: 15px;
   background-color: blue;
+}
+
+.user-card__countries-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    width: auto;
+  }
+}
+
+.user-card__transport-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    order: 3;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    order: 4;
+    position: static;
+    width: 50%;
+  }
+}
+
+.user-card__transport {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }

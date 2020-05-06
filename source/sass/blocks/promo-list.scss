@@ -1,7 +1,15 @@
 .promo-list {
-  @include container();
+  padding: 0;
+  margin: 0;
   list-style-position: inside;
   counter-reset: item;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .promo-list__item {
@@ -15,44 +23,148 @@
   height: 80px;
   border-radius: 10px 10px 0 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    height: 140px;
+    font-size: 24px;
+    padding-left: 33px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    padding: 30px 0;
+    height: auto;
+  }
 }
 
 .promo-list__item::before {
   position: absolute;
-  top: 50%;
+  top: 30px;
   right: 20px;
   transform: translate(0, -50%);
   content: counter(item);
   font-size: 18px;
   font-weight: bold;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    bottom: 6px;
+    left: 34px;
+    top: auto;
+    right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    left: auto;
+    bottom: auto;
+    top: 40px;
+    right: 18px;
+  }
 }
 
 .promo-list__item--mango {
   background-color: $mango;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 0 0 0;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    padding-left: 34px;
+  }
+}
+
+.promo-list__item--mango::before {
+  @media (min-width: $tablet-width) {
+    bottom: 6px;
+    left: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: auto;
+    bottom: auto;
+    top: 40px;
+    right: 49px;
+  }
 }
 
 .promo-list__item--mango::after {
   @include promoListAfter($mango);
+
+  @media (min-width: $tablet-width) {
+    @include promoListRightRadiusAfter($mango, 20px);
+  }
 }
 
 .promo-list__item--mango-three {
   background-color: $mango-three;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    margin-left: -15px;
+    padding-left: 30px;
+  }
 }
 
 .promo-list__item--mango-three::after {
   @include promoListAfter($mango-three);
+
+  @media (min-width: $desktop-width) {
+    @include promoListRightRadiusAfter($mango-three, 40px);
+  }
 }
 
 .promo-list__item--mango-two {
   background-color: $mango-two;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    margin-left: 14px;
+    padding-left: 32px;
+  }
 }
 
 .promo-list__item--mango-two::after {
   @include promoListAfter($mango-two);
+
+  @media (min-width: $tablet-width) {
+    @include promoListRightRadiusAfter($mango-two, 40px);
+  }
 }
 
 .promo-list__item--light-gold {
   background-color: $light-gold;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 20px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+    border-radius: 20px;
+    margin-left: 16px;
+    padding-left: 30px;
+  }
+}
+
+
+.promo-list__item--light-gold::before {
+  @media (min-width: $desktop-width) {
+    right: 33px;
+  }
 }

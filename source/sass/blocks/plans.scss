@@ -8,6 +8,10 @@
   @include borderRadiusBottomBg(20px, $pale-grey-two);
 }
 
+.plans__content {
+  @include container();
+}
+
 .plans__title {
   padding: 0;
   margin: 0;

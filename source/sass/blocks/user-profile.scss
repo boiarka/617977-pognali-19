@@ -8,6 +8,9 @@
   position: relative;
 }
 
+.user-profile__content {
+  @include container();
+}
 
 .user-profile::before {
   @include borderRadiusTopBg(30px, $pale-grey);
