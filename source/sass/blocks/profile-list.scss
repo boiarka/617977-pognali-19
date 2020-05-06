@@ -1,13 +1,34 @@
 .profile-list {
+  position: relative;
   padding: 0;
   list-style: none;
   counter-reset: item;
 }
 
+.profile-list::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 200px;
+    height: calc(100% + 88px);
+    background-color: $pale-grey-four;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -50px;
+    right: -128px;
+    width: 450px;
+    height: calc(100% + 100px);
+  }
+}
+
 .profile-list__item {
   counter-increment: item;
   font-size: 16px;
-  border-bottom: 1px solid $pale-grey-two;
+  border-bottom: 1px solid $grey-darken;
   color: $greyish-brown;
   padding: 14px 0;
   margin-right: 25px;
@@ -62,7 +83,7 @@
 }
 
 .profile-list__item:first-child {
-  border-top: 1px solid $pale-grey-two;
+  border-top: 1px solid $grey-darken;
 }
 
 .profile-list__price {

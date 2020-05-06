@@ -35,6 +35,12 @@ a {
   overflow: hidden;
 }
 
+.tablet-hidden {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .button {
   display: block;
   font-family: inherit;
