@@ -4,6 +4,11 @@
 
 .continents-list__item {
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 15px;
+  }
 }
 
 .continents-list__button {
@@ -16,6 +21,10 @@
   color: $dark-blue-grey-30;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .continents-list__button--active {

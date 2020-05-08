@@ -9,12 +9,21 @@
 }
 
 .page-main--catalog::before {
-  @include borderRadiusTopBg(30px, $pale-grey);
+  @include borderRadiusTopBg(60px, $pale-grey);
 
   @media (min-width: $tablet-width) {
     @include borderRadiusTopBg(60px, $pale-grey);
   }
 }
+
+.page-main--catalog::after{
+  @include borderRadiusBottomBg(60px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusBottomBg(60px, $pale-grey);
+  }
+}
+
 
 .page-main__catalog-content {
   @include container();
@@ -29,6 +38,7 @@
 
 .page-main__filter {
   width: 100%;
+  margin-bottom: 27px;
 
   @media (min-width: $desktop-width) {
     width: 285px;

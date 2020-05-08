@@ -5,13 +5,14 @@
 
 .form-checkbox__text {
   position: relative;
+  letter-spacing: -0.41px;
 }
 
 .form-checkbox__input + .form-checkbox__text::before {
   content: "";
   position: absolute;
-  left: -25px;
-  top: -2px;
+  left: -26px;
+  top: -4px;
   width: 18px;
   height: 18px;
   border-radius: 4px;
@@ -21,8 +22,8 @@
 .form-checkbox__input:checked + .form-checkbox__text::after {
   content: "";
   position: absolute;
-  left: -25px;
-  top: -2px;
+  left: -26px;
+  top: -4px;
   width: 18px;
   height: 18px;
   background: url("../img/tick.svg") no-repeat center center;

@@ -2,7 +2,7 @@
   background-color: $pale-grey-four;
   position: relative;
 
-  @include borderBottomRadius(30px);
+  @include borderBottomRadius(20px);
 
   @media (min-width: $tablet-width) {
     @include borderBottomRadius(60px);

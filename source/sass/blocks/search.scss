@@ -2,6 +2,7 @@
   background-color: $light-gold;
   border-radius: 20px;
   padding: 26px;
+  padding-bottom: 20px;
 }
 
 .search__title {
@@ -9,9 +10,10 @@
   color: $dark-slate-blue;
   font-weight: bold;
   width: 118px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .search__button {
+  margin-top: 7px;
   width: 100%;
 }

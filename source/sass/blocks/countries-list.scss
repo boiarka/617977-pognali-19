@@ -3,6 +3,13 @@
   line-height: 1.38;
 }
 
+.countries-list__item {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
 .countries-list__link {
   color: #444444;
 }

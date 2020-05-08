@@ -41,6 +41,16 @@ a {
   }
 }
 
+.mobile-hidden {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .button {
   display: block;
   font-family: inherit;

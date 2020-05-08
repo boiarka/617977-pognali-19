@@ -3,8 +3,8 @@
   background-color: $white;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
-  padding-top: 20px;
-  padding-bottom: 70px;
+  padding-top: 16px;
+  padding-bottom: 75px;
   margin-bottom: 10px;
   position: relative;
 
@@ -19,8 +19,8 @@
 .user-card__photo {
   display: flex;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 18px;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -92,8 +92,8 @@
 .user-card__like {
   display: flex;
   position: absolute;
-  top: 36px;
-  left: 40px;
+  top: 39px;
+  left: 42px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -101,8 +101,8 @@
 }
 
 .user-card__tags {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 21px;
+  margin-bottom: 14px;
   padding-right: 30px;
 
   @media (min-width: $desktop-width) {
@@ -165,18 +165,20 @@
 }
 
 .user-card__distance {
-  margin: 0;
-  margin-top: 5px;
-  padding: 0;
-  padding-left: 80px;
+  font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+  padding-left: 79px;
 }
 
 
 .user-card__status {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 8px;
+  right: -3px;
 }
 
 .user-card__title {
@@ -219,18 +221,17 @@
 }
 
 .user-card__section-transport {
-  width: 70%;
+  width: 82%;
 }
 
 .user-card__section-level {
-  width: 30%;
+  width: 18%;
 }
 
 .user-card__button {
   position: absolute;
-  bottom: -50px;
+  bottom: -52px;
   width: 100%;
-  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -244,7 +245,7 @@
 
 .user-card__countries {
   padding: 0;
-  margin: 15px 0;
+  margin: 14px 0;
   text-transform: uppercase;
   font-size: 15px;
   display: flex;
@@ -263,6 +264,10 @@
   display: flex;
   align-items: center;
   padding: 5px 0;
+}
+
+.user-card__item:last-child {
+  padding-bottom: 0;
 }
 
 .user-card__flag {
