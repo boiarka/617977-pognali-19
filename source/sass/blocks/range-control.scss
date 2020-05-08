@@ -1,8 +1,23 @@
+.range-control {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+}
+
 .range-control__inputs {
   border: 1px solid $cloudy-blue;
   border-radius: 5px;
   background-color: $white;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 59px;
+    margin-right: 10px;
+  }
 }
 
 .range-control__input {
@@ -15,6 +30,13 @@
   background-color: transparent;
   color: $dark-slate-blue;
   font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 5px 3px;
+    font-size: 20px;
+    width: 75px;
+    height: 46px;
+  }
 }
 
 .range-control__label {
@@ -58,4 +80,8 @@
 
 .range-control__scale {
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

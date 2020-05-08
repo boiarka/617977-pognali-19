@@ -35,6 +35,10 @@ a {
   overflow: hidden;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .tablet-hidden {
   @media (min-width: $tablet-width) {
     display: none;

@@ -1,6 +1,10 @@
 .page-main {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $dark-blue-grey;
+  }
 }
 
 .page-main--catalog {
@@ -16,7 +20,7 @@
   }
 }
 
-.page-main--catalog::after{
+.page-main--catalog::after {
   @include borderRadiusBottomBg(60px, $pale-grey);
 
   @media (min-width: $tablet-width) {
@@ -37,8 +41,14 @@
 }
 
 .page-main__filter {
+  padding-top: 25px;
   width: 100%;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    margin-bottom: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 285px;

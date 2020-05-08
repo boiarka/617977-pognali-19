@@ -100,12 +100,12 @@
 
       <div class="country-filter__wrapper">
         <p class="country-filter__text">Фильтрация по странам</p>
-        <button class="country-filter__toggle country-filter__toggle--opened" type="button">
-          <span class="mobile-hidden">Свернуть</span>
-          <span class="mobile-hidden visually-hidden">Показать все</span>
+        <button class="country-filter__toggle country-filter__toggle--closed" type="button">
+          <span class="mobile-hidden d-none">Свернуть</span>
+          <span class="mobile-hidden">Показать все</span>
         </button>
 
-        <ul class="country-filter__continents continents-list">
+        <ul class="country-filter__continents continents-list mobile-hidden">
           <li class="continents-list__item">
             <button class="continents-list__button continents-list__button--active" type="button">Европа</button>
           </li>
@@ -121,7 +121,7 @@
         </ul>
       </div>
 
-      <div class="country-filter__countries">
+      <div class="country-filter__countries d-none">
         <table class="country-filter__alphabet alphabet">
           <tbody class="alphabet__main">
             <tr>
@@ -146,46 +146,309 @@
                 <button class="alphabet__button" type="button">б</button>
 
                 <ul class="alphabet__list">
-                  <li class="countries-list__item"><a class="countries-list__link" href="#">Австралия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Багамские Острова</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бангладеш</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Барбадос</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бахрейн</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Белоруссия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Белиз</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бельгия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бенин</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Болгария</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Боливия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Босния и Герцеговина</a>
+                  </li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ботсвана</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бразилия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бруней</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Буркина-Фасо</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бурунди</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Бутан</a></li>
                 </ul>
               </td>
               <td class="alphabet__item">
                 <button class="alphabet__button" type="button">в</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Вануату</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Великобритания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Венгрия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Венесуэла</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Восточный Тимор</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Вьетнам</a></li>
+                </ul>
               </td>
               <td class="alphabet__item">
                 <button class="alphabet__button" type="button">г</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Габон</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гаити</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гайана</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гамбия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гана</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гватемала</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гвинея</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гвинея-Бисау</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Германия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гондурас</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Гренада</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Греция</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Грузия</a></li>
+                </ul>
               </td>
               <td class="alphabet__item">
                 <button class="alphabet__button" type="button">д</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Дания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Джибути</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Доминика</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Доминикана</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">е</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">з</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">и</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">к</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">л</button></td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">е</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Египет</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">з</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Замбия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Зимбабве</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">и</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Израиль</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Индия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Индонезия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Иордания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ирак</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Иран</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ирландия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Исландия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Испания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Италия</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">к</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Кабо-Верде</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Казахстан</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Камбоджа</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Камерун</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Канада</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Катар</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Кения</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Кипр</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Киргизия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Кирибати</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Китай</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Колумбия</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">л</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Лаос</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Латвия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Лесото</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Либерия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ливан</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ливия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Литва</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Лихтенштейн</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Люксембург</a></li>
+                </ul>
+              </td>
             </tr>
             <tr>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">м</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">н</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">о</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">п</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">р</button></td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">м</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Маврикий</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мавритания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мадагаскар</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Малави</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Малайзия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мали</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мальдивы</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мальта</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Марокко</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Мексика</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">н</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Намибия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Науру</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Непал</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Нигер</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Нигерия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Нидерланды</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Никарагуа</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Новая Зеландия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Норвегия</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">о</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">ОАЭ</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Оман</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">п</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Пакистан</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Палау</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Панама</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Папуа — Новая Гвинея</a>
+                  </li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Парагвай</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Перу</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Польша</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Португалия</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">р</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Руанда</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Румыния</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Россия</a></li>
+                </ul>
+              </td>
             </tr>
             <tr>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">с</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">т</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">у</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">ф</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">х</button></td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">с</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сальвадор</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Самоа</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сан-Марино</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Саудовская Аравия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сейшелы</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сенегал</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сербия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сингапур</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Сирия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Словакия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Словения</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">США</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">т</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Таджикистан</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Таиланд</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Танзания</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Того</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Тонга</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Тринидад и Тобаго</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Тувалу</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Тунис</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Туркмения</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Турция</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">у</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Уганда</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Узбекистан</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Украина</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Уругвай</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">ф</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Фиджи</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Филиппины</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Финляндия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Франция</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">х</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Хорватия</a></li>
+                </ul>
+              </td>
             </tr>
             <tr>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">ч</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">ш</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">з</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">ю</button></td>
-              <td class="alphabet__item"><button class="alphabet__button" type="button">я</button></td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">ч</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Чад</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Черногория</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Чехия</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Чили</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">ш</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Швейцария</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Швеция</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Шри-Ланка</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">з</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Эквадор</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Эритрея</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Эсватини</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Эстония</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Эфиопия</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">ю</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">ЮАР</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Южный Судан</a></li>
+                </ul>
+              </td>
+              <td class="alphabet__item">
+                <button class="alphabet__button" type="button">я</button>
+
+                <ul class="alphabet__list">
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Ямайка</a></li>
+                  <li class="countries-list__item"><a class="countries-list__link" href="#">Япония</a></li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -299,7 +562,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-fieldset">
+          <fieldset class="form-fieldset form-fieldset--rounds">
             <button class="form-fieldset__toggle" type="button">Транспорт</button>
             <div class="form-fieldset__inner">
               <div class="form-fieldset__name mobile-hidden">Транспорт:</div>
@@ -366,7 +629,7 @@ z" />
             </div>
           </fieldset>
 
-          <fieldset class="form-fieldset">
+          <fieldset class="form-fieldset form-fieldset--range">
             <button class="form-fieldset__toggle" type="button">Левел</button>
             <div class="form-fieldset__inner">
               <div class="form-fieldset__name mobile-hidden">Левел:</div>
@@ -374,7 +637,7 @@ z" />
                 <div class="range-control__inputs">
                   <label class="range-control__label range-control__label--min">
                     <input class="range-control__input range-control__input--min" name="min-level" type="number"
-                      value="0">
+                      value="30">
                   </label>
                   <label class="range-control__label range-control__label--max">
                     <input class="range-control__input range-control__input--max" name="max-level" type="number"
@@ -406,7 +669,6 @@ z" />
           <div class="user-card__content">
             <div class="user-card__top">
               <h3 class="user-card__name">Таня Фирсова</h3>
-              <span class="user-card__status user-status"></span>
 
               <div class="user-card__buttons">
                 <button class="user-card__button button" type="button">Позвать!</button>
@@ -452,7 +714,7 @@ z" />
                   <span class="user-card__title-text">транспорт:</span>
                 </p>
 
-                <ul class="user-card__transport transport-list">
+                <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -506,13 +768,16 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level level--small user-card__level">
-                  <svg class="level__ring level__ring--small">
-                    <circle class="level__circle" stroke-dashoffset="45" stroke-width="3" fill="transparent" r="22.5"
-                      cx="22.5" cy="22.5" />
-                  </svg>
-                  <div class="level_wrapper">
-                    <p class="level__count level__count--blue">99</p>
+                <div class="level user-card__level level-notext level-nobg">
+                  <div class="level__progress-inner">
+                    <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="99 100"
+                      viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="15.915" cy="15.915" stroke-width="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="level__wrapper">
+                    <span class="level__count">99</span>
+                    <span class="level__text">level</span>
                   </div>
                 </div>
               </div>
@@ -526,12 +791,11 @@ z" />
           <div class="user-card__content">
             <div class="user-card__top">
               <h3 class="user-card__name">Петя Демин</h3>
-              <span class="user-card__status user-status"></span>
 
               <div class="user-card__buttons">
                 <button class="user-card__button button" type="button">Позвать!</button>
                 <div class="user-card__like">
-                  <button class="user-card__like-button user-card__like-button--active" type="button"></button>
+                  <button class="user-card__like-button" type="button"></button>
                 </div>
                 <p class="user-card__distance">1500</p>
               </div>
@@ -568,7 +832,7 @@ z" />
                   <span class="user-card__title-text">транспорт:</span>
                 </p>
 
-                <ul class="user-card__transport transport-list">
+                <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -622,13 +886,16 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level level--small user-card__level">
-                  <svg class="level__ring level__ring--small">
-                    <circle class="level__circle" stroke-dashoffset="58" stroke-width="3" fill="transparent" r="22.5"
-                      cx="22.5" cy="22.5" />
-                  </svg>
-                  <div class="level_wrapper">
-                    <p class="level__count level__count--blue">80</p>
+                <div class="level user-card__level level-notext level-nobg">
+                  <div class="level__progress-inner">
+                    <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="80 100"
+                      viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="15.915" cy="15.915" stroke-width="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="level__wrapper">
+                    <span class="level__count">80</span>
+                    <span class="level__text">level</span>
                   </div>
                 </div>
               </div>
@@ -642,7 +909,6 @@ z" />
           <div class="user-card__content">
             <div class="user-card__top">
               <h3 class="user-card__name">Марк Смолов</h3>
-              <span class="user-card__status user-status"></span>
 
               <div class="user-card__buttons">
                 <button class="user-card__button button" type="button">Позвать!</button>
@@ -687,7 +953,7 @@ z" />
                   <span class="user-card__title-text">транспорт:</span>
                 </p>
 
-                <ul class="user-card__transport transport-list">
+                <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -741,13 +1007,16 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level level--small user-card__level">
-                  <svg class="level__ring level__ring--small">
-                    <circle class="level__circle" stroke-dashoffset="145" stroke-width="3" fill="transparent" r="22.5"
-                      cx="22.5" cy="22.5" />
-                  </svg>
-                  <div class="level_wrapper">
-                    <p class="level__count level__count--blue">25</p>
+                <div class="level user-card__level level-notext level-nobg">
+                  <div class="level__progress-inner">
+                    <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="25 100"
+                      viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="15.915" cy="15.915" stroke-width="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="level__wrapper">
+                    <span class="level__count">25</span>
+                    <span class="level__text">level</span>
                   </div>
                 </div>
               </div>
@@ -761,7 +1030,6 @@ z" />
           <div class="user-card__content">
             <div class="user-card__top">
               <h3 class="user-card__name">Лариса Роговая</h3>
-              <span class="user-card__status user-status"></span>
 
               <div class="user-card__buttons">
                 <button class="user-card__button button" type="button">Позвать!</button>
@@ -801,7 +1069,7 @@ z" />
                   <span class="user-card__title-text">транспорт:</span>
                 </p>
 
-                <ul class="user-card__transport transport-list">
+                <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -855,13 +1123,16 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level level--small user-card__level">
-                  <svg class="level__ring level__ring--small">
-                    <circle class="level__circle" stroke-dashoffset="110" stroke-width="3" fill="transparent" r="22.5"
-                      cx="22.5" cy="22.5" />
-                  </svg>
-                  <div class="level_wrapper">
-                    <p class="level__count level__count--blue">50</p>
+                <div class="level user-card__level level-notext level-nobg">
+                  <div class="level__progress-inner">
+                    <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="50 100"
+                      viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="15.915" cy="15.915" stroke-width="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="level__wrapper">
+                    <span class="level__count">50</span>
+                    <span class="level__text">level</span>
                   </div>
                 </div>
               </div>

@@ -1,92 +1,122 @@
 .level {
+  position: relative;
+  display: inline-block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: $black-40;
+  color: $white;
 }
 
-.level__ring {
-  width: 60px;
-  height: 60px;
+.level-nobg {
+  background-color: transparent;
+  color: $dark-two;
+}
+
+.level-notext {
+  width: 45px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.level-notext .level__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: $greyish-brown-30;
+    border-color: $greyish-brown-30;
+  }
+}
+
+.level-notext .level__count {
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    bottom: 8px;
+  }
+}
+
+.level__progress-inner {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
-.level--small {
-  width: 45px;
-  height: 45px;
-}
-
-.level__ring--small {
-  width: 45px;
-  height: 45px;
+.level__progress-inner::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.level--big {
-  width: 100px;
-  height: 100px;
-}
-
-.level__ring--big {
-  width: 100px;
-  height: 100px;
-}
-
-.level__circle {
-  stroke-dasharray: 182, 182;
-  // stroke-dashoffset: 5;
-  stroke: $mango;
-  transition: stroke-dashoffset 0.35s;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-}
-
-.level__circle--big {
-  stroke-dasharray: 364, 182;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .level__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  transform: translate(-50%, -50%);
 }
 
-.level--black {
-  background-color: $dark-black-30;
+.level__progress-pie {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  fill: transparent;
+  stroke: $mango;
 }
 
 .level__count {
+  z-index: 3;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  color: $white;
   margin: 0;
   line-height: 1;
   padding-top: 5px;
   text-align: center;
 }
 
-.level__count--blue {
-  color: $dark-slate-blue;
-}
 
 .level__text {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
   font-size: 14px;
   padding: 0 3px;
+  border-top: 1px solid $white;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  color: $white;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 2px;
 }

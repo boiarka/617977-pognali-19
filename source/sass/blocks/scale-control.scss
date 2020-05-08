@@ -3,6 +3,10 @@
   height: 2px;
   background-color: $dark-slate-blue-30;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+  }
 }
 
 .scale-control__bar {
@@ -10,8 +14,13 @@
   top: 0;
   right: 0;
   width: 70%;
-  height: 1px;
+  height: 2px;
   background-color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+    width: 70%;
+  }
 }
 
 .scale-control__toggle {
@@ -22,6 +31,11 @@
   height: 10px;
   background-color: $dark-slate-blue;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .scale-control__toggle--min {
@@ -30,4 +44,8 @@
 
 .scale-control__toggle--max {
   right: -5px;
+
+  @media (min-width: $tablet-width) {
+    right: -8px;
+  }
 }

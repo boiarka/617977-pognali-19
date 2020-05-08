@@ -1,5 +1,10 @@
 .continents-list {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 33px;
+    margin-right: auto;
+  }
 }
 
 .continents-list__item {

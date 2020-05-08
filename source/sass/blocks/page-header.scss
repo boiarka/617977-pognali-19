@@ -40,6 +40,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+  }
 }
 
 .page-header__wrapper {
@@ -121,6 +125,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-left: 126px;
+    padding-right: 123px;
+    padding-bottom: 55px;
   }
 }
 

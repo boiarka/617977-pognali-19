@@ -5,11 +5,24 @@
   border-top: 1px solid $macaroni-and-cheese;
 
   @media (min-width: $tablet-width) {
+    padding: 18px 0 11px 8px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: none;
+  }
+}
+
+.form-fieldset--rounds {
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
+}
+
+.form-fieldset--range {
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
   }
 }
 
@@ -19,7 +32,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
-    justify-content: row;
     align-items: center;
   }
 }
@@ -32,6 +44,8 @@
   color: $dark-slate-blue;
 
   @media (min-width: $tablet-width) {
+    letter-spacing: -0.4px;
+    font-size: 20px;
     display: flex;
     width: 20%;
     margin: 0;
@@ -82,6 +96,8 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 0;
     margin: 0;
     width: 33%;
   }
@@ -108,4 +124,22 @@
 
 .form-fieldset__transport {
   margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: -3px;
+  }
+}
+
+
+.form-fieldset__list .form-fieldset__option:last-child {
+  @media (min-width: $tablet-width) {
+    padding-left: 48px;
+  }
+}
+
+.form-fieldset__list .form-fieldset__option:nth-child(3n + 2) {
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+  }
 }
