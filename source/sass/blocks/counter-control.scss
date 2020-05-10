@@ -1,6 +1,17 @@
 .counter-control {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.counter-control__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .counter-control__title {
@@ -13,10 +24,20 @@
   color: $dark-slate-blue-30;
 }
 
+.counter-control__name {
+  font-weight: 500;
+  color: $dark-slate-blue;
+  text-transform: uppercase;
+}
+
 .counter-control__text {
   font-weight: 500;
   color: $dark-slate-blue;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .counter-control__wrapper {
@@ -27,6 +48,10 @@
   justify-content: space-between;
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
+
+  @media (min-width: $desktop-width) {
+    width: 181px;
+  }
 }
 
 .counter-control__button {

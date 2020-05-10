@@ -61,8 +61,15 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    font-display: row;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+
+.step__inputs .counter-control:last-child {
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -72,6 +79,10 @@
   @media (min-width: $tablet-width) {
     order: 0;
     border-bottom: 1px solid $light-blue-grey-five;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
