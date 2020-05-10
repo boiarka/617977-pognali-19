@@ -1,6 +1,14 @@
 .connected-textareas__item {
   display: block;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+  }
 }
 
 .connected-textareas__item--start::after {
@@ -11,6 +19,16 @@
   width: 2px;
   height: 100%;
   background-color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 3px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 172px;
+  }
 }
 
 
@@ -22,4 +40,14 @@
   width: 2px;
   height: 23px;
   background-color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 3px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 172px;
+  }
 }

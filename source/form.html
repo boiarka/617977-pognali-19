@@ -91,27 +91,27 @@
     </div>
     <div class="page-header__page-name">
       <div class="page-header__title page-header__title--bordered">Направления</div>
-      <div class="page-header__go-home mobile-hidden"><a class="page-header__link-home" href="/">На главную</a></div>
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--nobg">
     <div class="page-main__user-profile user-profile">
       <div class="user-profile__content">
 
-        <div class="user-profile__photo edit-photo">
-          <div class="edit-photo__level level level--white level--big">
-            <svg class="level__ring level__ring--big">
-              <circle class="level__circle level__circle--big" stroke-dashoffset="400" stroke-width="6"
-                fill="transparent" r="50" cx="50" cy="50" />
+        <div class="level user-profile__level">
+          <div class="level__progress-inner">
+            <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="50 100"
+              viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="4"></circle>
             </svg>
-            <div class="level_wrapper">
-              <p class="level__count">80</p>
-              <span class="level__text">level</span>
-            </div>
           </div>
-          <img class="edit-photo__image" src="./img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото">
+          <div class="level__wrapper">
+            <span class="level__count">50</span>
+            <span class="level__text">level</span>
+          </div>
         </div>
+        <img class="user-profile__image" src="./img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото">
+
         <button class="user-profile__button button button--gray" type="button">Сменить фото</button>
 
         <div class="user-profile__tags">
@@ -196,7 +196,10 @@ z" />
         <p class="plans__title">Мои планы:</p>
 
         <div class="plans__card trip-card">
-          <p class="trip-card__title">1 Франция, Италия</p>
+          <div class="trip-card__title">
+            <span class="trip-card__counter">1</span>
+            <span class="trip-card__countries">Франция, Италия</span>
+          </div>
           <ul class="trip-card__info">
             <li>3 попутчика</li>
             <li>26 мар — 29 мар</li>
@@ -205,7 +208,7 @@ z" />
         </div>
 
         <div class="plans__card trip-card">
-          <p class="trip-card__title">2 Таиланд, Индонезия</p>
+          <p class="trip-card__title"><span class="trip-card__counter">2</span> Таиланд, Индонезия</p>
           <ul class="trip-card__info">
             <li>1 попутчик</li>
             <li>1 июл — 15 июл</li>
@@ -239,68 +242,83 @@ z" />
         <form class="add-plan__form" method="post" action="https://echo.htmlacademy.ru/">
 
           <fieldset class="step">
-            <p class="step__title">Шаг 1. Даты пребывания</p>
-            <p class="step__description">
-              Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую
-              длительность.
-            </p>
-
-            <div class="step__section counter-control">
-              <label class="counter-control__title" for="plan-travelers">
-                <span class="counter-control__text">Ищу попутчиков:</span>
-                <span class="counter-control__text counter-control__title--gray">Чел.</span>
-              </label>
-              <div class="counter-control__wrapper">
-                <button class="counter-control__button" type="button">
-                  <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
-                    <rect width="14" height="2" style="fill:#606161" />
-                  </svg>
-                </button>
-                <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
-                <button class="counter-control__button" type="button">
-                  <svg class="counter-control__icon counter-control__icon--plus" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 14 14" style="enable-background:new 0 0 14 14" xml:space="preserve">
-                    <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 " style="fill:#606161" />
-                  </svg>
-                </button>
+            <div class="step__top">
+              <div class="step__top-info">
+                <p class="step__title">Шаг 1. Даты пребывания</p>
+                <p class="step__description">
+                  Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее
+                  предполагаемую длительность.
+                </p>
+              </div>
+              <div class="step__top-buttons">
+                <ul class="step-buttons">
+                  <li class="step-buttons__item"><button type="button">Даты</button></li>
+                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
+                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+                </ul>
               </div>
             </div>
 
+            <div class="step__inputs">
 
-            <div class="step__section counter-control">
-              <label class="counter-control__title" for="plan-duration">
-                <span class="counter-control__text">Длительность:</span>
-                <span class="counter-control__text counter-control__title--gray">дн.</span>
-              </label>
-              <div class="counter-control__wrapper">
-                <button class="counter-control__button" type="button">
-                  <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
-                    <rect width="14" height="2" style="fill:#606161" />
-                  </svg>
-                </button>
-                <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
-                <button class="counter-control__button" type="button">
-                  <svg class="counter-control__icon counter-control__icon--plus" version="1.1" id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 14 14" style="enable-background:new 0 0 14 14" xml:space="preserve">
-                    <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 " style="fill:#606161" />
-                  </svg>
-                </button>
+              <div class="step__section counter-control">
+                <label class="counter-control__title" for="plan-travelers">
+                  <span class="counter-control__text">Ищу попутчиков:</span>
+                  <span class="counter-control__text counter-control__title--gray">Чел.</span>
+                </label>
+                <div class="counter-control__wrapper">
+                  <button class="counter-control__button" type="button">
+                    <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
+                      <rect width="14" height="2" style="fill:#606161" />
+                    </svg>
+                  </button>
+                  <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
+                  <button class="counter-control__button" type="button">
+                    <svg class="counter-control__icon counter-control__icon--plus" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 14 14" style="enable-background:new 0 0 14 14" xml:space="preserve">
+                      <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 " style="fill:#606161" />
+                    </svg>
+                  </button>
+                </div>
               </div>
+
+              <div class="step__section step__checkbox step__inputs-checkbox">
+                <label class="form-checkbox">
+                  <input class="visually-hidden form-checkbox__input form-checkbox__input--border" type="checkbox"
+                    name="childs" />
+                  <span class="form-checkbox__text">Можно с детьми</span>
+                </label>
+              </div>
+
+              <div class="step__section counter-control">
+                <label class="counter-control__title" for="plan-duration">
+                  <span class="counter-control__text">Длительность:</span>
+                  <span class="counter-control__text counter-control__title--gray">дн.</span>
+                </label>
+                <div class="counter-control__wrapper">
+                  <button class="counter-control__button" type="button">
+                    <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
+                      <rect width="14" height="2" style="fill:#606161" />
+                    </svg>
+                  </button>
+                  <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
+                  <button class="counter-control__button" type="button">
+                    <svg class="counter-control__icon counter-control__icon--plus" version="1.1" id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 14 14" style="enable-background:new 0 0 14 14" xml:space="preserve">
+                      <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 " style="fill:#606161" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
             </div>
 
-            <div class="step__section step__checkbox">
-              <label class="form-checkbox">
-                <input class="visually-hidden form-checkbox__input form-checkbox__input--border" type="checkbox"
-                  name="childs" />
-                <span class="form-checkbox__text">Можно с детьми</span>
-              </label>
-            </div>
 
             <div class="step_calendar calendar">
               <div class="calendar__header calendar-nav">
@@ -325,92 +343,97 @@ z" />
               </div>
 
               <table class="calendar__table days-table">
-                <tr>
-                  <th class="days-table__day">П</th>
-                  <th class="days-table__day">В</th>
-                  <th class="days-table__day">С</th>
-                  <th class="days-table__day">Ч</th>
-                  <th class="days-table__day">П</th>
-                  <th class="days-table__day days-table__day--weekend">С</th>
-                  <th class="days-table__day days-table__day--weekend">В</th>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button class="days-table__button">23</button></td>
-                  <td class="days-table__num"><button class="days-table__button">24</button></td>
-                  <td class="days-table__num"><button class="days-table__button">25</button></td>
-                  <td class="days-table__num"><button class="days-table__button">26</button></td>
-                  <td class="days-table__num"><button class="days-table__button">27</button></td>
-                  <td class="days-table__num"><button class="days-table__button">28</button></td>
-                  <td class="days-table__num"><button class="days-table__button">1</button></td>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button class="days-table__button">2</button></td>
-                  <td class="days-table__num"><button class="days-table__button">3</button></td>
-                  <td class="days-table__num"><button class="days-table__button">4</button></td>
-                  <td class="days-table__num"><button class="days-table__button">5</button></td>
-                  <td class="days-table__num"><button class="days-table__button">6</button></td>
-                  <td class="days-table__num"><button class="days-table__button">7</button></td>
-                  <td class="days-table__num"><button class="days-table__button">8</button></td>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button class="days-table__button">9</button></td>
-                  <td class="days-table__num"><button class="days-table__button">10</button></td>
-                  <td class="days-table__num"><button class="days-table__button">11</button></td>
-                  <td class="days-table__num"><button class="days-table__button">12</button></td>
-                  <td class="days-table__num"><button class="days-table__button">13</button></td>
-                  <td class="days-table__num"><button class="days-table__button">14</button></td>
-                  <td class="days-table__num"><button class="days-table__button">15</button></td>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button class="days-table__button">16</button></td>
-                  <td class="days-table__num"><button class="days-table__button">17</button></td>
-                  <td class="days-table__num"><button class="days-table__button">18</button></td>
-                  <td class="days-table__num"><button class="days-table__button">19</button></td>
-                  <td class="days-table__num"><button class="days-table__button">20</button></td>
-                  <td class="days-table__num"><button class="days-table__button">21</button></td>
-                  <td class="days-table__num"><button class="days-table__button">22</button></td>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button class="days-table__button">23</button></td>
-                  <td class="days-table__num"><button class="days-table__button">24</button></td>
-                  <td class="days-table__num"><button class="days-table__button">25</button></td>
-                  <td class="days-table__num">
-                    <button class="days-table__button days-table__button--available days-table__button--selected
-                      days-table__button--active">26</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available days-table__button--selected">27</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available days-table__button--selected">28</button>
-                  </td>
-                  <td class="days-table__num "><button
-                      class="days-table__button days-table__button--available">29</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">30</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">31</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">1</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">2</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">3</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">4</button>
-                  </td>
-                  <td class="days-table__num"><button
-                      class="days-table__button days-table__button--available">5</button>
-                  </td>
-                </tr>
+                <tbody class="days-table__body">
+                  <tr class="days-table__row">
+                    <th class="days-table__day">П</th>
+                    <th class="days-table__day">В</th>
+                    <th class="days-table__day">С</th>
+                    <th class="days-table__day">Ч</th>
+                    <th class="days-table__day">П</th>
+                    <th class="days-table__day days-table__day--weekend">С</th>
+                    <th class="days-table__day days-table__day--weekend">В</th>
+                  </tr>
+                  <tr class="days-table__row">
+                    <td class="days-table__num"><button class="days-table__button" type="button">23</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">24</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">25</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">26</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">27</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">28</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">1</button></td>
+                  </tr>
+                  <tr class="days-table__row">
+                    <td class="days-table__num"><button class="days-table__button" type="button">2</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">3</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">4</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">5</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">6</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">7</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">8</button></td>
+                  </tr>
+                  <tr class="days-table__row">
+                    <td class="days-table__num"><button class="days-table__button" type="button">9</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">10</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">11</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">12</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">13</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">14</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">15</button></td>
+                  </tr>
+                  <tr class="days-table__row">
+                    <td class="days-table__num"><button class="days-table__button" type="button">16</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">17</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">18</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">19</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">20</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">21</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">22</button></td>
+                  </tr>
+                  <tr class="days-table__row">
+                    <td class="days-table__num"><button class="days-table__button" type="button">23</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">24</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">25</button></td>
+                    <td class="days-table__num">
+                      <button
+                        class="days-table__button days-table__button--active days-table__button--available days-table__button--selected"
+                        type="button">26</button>
+                    </td>
+                    <td class="days-table__num"><button
+                        class="days-table__button days-table__button--available days-table__button--selected"
+                        type="button">27</button>
+                    </td>
+                    <td class="days-table__num"><button
+                        class="days-table__button days-table__button--available days-table__button--selected"
+                        type="button">28</button>
+                    </td>
+                    <td class="days-table__num "><button class="days-table__button days-table__button--available"
+                        type="button">29</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">30</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">31</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">1</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">2</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">3</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">4</button>
+                    </td>
+                    <td class="days-table__num"><button class="days-table__button days-table__button--available"
+                        type="button">5</button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
 
             </div>
@@ -420,18 +443,30 @@ z" />
 
 
           <fieldset class="step">
-            <p class="step__title">Шаг 2. Маршрут</p>
-            <p class="step__description">
-              Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
-            </p>
+            <div class="step__top">
+              <div class="step__top-info">
+                <p class="step__title">Шаг 2. Маршрут</p>
+                <p class="step__description">
+                  Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+                </p>
+              </div>
+              <div class="step__top-buttons">
+                <ul class="step-buttons">
+                  <li class="step-buttons__item"><button type="button">Даты</button></li>
+                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
+                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+                </ul>
+              </div>
+            </div>
 
             <div class="step__add-country route-section">
 
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Босния и Герцеговина</button>
                 <div class="added-country__flag">
-                  <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг">
-                  <button class="added-country__close close-button" type="button">
+                  <img class="added-country__flag-img" src="https://via.placeholder.com/150x150" width="35" height="24"
+                    alt="Флаг">
+                  <button class="added-country__close" type="button">
                     <svg class="close-button__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
                       style="enable-background:new 0 0 9 9" xml:space="preserve">
@@ -446,8 +481,9 @@ z" />
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Чехия</button>
                 <div class="added-country__flag">
-                  <img src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг">
-                  <button class="added-country__close close-button" type="button">
+                  <img class="added-country__flag-img" src="https://via.placeholder.com/150x150" width="35" height="24"
+                    alt="Флаг">
+                  <button class="added-country__close" type="button">
                     <svg class="close-button__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
                       style="enable-background:new 0 0 9 9" xml:space="preserve">
@@ -463,7 +499,7 @@ z" />
                 <button class="choose-country__button" type="button">
                   Выберите страну
                 </button>
-                <button class="choose-country__close close-button" type="button">
+                <button class="choose-country__close" type="button">
                   <svg class="close-button__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9"
                     style="enable-background:new 0 0 9 9" xml:space="preserve">
@@ -545,15 +581,28 @@ z" />
 
             </div>
 
-            <button class="step__button button" type="button">Следующий шаг</button>
-            <button class="step__button step__button-next button button--nobg" type="button">На шаг назад</button>
+            <div class="step__buttons">
+              <button class="step__button button" type="button">Следующий шаг</button>
+              <button class="step__button step__button-next button button--nobg" type="button">На шаг назад</button>
+            </div>
           </fieldset>
 
           <fieldset class="step">
-            <p class="step__title">Шаг 3. Развлечения</p>
-            <p class="step__description">
-              Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-            </p>
+            <div class="step__top">
+              <div class="step__top-info">
+                <p class="step__title">Шаг 3. Развлечения</p>
+                <p class="step__description">
+                  Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                </p>
+              </div>
+              <div class="step__top-buttons">
+                <ul class="step-buttons">
+                  <li class="step-buttons__item"><button type="button">Даты</button></li>
+                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
+                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+                </ul>
+              </div>
+            </div>
 
             <div class="step__selected-countries connected-textareas">
 
@@ -564,23 +613,30 @@ z" />
                   <img class="textarea__flag" src="https://via.placeholder.com/150x150" width="35" height="24"
                     alt="Флаг">
                 </p>
-                <textarea class="textarea__field" placeholder="План действий" name="text"></textarea>
+                <div class="textarea__main">
+                  <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
+                    name="text"></textarea>
+                </div>
               </label>
 
-              <label class="connected-textareas__item connected-textareas__item--end  textarea">
+              <label class="connected-textareas__item connected-textareas__item--end textarea">
                 <p class="textarea__title textarea__title--connected">
                   <span class="textarea__name">Чехия</span>
                   <img class="textarea__flag" src="https://via.placeholder.com/150x150" width="35" height="24"
                     alt="Флаг">
                 </p>
-                <textarea class="textarea__field" placeholder="План действий"
-                  name="text">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <div class="textarea__main">
+                  <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
+                    name="text">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
               </label>
 
             </div>
 
-            <button class="step__button step__button-send button">Отправить</button>
-            <button class="step__button button button--nobg" type="button">На шаг назад</button>
+            <div class="step__buttons">
+              <button class="step__button step__button-send button">Отправить</button>
+              <button class="step__button button button--nobg" type="button">На шаг назад</button>
+            </div>
           </fieldset>
         </form>
 

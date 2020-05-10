@@ -6,6 +6,21 @@
   margin-bottom: 10px;
 }
 
+.step__top {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.step__top-buttons {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .step__title {
   font-size: 20px;
   font-weight: bold;
@@ -39,4 +54,29 @@
 
 .step_calendar {
   margin-bottom: 20px;
+}
+
+.step__inputs {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    font-display: row;
+    flex-wrap: wrap;
+  }
+}
+
+.step__inputs-checkbox {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    border-bottom: 1px solid $light-blue-grey-five;
+  }
+}
+
+.step__buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

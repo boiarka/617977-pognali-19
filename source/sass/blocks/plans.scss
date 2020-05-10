@@ -2,10 +2,18 @@
   border-radius: 20px 20px 0 0;
   background-color: $pale-grey-two;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 30px 30px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px 60px 0 0;
+  }
 }
 
 .plans::after {
-  @include borderRadiusBottomBg(20px, $pale-grey-two);
+  @include borderRadiusBottomBg(60px, $pale-grey-two);
 }
 
 .plans__content {
