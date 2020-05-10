@@ -1,6 +1,18 @@
 .alphabet {
   margin: 0 auto;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.alphabet__main {
+  width: 100%;
 }
 
 .alphabet__button {
@@ -18,11 +30,52 @@
   z-index: 1;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    color: $dark-blue-grey-30;
+    padding: 0;
+    font-weight: bold;
+    font-size: 60px;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 52px;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
+
+.alphabet__item {
+  padding: 1px;
+
+  @media (min-width: $tablet-width) {
+    vertical-align: top;
+    padding: 10px 22px 4px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 34px;
+    width: 20%;
+  }
+}
+
 
 .alphabet__button:hover {
   border: 1px solid $dark-slate-blue;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .alphabet__button--active {
@@ -30,4 +83,23 @@
   border: 1px solid $dark-slate-blue;
   color: $white;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    background-color: transparent;
+    color: $dark-slate-blue;
+  }
+}
+
+
+.alphabet__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+    display: block;
+  }
 }

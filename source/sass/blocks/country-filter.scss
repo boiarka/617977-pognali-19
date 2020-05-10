@@ -1,25 +1,81 @@
 .country-filter {
+  @include container();
+
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
 
-  @include container();
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
+  }
 }
 
 .country-filter__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 37px 20px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 67px;
+  }
+}
+
+.country-filter__continents {
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
 }
 
 .country-filter__countries {
+  position: relative;
+  width: 100%;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .country-filter__text {
+  padding: 0;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 27px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 36px;
+    font-size: 20px;
+    display: block;
+    order: -1;
+  }
 }
 
 .country-filter__text::before {
@@ -30,37 +86,112 @@
   top: 1px;
   left: 0;
   background-image: url("../../img/filter.svg");
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: -7px;
+    width: 23px;
+    height: 15px;
+  }
 }
 
 .country-filter__turn-button {
   margin-top: 41px;
   width: 100%;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    margin-left: 16px;
+    font-size: 20px;
+    height: 100px;
+  }
 }
 
 .country-filter__list {
   margin-top: 20px;
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    padding-right: 20px;
+  }
 }
 
 .country-filter__alphabet {
   margin-top: 25px;
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
-}
 
-
-.country-filter__continents {
-  padding-left: $mobilePadding;
-  padding-right: $mobilePadding;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
 }
 
 .country-filter__toggle {
-  width: 12px;
-  height: 12px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $dark-blue-grey;
+  line-height: 1;
+  display: flex;
+  padding: 0;
+  position: relative;
   border: none;
   background-color: transparent;
-  background-image: url("../img/filter-close.svg");
+}
+
+.country-filter__toggle--closed {
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+  }
+}
+
+.country-filter__toggle--opened {
+  @media (min-width: $tablet-width) {
+    padding-right: 83px;
+  }
+}
+
+.country-filter__toggle::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
   cursor: pointer;
+}
+
+.country-filter__toggle--closed::after {
+  background-image: url("../img/dots.svg");
+  top: -4px;
+  right: 4px;
+  width: 18px;
+  height: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    right: -2px;
+    width: 27px;
+    height: 5px;
+  }
+}
+
+.country-filter__toggle--opened::after {
+  background-image: url("../img/filter-close.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.country-filter__countries-checked {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

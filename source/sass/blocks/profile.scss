@@ -48,6 +48,7 @@
 }
 
 .profile__list {
+  position: relative;
   margin: 0;
   margin-top: 43px;
 
@@ -62,8 +63,9 @@
 }
 
 .profile__button {
+  position: relative;
   margin-top: 30px;
-  color: $dark-blue-grey;
+  color: $light-navy;
   background-color: transparent;
   border: none;
   font-size: 16px;
@@ -78,21 +80,44 @@
   }
 }
 
+.profile__button-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    top: -24px;
+    left: -87px;
+    fill: $light-navy;
+    background-color: $pale-grey-four;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    padding: 22px;
+  }
+}
+
+.profile__list-wrapper {
+  display: block;
+  position: relative;
+}
+
 .profile__icon {
   position: absolute;
-  top: 37px;
-  right: 26px;
+  top: -130px;
+  right: -24px;
 
   @media (min-width: $tablet-width) {
     top: auto;
-    bottom: 44px;
-    right: 86px;
+    bottom: -119px;
+    right: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 286px;
-    right: 134px;
+    top: 50%;
+    right: 4px;
     bottom: auto;
+    transform: translate(0, -50%);
   }
 }
 

@@ -10,14 +10,33 @@
 
 .user-profile__content {
   @include container();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .user-profile::before {
   @include borderRadiusTopBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusTopBg(60px, $pale-grey);
+  }
 }
 
 .user-profile::after {
   @include borderRadiusBottomBg(30px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusBottomBg(60px, $pale-grey);
+  }
+}
+
+.user-profile__level {
+  order: -1;
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 .user-profile__button {
@@ -26,14 +45,20 @@
 }
 
 .user-profile__tags {
+  width: 100%;
   border: 1px solid $cloudy-blue;
   position: relative;
   border-radius: 10px;
   margin-top: 30px;
   padding: 26px;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .user-profile__transport {
+  width: 100%;
   border: 1px solid $cloudy-blue;
   position: relative;
   border-radius: 10px;
@@ -42,6 +67,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 

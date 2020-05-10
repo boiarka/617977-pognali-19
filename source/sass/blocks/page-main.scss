@@ -1,6 +1,16 @@
 .page-main {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $dark-blue-grey;
+  }
+}
+
+.page-main--nobg {
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .page-main--catalog {
@@ -9,12 +19,21 @@
 }
 
 .page-main--catalog::before {
-  @include borderRadiusTopBg(30px, $pale-grey);
+  @include borderRadiusTopBg(60px, $pale-grey);
 
   @media (min-width: $tablet-width) {
     @include borderRadiusTopBg(60px, $pale-grey);
   }
 }
+
+.page-main--catalog::after {
+  @include borderRadiusBottomBg(60px, $pale-grey);
+
+  @media (min-width: $tablet-width) {
+    @include borderRadiusBottomBg(60px, $pale-grey);
+  }
+}
+
 
 .page-main__catalog-content {
   @include container();
@@ -28,7 +47,14 @@
 }
 
 .page-main__filter {
+  padding-top: 25px;
   width: 100%;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    margin-bottom: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 285px;

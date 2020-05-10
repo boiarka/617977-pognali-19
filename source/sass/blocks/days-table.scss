@@ -1,35 +1,55 @@
 .days-table {
-  display: flex;
+  width: 100%;
   border-collapse: collapse;
+}
+
+
+.days-table__body {
+  width: 100%;
+}
+
+.days-table__row {
+  width: 100%;
 }
 
 .days-table__day {
   font-size: 14px;
   font-weight: normal;
   padding-bottom: 12px;
+  width: 12.5%;
 }
 
 .days-table__day--weekend {
   color: $orange-red;
 }
 
+.days-table__num {
+  width: 12.5%;
+  border: 1px solid $pale-grey-two;
+  padding: 0;
+}
 
 .days-table__button {
+  border: none;
+  padding: 0;
   font-family: inherit;
   font-size: 14px;
-  border: 1px solid $pale-grey-two;
   color: $pale-grey-two;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: 100%;
   height: 30px;
   background-color: $white;
   text-transform: uppercase;
-  margin: -2px -2px -1px -1px;
   z-index: 1;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 70px;
+    font-size: 20px;
+  }
 }
 
 
@@ -56,7 +76,14 @@
 .days-table__button--active::before {
   content: "";
   border: 2px solid $orange-red;
+  border-radius: 2px;
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+
+  @media (min-width: $tablet-width) {
+    border-width: 4px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+  }
 }

@@ -2,6 +2,11 @@
   background-color: $light-gold;
   border-radius: 20px;
   padding: 26px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+  }
 }
 
 .search__title {
@@ -9,9 +14,29 @@
   color: $dark-slate-blue;
   font-weight: bold;
   width: 118px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 36px;
+    width: 100%;
+    border-bottom: 1px solid $macaroni-and-cheese;
+  }
 }
 
 .search__button {
+  margin-top: 7px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 20px);
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    margin-top: 61px;
+  }
 }

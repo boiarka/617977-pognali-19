@@ -97,13 +97,13 @@
 .travelers__button {
   order: 2;
   position: absolute;
-  width: 270px;
+  width: calc(100% - 50px);
   bottom: -72px;
   left: 25px;
   right: 25px;
 
   @media (min-width: $tablet-width) {
-    width: 618px;
+    width: calc(100% - 150px);
     bottom: -150px;
     left: 75px;
     margin-top: 71px;
