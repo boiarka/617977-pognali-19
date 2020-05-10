@@ -35,10 +35,6 @@ a {
   overflow: hidden;
 }
 
-.d-none {
-  display: none !important;
-}
-
 .tablet-hidden {
   @media (min-width: $tablet-width) {
     display: none;
@@ -60,4 +56,8 @@ a {
   font-family: inherit;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.d-none {
+  display: none;
 }
