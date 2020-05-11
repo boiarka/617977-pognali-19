@@ -8,6 +8,34 @@
   color: $white;
 }
 
+.level--big {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+  }
+}
+
+.level--big .level__text {
+  color: $greyish-brown;
+  font-size: 18px;
+  border-width: 2px;
+  border-color: $cloudy-blue;
+  padding: 5px 10px 0;
+}
+
+.level--big .level__count {
+  color: $dark-two;
+  font-size: 38px;
+}
+
+.level--big .level__wrapper {
+  top: 62px;
+}
+
 .level--nobg {
   background-color: transparent;
   color: $dark-two;
