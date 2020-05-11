@@ -4,7 +4,7 @@
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
   padding-top: 16px;
-  padding-bottom: 75px;
+  padding-bottom: 74px;
   margin-bottom: 10px;
   position: relative;
 
@@ -310,11 +310,21 @@
 
 .user-card__section-transport {
   width: 82%;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 2px;
+  }
+}
+
+.user-card__section-level {
+  @media (min-width: $tablet-width) {
+    padding-right: 5px;
+  }
 }
 
 .user-card__button {
   position: absolute;
-  bottom: -52px;
+  bottom: -51px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -330,7 +340,8 @@
 }
 
 .user-card__level {
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-right: -5px;
 
   @media (min-width: $tablet-width) {
     margin-top: 3px;

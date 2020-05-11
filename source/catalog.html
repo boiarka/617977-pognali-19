@@ -14,7 +14,7 @@
     <div class="page-header__main page-header__main--page">
 
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a href="/" class="page-header__logo">
           <img class="page-header__image" src="img/logo-mobile-white@1x.png" width="100" height="19"
             alt="Логотип сайта «Погнали?»">
         </a>
@@ -101,8 +101,8 @@
       <div class="country-filter__wrapper">
         <p class="country-filter__text">Фильтрация по странам</p>
         <button class="country-filter__toggle country-filter__toggle--closed" type="button">
-          <span class="mobile-hidden">Свернуть</span>
-          <span class="mobile-hidden d-none">Показать все</span>
+          <span class="country-filter__close mobile-hidden d-none">Свернуть</span>
+          <span class="country-filter__show-all mobile-hidden">Показать все</span>
         </button>
 
         <ul class="country-filter__continents continents-list mobile-hidden">
@@ -121,7 +121,7 @@
         </ul>
       </div>
 
-      <div class="country-filter__countries d-none">
+      <div class="country-filter__countries country-filter--closed">
         <table class="country-filter__alphabet alphabet">
           <tbody class="alphabet__main">
             <tr>
@@ -483,7 +483,7 @@
 
           <fieldset class="form-fieldset">
             <button class="form-fieldset__toggle" type="button">Хобби</button>
-            <div class="form-fieldset__inner mobile-hidden">
+            <div class="form-fieldset__inner mobile-hidden desktop-hidden">
               <div class="form-fieldset__name mobile-hidden">Хобби:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option">
@@ -537,7 +537,7 @@
 
           <fieldset class="form-fieldset">
             <button class="form-fieldset__toggle" type="button">Еда</button>
-            <div class="form-fieldset__inner mobile-hidden">
+            <div class="form-fieldset__inner mobile-hidden desktop-hidden">
               <div class="form-fieldset__name mobile-hidden">Еда:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option">
@@ -768,7 +768,7 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level user-card__level level-notext level-nobg">
+                <div class="level user-card__level level--notext level--nobg">
                   <div class="level__progress-inner">
                     <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="99 100"
                       viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
@@ -886,7 +886,7 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level user-card__level level-notext level-nobg">
+                <div class="level user-card__level level--notext level--nobg">
                   <div class="level__progress-inner">
                     <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="80 100"
                       viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
@@ -900,6 +900,7 @@ z" />
                 </div>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -1007,7 +1008,7 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level user-card__level level-notext level-nobg">
+                <div class="level user-card__level level--notext level--nobg">
                   <div class="level__progress-inner">
                     <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="25 100"
                       viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
@@ -1123,7 +1124,7 @@ z" />
                 <p class="user-card__title tablet-hidden">
                   <span class="user-card__title-text user-card__title-level">левел:</span>
                 </p>
-                <div class="level user-card__level level-notext level-nobg">
+                <div class="level user-card__level level--notext level--nobg">
                   <div class="level__progress-inner">
                     <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="50 100"
                       viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
@@ -1219,6 +1220,9 @@ c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.
       </div>
     </div>
   </footer>
+
+  <script src="js/main-nav.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 
 </html>

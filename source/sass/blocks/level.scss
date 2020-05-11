@@ -8,12 +8,12 @@
   color: $white;
 }
 
-.level-nobg {
+.level--nobg {
   background-color: transparent;
   color: $dark-two;
 }
 
-.level-notext {
+.level--notext {
   width: 45px;
   height: 45px;
 
@@ -23,7 +23,7 @@
   }
 }
 
-.level-notext .level__text {
+.level--notext .level__text {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
   }
 }
 
-.level-notext .level__count {
+.level--notext .level__count {
   bottom: 0;
 
   @media (min-width: $tablet-width) {

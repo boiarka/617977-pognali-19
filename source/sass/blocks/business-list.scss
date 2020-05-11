@@ -1,1 +1,21 @@
-// business-list
+.business-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid $dark-slate-blue-10;
+}
+
+.business-list__item {
+  display: flex;
+  flex-direction: column;
+  color: $greyish-brown;
+  padding: 17px 0;
+  border-bottom: 1px solid $dark-slate-blue-10;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
