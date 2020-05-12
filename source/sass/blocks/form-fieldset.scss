@@ -176,12 +176,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
     margin-top: 15px;
     margin-bottom: 26px;
   }
 }
-
 
 .form-fieldset__list .form-fieldset__option:last-child {
   @media (min-width: $tablet-width) {
