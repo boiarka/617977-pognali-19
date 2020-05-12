@@ -1,6 +1,7 @@
 .connected-textareas__item {
   display: block;
   position: relative;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;
@@ -9,6 +10,10 @@
   @media (min-width: $desktop-width) {
     padding-right: 80px;
   }
+}
+
+.connected-textareas__item:last-child {
+  margin-bottom: 0;
 }
 
 .connected-textareas__item--start::after {
