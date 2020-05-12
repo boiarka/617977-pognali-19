@@ -1,3 +1,31 @@
 .countries-popup {
   display: none;
+  width: 100%;
+  padding: 0;
+  background-color: $white;
+  position: absolute;
+  top: 42px;
+  z-index: 5;
+  border-radius: 5px;
+  box-shadow: 0 20px 50px 0 $dark-slate-blue-10;
+}
+
+.countries-popup--opened {
+  display: block;
+}
+
+.countries-popup__content {
+  border: 1px solid $cloudy-blue;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  padding: 13px 19px;
+}
+
+.countries-popup__list {
+  padding: 0;
+  margin: 0;
+}
+
+.countries-popup__list a {
+  color: $greyish-brown;
 }

@@ -1,9 +1,18 @@
 .step {
+  margin: 0;
   background-color: $white;
   border-radius: 10px;
   border: none;
-  padding: 25px 25px 5px 25px;
+  padding: 25px 25px 21px 25px;
   margin-bottom: 10px;
+}
+
+.step-two {
+  padding-bottom: 5px;
+}
+
+.step-three {
+  padding-bottom: 6px;
 }
 
 .step__top {
@@ -22,12 +31,20 @@
 }
 
 .step__title {
+  padding: 0;
+  margin: 0;
   font-size: 20px;
   font-weight: bold;
   color: $dark-slate-blue;
 }
 
+.step__title-name {
+  display: block;
+}
+
 .step__description {
+  padding: 0;
+  margin: 14px 0 0 0;
   color: $page-text-dark;
   line-height: 1.38;
 }
@@ -35,21 +52,34 @@
 
 .step__checkbox {
   padding: 6px 15px 6px 38px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
+  margin-top: 18px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    border-bottom: 1px solid $light-blue-grey-five;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 
 .step__button {
   width: 100%;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  letter-spacing: 0.2px;
 }
 
 .step__button-next {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .step__button-send {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .step_calendar {
@@ -73,21 +103,15 @@
   }
 }
 
-.step__inputs-checkbox {
-  order: 1;
-
-  @media (min-width: $tablet-width) {
-    order: 0;
-    border-bottom: 1px solid $light-blue-grey-five;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: none;
-  }
-}
-
 .step__buttons {
+  margin-top: 19px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+
+.step__selected-countries {
+  margin-top: 21px;
 }

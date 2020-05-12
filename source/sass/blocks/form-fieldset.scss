@@ -12,6 +12,11 @@
     justify-content: space-between;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 0 6px 0;
+    margin: 0;
+  }
 }
 
 .form-fieldset--rounds {
@@ -34,6 +39,17 @@
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+  }
+}
+
+.desktop-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .form-fieldset__name {
@@ -49,6 +65,10 @@
     display: flex;
     width: 20%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -70,6 +90,12 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: -0.7px;
+    font-size: 20px;
+    display: block;
+  }
 }
 
 .form-fieldset__toggle::after {
@@ -84,6 +110,14 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 10px;
+    height: 5px;
+    right: -1px;
+    top: 8px;
   }
 }
 
@@ -101,12 +135,17 @@
     margin: 0;
     width: 33%;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
+    width: 100%;
+    margin-bottom: 21px;
+  }
 }
 
 .form-fieldset__option:last-child {
   margin-bottom: 0;
 }
-
 
 .form-fieldset__list {
   padding: 0;
@@ -120,6 +159,12 @@
     display: flex;
     width: 80%;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 100%;
+    padding: 26px 10px 12px 10px;
+  }
 }
 
 .form-fieldset__transport {
@@ -129,17 +174,29 @@
     margin-top: 0;
     margin-left: -3px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    margin-bottom: 26px;
+  }
+}
 
 .form-fieldset__list .form-fieldset__option:last-child {
   @media (min-width: $tablet-width) {
     padding-left: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
   }
 }
 
 .form-fieldset__list .form-fieldset__option:nth-child(3n + 2) {
   @media (min-width: $tablet-width) {
     padding-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
   }
 }

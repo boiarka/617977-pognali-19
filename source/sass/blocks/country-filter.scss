@@ -10,6 +10,12 @@
   }
 }
 
+.country-filter__opened {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 74px;
+  }
+}
+
 .country-filter__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -26,10 +32,11 @@
 }
 
 .country-filter__continents {
-  padding: 0;
+  padding: 20px 20px 0 20px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     order: -1;
     width: auto;
     display: flex;
@@ -55,6 +62,19 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin: 0;
+  }
+}
+
+.country-filter--closed {
+  display: none;
+}
+
+.country-filter--opened {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -106,6 +126,10 @@
     font-size: 20px;
     height: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 62px;
+  }
 }
 
 .country-filter__list {
@@ -126,6 +150,10 @@
     padding: 0;
     margin: 0;
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
   }
 }
 
@@ -175,7 +203,7 @@
 
   @media (min-width: $tablet-width) {
     top: 4px;
-    right: -2px;
+    right: 0;
     width: 27px;
     height: 5px;
   }
@@ -183,8 +211,14 @@
 
 .country-filter__toggle--opened::after {
   background-image: url("../img/filter-close.svg");
+  top: -8px;
+  right: 5px;
+  width: 12px;
+  height: 12px;
 
   @media (min-width: $tablet-width) {
+    top: -2px;
+    right: 23px;
     width: 19px;
     height: 19px;
   }

@@ -61,13 +61,16 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 50px;
-    padding-left: 35px;
-    padding-right: 34px;
+    padding-top: 48px;
     width: 20%;
   }
 }
 
+.alphabet__item:nth-child(4n + 1) {
+  @media (min-width: $desktop-width) {
+    padding-right: 96px;
+  }
+}
 
 .alphabet__button:hover {
   border: 1px solid $dark-slate-blue;
@@ -102,4 +105,14 @@
     margin-top: 26px;
     display: block;
   }
+}
+
+.alphabet--modal .alphabet__button--active {
+  border-color: $cloudy-blue;
+  background-color: $pale-grey;
+  color: $dark-slate-blue;
+}
+
+.alphabet--modal .alphabet__button {
+  border-color: $cloudy-blue;
 }

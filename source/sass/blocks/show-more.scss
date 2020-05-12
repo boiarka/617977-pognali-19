@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .show-more__icon {
@@ -11,10 +12,30 @@
   height: 18px;
   fill: $dark-slate-blue;
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 27px;
+    height: 27px;
+    margin-right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 23px;
+  }
 }
 
 .show-more__text {
   color: $dark-slate-blue;
   font-size: 17px;
   font-weight: bold;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 76px;
+  }
 }

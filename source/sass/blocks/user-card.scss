@@ -4,7 +4,7 @@
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
   padding-top: 16px;
-  padding-bottom: 75px;
+  padding-bottom: 74px;
   margin-bottom: 10px;
   position: relative;
 
@@ -64,6 +64,7 @@
     flex-direction: column;
     width: 70%;
     height: 100%;
+    padding: 47px 43px 45px 56px;
   }
 }
 
@@ -80,11 +81,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     order: -1;
-    padding-top: 46px;
-    padding-left: 56px;
-    padding-bottom: 47px;
     width: 50%;
     height: 100%;
+    padding: 0;
   }
 }
 
@@ -310,11 +309,26 @@
 
 .user-card__section-transport {
   width: 82%;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 2px;
+  }
+}
+
+.user-card__section-level {
+  @media (min-width: $tablet-width) {
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
+    padding-right: 0;
+  }
 }
 
 .user-card__button {
   position: absolute;
-  bottom: -52px;
+  bottom: -51px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -330,10 +344,15 @@
 }
 
 .user-card__level {
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-right: -5px;
 
   @media (min-width: $tablet-width) {
     margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -355,6 +374,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -366,6 +387,11 @@
   @media (min-width: $tablet-width) {
     margin-right: 28px;
     padding: 9px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 8px 0 9px;
   }
 }
 
@@ -410,8 +436,7 @@
     order: 1;
     width: 50%;
     margin-top: 0;
-    padding-top: 31px;
-    padding-left: 47px;
+    padding-left: 50px;
   }
 }
 
@@ -428,8 +453,6 @@
     width: 50%;
     flex-direction: row;
     order: 1;
-    padding-right: 44px;
-    padding-bottom: 38px;
   }
 }
 
@@ -447,8 +470,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 16px;
-    margin-left: 5px;
+    margin-top: 17px;
+    margin-left: -1px;
     flex-direction: row;
   }
 }
