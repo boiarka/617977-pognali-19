@@ -1,11 +1,15 @@
 const headerMain = document.querySelector(".page-header__main");
 const headerToggle = document.querySelector(".page-header__toggle");
-
 const mainNav = document.querySelector(".main-nav");
-mainNav.classList.remove("main-nav__nojs");
+
+headerMain.classList.add("page-header__main--closed");
+mainNav.classList.add("main-nav--closed");
 
 headerToggle.addEventListener("click", function () {
   this.classList.toggle("page-header__toggle--opened");
-  headerMain.classList.add("page-header__main--opened");
-  mainNav.classList.toggle("main-nav__opened");
+  mainNav.classList.toggle("main-nav--closed");
+  mainNav.classList.toggle("main-nav--opened");
+
+  headerMain.classList.toggle("page-header__main--closed");
+  headerMain.classList.toggle("page-header__main--opened");
 })

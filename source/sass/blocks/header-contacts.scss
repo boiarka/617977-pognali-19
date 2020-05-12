@@ -1,6 +1,4 @@
 .header-contacts {
-  padding: 0;
-  margin: 0;
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -13,20 +11,32 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  }
 }
 
 .header-contacts__icon {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  margin-right: 16px;
   background-color: $dark-blue-grey-two;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    width: 67px;
+    height: 67px;
+    margin-right: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 50px;
     height: 50px;
+    margin: 0;
   }
 }
 
@@ -46,12 +56,20 @@
   width: 18px;
   fill: $light-gold;
 
+  @media (min-width: $tablet-width) {
+    width: 27px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 18px;
     fill: $dark-blue-grey-two;
   }
 }
 
 .header-contacts__link {
+  margin-top: 5px;
+  color: $dark-blue-grey;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
