@@ -13,8 +13,9 @@
 .page-header__main {
   @include container();
 
+  background-color: $white;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -28,12 +29,29 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-color: transparent;
     flex-wrap: nowrap;
     padding-bottom: 0;
     padding-top: 49px;
   }
 }
 
+.page-header__main--closed {
+  padding-bottom: 25px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.page-header__main--opened {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+}
 
 .page-header__main--page {
   padding-top: 19px;
@@ -100,7 +118,7 @@
   top: 0;
   width: 100%;
   height: 3px;
-  background-color: $white;
+  background-color: $pinkish-grey;
   border-radius: 2px;
 }
 
@@ -111,19 +129,20 @@
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: $white;
+  background-color: $pinkish-grey;
   border-radius: 2px;
 }
 
 .page-header__toggle--opened::before {
   transform: rotate(-45deg);
   background-color: $pinkish-grey;
+  top: 4px;
 }
 
 .page-header__toggle--opened::after {
   transform: rotate(45deg);
   background-color: $pinkish-grey;
-  bottom: 8px;
+  bottom: 4px;
 }
 
 
@@ -141,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 94px;
+    padding-top: 39px;
     padding-left: 126px;
     padding-right: 123px;
     padding-bottom: 55px;

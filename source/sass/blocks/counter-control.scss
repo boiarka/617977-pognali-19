@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    width: 50%;
   }
 }
 
@@ -13,6 +18,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .counter-control__title {
@@ -30,6 +44,10 @@
   font-weight: 500;
   color: $dark-slate-blue;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 2.3px;
+  }
 }
 
 .counter-control__text {
@@ -40,6 +58,9 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 50px;
+    margin-right: 12px;
+    margin-left: 38px;
   }
 }
 
@@ -54,8 +75,15 @@
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
 
+  @media (min-width: $tablet-width) {
+    height: 70px;
+    margin-top: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 181px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -67,6 +95,10 @@
   margin: 0;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .counter-control__input {
@@ -77,6 +109,10 @@
   text-align: center;
   font-size: 15px;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 
@@ -87,10 +123,19 @@
 .counter-control__icon--minus {
   width: 14px;
   height: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 
 .counter-control__icon--plus {
   width: 14px;
   height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }

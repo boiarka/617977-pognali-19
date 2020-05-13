@@ -4,8 +4,15 @@
   background-color: $light-blue-grey-five;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
   @media (min-width: $desktop-width) {
     border-radius: 60px 60px 0 0;
+    padding-top: 56px;
+    padding-bottom: 63px;
   }
 }
 
@@ -15,6 +22,14 @@
 
 .add-plan__content {
   @include container();
+
+  @media (min-width: $tablet-width) {
+    @include extra-container();
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container();
+  }
 }
 
 .add-plan__title {
@@ -23,14 +38,26 @@
   font-size: 24px;
   font-weight: bold;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 }
 
 .add-plan__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .add-plan__form {
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 56px;
+  }
 }

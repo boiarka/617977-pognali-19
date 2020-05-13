@@ -4,7 +4,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid black;
+    border-top: 1px solid $light-blue-grey-five;
     padding-top: 30px;
   }
 }
@@ -14,14 +14,22 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 146px;
+    right: 136px;
     width: 1px;
     height: 100%;
-    background-color: black;
+    background-color: $light-blue-grey-five;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 225px;
   }
 }
 
 .route-section__item {
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 }

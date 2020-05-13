@@ -112,10 +112,11 @@
         </div>
         <img class="user-profile__image" src="./img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото">
 
-        <button class="user-profile__button button button--gray" type="button">Сменить фото</button>
+        <button class="user-profile__button button button--gray" type="button"><span
+            class="user-profile__text">Сменить</span> фото</button>
 
         <div class="user-profile__tags">
-          <span class="user-profile__title">Тэги</span>
+          <span class="user-profile__title user-profile__title--left">Тэги</span>
           <textarea class="user-profile__textarea" name="" id="">#бургер #бар #футбол #концерт #крафт</textarea>
         </div>
 
@@ -197,26 +198,31 @@ z" />
 
         <div class="plans__card trip-card">
           <div class="trip-card__title">
-            <span class="trip-card__counter">1</span>
+            <span class="trip-card__counter">1.</span>
             <span class="trip-card__countries">Франция, Италия</span>
           </div>
-          <ul class="trip-card__info">
-            <li class="trip-card__info-item">3 попутчика</li>
-            <li class="trip-card__info-item">26 мар — 29 мар</li>
-          </ul>
-          <button class="trip-card__button" type="button">Изменить</button>
+          <div class="trip-card__content">
+            <ul class="trip-card__info">
+              <li class="trip-card__info-item">3 попутчика</li>
+              <li class="trip-card__info-item">26 мар — 29 мар</li>
+            </ul>
+            <button class="trip-card__button" type="button">Изменить</button>
+          </div>
         </div>
 
         <div class="plans__card trip-card">
           <div class="trip-card__title">
-            <span class="trip-card__counter">2</span>
+            <span class="trip-card__counter">2.</span>
             <span class="trip-card__countries">Таиланд, Индонезия</span>
           </div>
-          <ul class="trip-card__info">
-            <li class="trip-card__info-item">1 попутчик</li>
-            <li class="trip-card__info-item">1 июл — 15 июл</li>
-          </ul>
-          <button class="trip-card__button" type="button">Изменить</button>
+
+          <div class="trip-card__content">
+            <ul class="trip-card__info">
+              <li class="trip-card__info-item">1 попутчик</li>
+              <li class="trip-card__info-item">1 июл — 15 июл</li>
+            </ul>
+            <button class="trip-card__button" type="button">Изменить</button>
+          </div>
         </div>
 
 
@@ -247,17 +253,18 @@ z" />
           <fieldset class="step">
             <div class="step__top">
               <div class="step__top-info">
-                <p class="step__title">Шаг 1. <span class="step__title-name">Даты пребывания</span></p>
+                <p class="step__title">Шаг 1.<span class="step__title-name">Даты пребывания</span></p>
                 <p class="step__description">
                   Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее
                   предполагаемую длительность.
                 </p>
               </div>
-              <div class="step__top-buttons">
-                <ul class="step-buttons">
-                  <li class="step-buttons__item"><button type="button">Даты</button></li>
-                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
-                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+              <div class="step__nav">
+                <ul class="step__nav-list">
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Даты</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Маршрут</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Развлечения</button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -272,8 +279,9 @@ z" />
                     <button class="counter-control__button" type="button">
                       <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
-                        <rect width="14" height="2" style="fill:#606161" />
+                        viewBox="0 0 20 2" style="enable-background:new 0 0 20 2" xml:space="preserve">
+                        <rect class="st0" width="20" height="2" />
+                        <rect class="st0" width="20" height="2" />
                       </svg>
                     </button>
                     <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
@@ -288,7 +296,7 @@ z" />
                 </label>
               </div>
 
-              <div class="step__section step__checkbox">
+              <div class="step__section step__section-checkbox">
                 <label class="form-checkbox">
                   <input class="visually-hidden form-checkbox__input form-checkbox__input--border" type="checkbox"
                     name="childs" />
@@ -304,8 +312,9 @@ z" />
                     <button class="counter-control__button" type="button">
                       <svg class="counter-control__icon counter-control__icon--minus" version="1.1" id="Layer_1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 14 2" style="enable-background:new 0 0 14 2" xml:space="preserve">
-                        <rect width="14" height="2" style="fill:#606161" />
+                        viewBox="0 0 20 2" style="enable-background:new 0 0 20 2" xml:space="preserve">
+                        <rect class="st0" width="20" height="2" />
+                        <rect class="st0" width="20" height="2" />
                       </svg>
                     </button>
                     <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
@@ -348,13 +357,15 @@ z" />
               <table class="calendar__table days-table">
                 <tbody class="days-table__body">
                   <tr class="days-table__row">
-                    <th class="days-table__day">П</th>
-                    <th class="days-table__day">В</th>
-                    <th class="days-table__day">С</th>
-                    <th class="days-table__day">Ч</th>
-                    <th class="days-table__day">П</th>
-                    <th class="days-table__day days-table__day--weekend">С</th>
-                    <th class="days-table__day days-table__day--weekend">В</th>
+                    <th class="days-table__day">П<span class="days-table--mobile-hidden">н</span></th>
+                    <th class="days-table__day">В<span class="days-table--mobile-hidden">т</span></th>
+                    <th class="days-table__day">С<span class="days-table--mobile-hidden">р</span></th>
+                    <th class="days-table__day">Ч<span class="days-table--mobile-hidden">т</span></th>
+                    <th class="days-table__day">П<span class="days-table--mobile-hidden">т</span></th>
+                    <th class="days-table__day days-table__day--weekend">С<span
+                        class="days-table--mobile-hidden">б</span></th>
+                    <th class="days-table__day days-table__day--weekend">В<span
+                        class="days-table--mobile-hidden">с</span></th>
                   </tr>
                   <tr class="days-table__row">
                     <td class="days-table__num"><button class="days-table__button" type="button">23</button></td>
@@ -363,7 +374,8 @@ z" />
                     <td class="days-table__num"><button class="days-table__button" type="button">26</button></td>
                     <td class="days-table__num"><button class="days-table__button" type="button">27</button></td>
                     <td class="days-table__num"><button class="days-table__button" type="button">28</button></td>
-                    <td class="days-table__num"><button class="days-table__button" type="button">1</button></td>
+                    <td class="days-table__num"><button class="days-table__button" type="button">1<span
+                          class="days-table--month"> мар</span></button></td>
                   </tr>
                   <tr class="days-table__row">
                     <td class="days-table__num"><button class="days-table__button" type="button">2</button></td>
@@ -399,7 +411,7 @@ z" />
                     <td class="days-table__num">
                       <button
                         class="days-table__button days-table__button--active days-table__button--available days-table__button--selected"
-                        type="button">26</button>
+                        type="button">26<span class="days-table__info">Заезд</span></button>
                     </td>
                     <td class="days-table__num"><button
                         class="days-table__button days-table__button--available days-table__button--selected"
@@ -407,7 +419,7 @@ z" />
                     </td>
                     <td class="days-table__num"><button
                         class="days-table__button days-table__button--available days-table__button--selected"
-                        type="button">28</button>
+                        type="button">28 <span class="days-table__info">Выезд</span></button>
                     </td>
                     <td class="days-table__num "><button class="days-table__button days-table__button--available"
                         type="button">29</button>
@@ -421,7 +433,7 @@ z" />
                         type="button">31</button>
                     </td>
                     <td class="days-table__num"><button class="days-table__button days-table__button--available"
-                        type="button">1</button>
+                        type="button">1<span class="days-table--month">апр</span></button>
                     </td>
                     <td class="days-table__num"><button class="days-table__button days-table__button--available"
                         type="button">2</button>
@@ -448,16 +460,17 @@ z" />
           <fieldset class="step step-two">
             <div class="step__top">
               <div class="step__top-info">
-                <p class="step__title">Шаг 2. <span class="step__title-name">Маршрут</span></p>
+                <p class="step__title">Шаг 2.<span class="step__title-name">Маршрут</span></p>
                 <p class="step__description">
-                  Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+                  Укажите страны, которые вы хотели посетить. Это&nbsp;может&nbsp;быть одна или сразу несколько.
                 </p>
               </div>
-              <div class="step__top-buttons">
-                <ul class="step-buttons">
-                  <li class="step-buttons__item"><button type="button">Даты</button></li>
-                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
-                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+              <div class="step__nav">
+                <ul class="step__nav-list">
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Даты</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Маршрут</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Развлечения</button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -512,61 +525,64 @@ z" />
                   </svg>
                 </button>
                 <div class="choose-country__popup countries-popup">
-                  <table class="alphabet alphabet--modal">
-                    <tr>
-                      <td><button class="alphabet__button alphabet__button--active" type="button">а</button></td>
-                      <td><button class="alphabet__button" type="button">б</button></td>
-                      <td><button class="alphabet__button" type="button">в</button></td>
-                      <td><button class="alphabet__button" type="button">г</button></td>
-                      <td><button class="alphabet__button" type="button">д</button></td>
-                    </tr>
-                    <tr>
-                      <td><button class="alphabet__button" type="button">е</button></td>
-                      <td><button class="alphabet__button" type="button">з</button></td>
-                      <td><button class="alphabet__button" type="button">и</button></td>
-                      <td><button class="alphabet__button" type="button">к</button></td>
-                      <td><button class="alphabet__button" type="button">л</button></td>
-                    </tr>
-                    <tr>
-                      <td><button class="alphabet__button" type="button">м</button></td>
-                      <td><button class="alphabet__button" type="button">н</button></td>
-                      <td><button class="alphabet__button" type="button">о</button></td>
-                      <td><button class="alphabet__button" type="button">п</button></td>
-                      <td><button class="alphabet__button" type="button">р</button></td>
-                    </tr>
-                    <tr>
-                      <td><button class="alphabet__button" type="button">с</button></td>
-                      <td><button class="alphabet__button" type="button">т</button></td>
-                      <td><button class="alphabet__button" type="button">у</button></td>
-                      <td><button class="alphabet__button" type="button">ф</button></td>
-                      <td><button class="alphabet__button" type="button">х</button></td>
-                    </tr>
-                    <tr>
-                      <td><button class="alphabet__button" type="button">ч</button></td>
-                      <td><button class="alphabet__button" type="button">ш</button></td>
-                      <td><button class="alphabet__button" type="button">з</button></td>
-                      <td><button class="alphabet__button" type="button">ю</button></td>
-                      <td><button class="alphabet__button" type="button">я</button></td>
-                    </tr>
-                  </table>
 
-                  <div class="countries-popup__content">
-                    <ul class="countries-popup__list countries-list">
-                      <li class="countries-list__item"><a href="#">Австралия</a></li>
-                      <li class="countries-list__item"><a href="#">Австрия</a></li>
-                      <li class="countries-list__item"><a href="#">Азербайджан</a></li>
-                      <li class="countries-list__item"><a href="#">Албания</a></li>
-                      <li class="countries-list__item"><a href="#">Алжир</a></li>
-                      <li class="countries-list__item"><a href="#">Ангола</a></li>
-                      <li class="countries-list__item"><a href="#">Андорра</a></li>
-                      <li class="countries-list__item"><a href="#">Антигуа и Барбуда</a></li>
-                      <li class="countries-list__item"><a href="#">Аргентина</a></li>
-                      <li class="countries-list__item"><a href="#">Армения</a></li>
-                      <li class="countries-list__item"><a href="#">Афганистан</a></li>
-                    </ul>
+                  <div class="countries-popup__main">
+                    <div class="countries-popup__alphabet">
+                      <table class="alphabet alphabet--modal">
+                        <tr>
+                          <td><button class="alphabet__button alphabet__button--active" type="button">а</button></td>
+                          <td><button class="alphabet__button" type="button">б</button></td>
+                          <td><button class="alphabet__button" type="button">в</button></td>
+                          <td><button class="alphabet__button" type="button">г</button></td>
+                          <td><button class="alphabet__button" type="button">д</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="alphabet__button" type="button">е</button></td>
+                          <td><button class="alphabet__button" type="button">з</button></td>
+                          <td><button class="alphabet__button" type="button">и</button></td>
+                          <td><button class="alphabet__button" type="button">к</button></td>
+                          <td><button class="alphabet__button" type="button">л</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="alphabet__button" type="button">м</button></td>
+                          <td><button class="alphabet__button" type="button">н</button></td>
+                          <td><button class="alphabet__button" type="button">о</button></td>
+                          <td><button class="alphabet__button" type="button">п</button></td>
+                          <td><button class="alphabet__button" type="button">р</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="alphabet__button" type="button">с</button></td>
+                          <td><button class="alphabet__button" type="button">т</button></td>
+                          <td><button class="alphabet__button" type="button">у</button></td>
+                          <td><button class="alphabet__button" type="button">ф</button></td>
+                          <td><button class="alphabet__button" type="button">х</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="alphabet__button" type="button">ч</button></td>
+                          <td><button class="alphabet__button" type="button">ш</button></td>
+                          <td><button class="alphabet__button" type="button">з</button></td>
+                          <td><button class="alphabet__button" type="button">ю</button></td>
+                          <td><button class="alphabet__button" type="button">я</button></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="countries-popup__content">
+                      <ul class="countries-popup__list countries-list">
+                        <li class="countries-list__item"><a href="#">Австралия</a></li>
+                        <li class="countries-list__item"><a href="#">Австрия</a></li>
+                        <li class="countries-list__item"><a href="#">Азербайджан</a></li>
+                        <li class="countries-list__item"><a href="#">Албания</a></li>
+                        <li class="countries-list__item"><a href="#">Алжир</a></li>
+                        <li class="countries-list__item"><a href="#">Ангола</a></li>
+                        <li class="countries-list__item"><a href="#">Андорра</a></li>
+                        <li class="countries-list__item"><a href="#">Антигуа и Барбуда</a></li>
+                        <li class="countries-list__item"><a href="#">Аргентина</a></li>
+                        <li class="countries-list__item"><a href="#">Армения</a></li>
+                        <li class="countries-list__item"><a href="#">Афганистан</a></li>
+                      </ul>
 
+                    </div>
                   </div>
-
                 </div>
 
               </div>
@@ -586,16 +602,17 @@ z" />
           <fieldset class="step step-three">
             <div class="step__top">
               <div class="step__top-info">
-                <p class="step__title">Шаг 3. <span class="step__title-name">Развлечения</span></p>
+                <p class="step__title">Шаг 3.<span class="step__title-name">Развлечения</span></p>
                 <p class="step__description">
                   Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                 </p>
               </div>
-              <div class="step__top-buttons">
-                <ul class="step-buttons">
-                  <li class="step-buttons__item"><button type="button">Даты</button></li>
-                  <li class="step-buttons__item"><button type="button">Маршрут</button></li>
-                  <li class="step-buttons__item"><button type="button">Развлечения</button></li>
+              <div class="step__nav">
+                <ul class="step__nav-list">
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Даты</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Маршрут</button></li>
+                  <li class="step__nav-list-item"><button class="step__nav-button" type="button">Развлечения</button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -629,8 +646,8 @@ z" />
             </div>
 
             <div class="step__buttons">
-              <button class="step__button step__button-send button">Отправить</button>
-              <button class="step__button button button--nobg" type="button">На шаг назад</button>
+              <button class="step__button button">Отправить</button>
+              <button class="step__button step__button-next button button--nobg" type="button">На шаг назад</button>
             </div>
           </fieldset>
         </form>

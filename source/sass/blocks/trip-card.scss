@@ -8,9 +8,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 40px 0 11px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    padding-left: 44px;
+    padding-right: 39px;
+    padding-bottom: 37px;
+    margin-bottom: 14px;
     align-items: center;
   }
 }
@@ -19,10 +25,18 @@
   color: $dark-slate-blue;
 
   @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 33px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-direction: row;
+    padding: 0;
   }
 }
 
@@ -37,11 +51,36 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-top: 3px;
+    width: 100%;
   }
 }
 
 .trip-card__info-item {
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 2.4px;
+    margin: 0;
+    margin-right: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.trip-card__info-item:last-child {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 128px;
+  }
 }
 
 .trip-card__button {
@@ -54,12 +93,53 @@
   text-transform: uppercase;
   color: $black-30;
   font-family: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: 2.4px;
+  }
 }
 
 .trip-card__counter {
   margin-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 4px;
+  }
 }
 
 .trip-card__countries {
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 36px;
+  }
+}
+
+.trip-card__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid $pale-grey-four;
+    margin-top: 34px;
+    padding-left: 32px;
+    padding-right: 34px;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 51%;
+    margin: 0;
+    padding: 0;
+    padding-left: 7px;
+    border: none;
+  }
 }

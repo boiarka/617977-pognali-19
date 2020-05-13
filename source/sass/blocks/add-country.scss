@@ -3,7 +3,11 @@
   margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 172px;
+    padding-right: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 270px;
   }
 }
 
@@ -22,6 +26,14 @@
   font-weight: 500;
   text-align: left;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 24px 0;
+    letter-spacing: 2.4px;
+    font-size: 20px;
+    margin-top: 2px;
+    height: 70px;
+  }
 }
 
 .add-country__button::after {
@@ -35,6 +47,12 @@
   background-image: url("../img/qty-plus-mobile.svg");
   z-index: 2;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    right: 26px;
+  }
 }
 
 .add-country__button::before {
@@ -50,8 +68,14 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
+    background-color: $white;
     width: 15px;
     height: 15px;
     right: -41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -60px;
+    top: 47%;
   }
 }

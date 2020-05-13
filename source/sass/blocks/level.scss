@@ -25,11 +25,20 @@
   border-width: 2px;
   border-color: $cloudy-blue;
   padding: 5px 10px 0;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    border-color: $white-30;
+  }
 }
 
 .level--big .level__count {
   color: $dark-two;
   font-size: 38px;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .level--big .level__wrapper {

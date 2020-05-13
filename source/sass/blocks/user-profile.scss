@@ -10,11 +10,21 @@
 
 .user-profile__content {
   @include container();
-
+  position: relative;
   padding-top: 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    @include extra-container();
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container();
+    padding-top: 52px;
+  }
 }
 
 .user-profile::before {
@@ -37,19 +47,65 @@
   order: -1;
   margin-left: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
   @media (min-width: $desktop-width) {
     order: 0;
+    position: absolute;
+    top: -169px;
+    right: 390px;
   }
 }
 
 .user-profile__image {
   border-radius: 50%;
   margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 10px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -210px;
+    right: 155px;
+    border-radius: 0;
+  }
 }
 
 .user-profile__button {
   width: 100%;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 1.4px;
+    font-size: 20px;
+    margin-top: 53px;
+    border-radius: 10px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 47px;
+    position: absolute;
+    top: -73px;
+    right: 155px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.user-profile__text {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .user-profile__tags {
@@ -60,8 +116,16 @@
   margin-top: 32px;
   padding: 19px 22px 15px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    padding: 30px 36px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    width: auto;
+    margin: 0;
+    margin-left: 64px;
+    width: 730px;
+    height: 94px;
   }
 }
 
@@ -78,10 +142,16 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 0;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
+    width: 384px;
+    height: 94px;
+    padding-top: 25px;
     order: 0;
   }
 }
@@ -98,6 +168,19 @@
   text-transform: uppercase;
   color: $dark-slate-blue;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: 1.8px;
+    font-size: 20px;
+    top: auto;
+    bottom: -25px;
+  }
+}
+
+.user-profile__title--left {
+  @media (min-width: $desktop-width) {
+    left: 63px;
+  }
 }
 
 .user-profile__title::after {
@@ -120,4 +203,8 @@
   width: 100%;
   height: auto;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

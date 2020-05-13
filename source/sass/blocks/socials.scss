@@ -30,3 +30,12 @@
 .social-link--nobg {
   background-color: transparent;
 }
+
+.social-link__icon {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 17px 16px;
+    width: 100%;
+    height: 100%;
+  }
+}
