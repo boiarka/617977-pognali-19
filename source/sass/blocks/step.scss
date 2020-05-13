@@ -57,6 +57,7 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    padding-top: 7px;
     display: block;
   }
 }
@@ -185,7 +186,6 @@
   }
 }
 
-
 .step__button-send {
   margin-bottom: 3px;
 }
@@ -241,7 +241,6 @@
   }
 }
 
-
 .step__selected-countries {
   margin-top: 21px;
 
@@ -257,9 +256,6 @@
   }
 }
 
-
-
-
 .step__add-country {
   @media (min-width: $tablet-width) {
     margin-top: 32px;
@@ -270,10 +266,6 @@
     padding-top: 52px;
     margin-bottom: 46px;
   }
-}
-
-.step__nav {
-  padding-top: 7px;
 }
 
 .step__nav-list {
