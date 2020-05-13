@@ -39,6 +39,12 @@
     padding-right: 40px;
     margin-left: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 115px;
+    padding-left: 40px;
+    margin-left: 45px;
+  }
 }
 
 .added-country__flag-img {
@@ -88,6 +94,10 @@
     right: -22px;
     transform: translate(-50%, -50%);
   }
+
+  @media (min-width: $desktop-width) {
+    right: -14px;
+  }
 }
 
 .close-button__icon {
@@ -98,6 +108,10 @@
   @media (min-width: $tablet-width) {
     width: 17px;
     height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $pale-grey;
   }
 }
 

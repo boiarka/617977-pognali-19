@@ -48,12 +48,11 @@
   }
 }
 
-
 .form-checkbox__input--border + .form-checkbox__text {
   @media (min-width: $tablet-width) {
-   letter-spacing: 2.4px;
-   padding-top: 3px;
-   padding-left: 21px;
+    letter-spacing: 2.4px;
+    padding-top: 3px;
+    padding-left: 21px;
   }
 }
 

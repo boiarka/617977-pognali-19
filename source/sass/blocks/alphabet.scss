@@ -52,6 +52,8 @@
 }
 
 .alphabet--modal .alphabet__button {
+  border-color: $cloudy-blue;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 500;
@@ -64,6 +66,17 @@
     background-color: $white;
     text-transform: uppercase;
     margin: -2px -2px -1px -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border-radius: 4px;
+    margin: 0 12px 10px 0;
+    text-align: center;
+    width: 60px;
+    height: 72px;
+    color: $dark-slate-blue;
+    font-weight: 500;
   }
 }
 
@@ -110,7 +123,6 @@
   }
 }
 
-
 .alphabet__list {
   list-style: none;
   padding: 0;
@@ -127,8 +139,9 @@
   border-color: $cloudy-blue;
   background-color: $pale-grey;
   color: $dark-slate-blue;
-}
 
-.alphabet--modal .alphabet__button {
-  border-color: $cloudy-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $dark-slate-blue;
+    color: $white;
+  }
 }

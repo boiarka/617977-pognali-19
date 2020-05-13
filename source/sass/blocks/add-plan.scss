@@ -11,6 +11,8 @@
 
   @media (min-width: $desktop-width) {
     border-radius: 60px 60px 0 0;
+    padding-top: 56px;
+    padding-bottom: 63px;
   }
 }
 
@@ -23,6 +25,10 @@
 
   @media (min-width: $tablet-width) {
     @include extra-container();
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container();
   }
 }
 
@@ -42,6 +48,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
 }
 
 .add-plan__form {

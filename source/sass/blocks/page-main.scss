@@ -142,6 +142,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .page-main__plans {
@@ -151,6 +155,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 56px;
     padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 47px;
   }
 }
 

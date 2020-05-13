@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     padding: 24px 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0;
+  }
 }
 
 .calendar-nav__button {
@@ -27,6 +31,11 @@
   @media (min-width: $tablet-width) {
     width: 15px;
     height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 34px;
   }
 }
 
@@ -47,5 +56,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }

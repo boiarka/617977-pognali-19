@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    width: 50%;
   }
 }
 
@@ -20,6 +21,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -38,6 +44,10 @@
   font-weight: 500;
   color: $dark-slate-blue;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: 2.3px;
+  }
 }
 
 .counter-control__text {
@@ -48,6 +58,9 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 50px;
+    margin-right: 12px;
+    margin-left: 38px;
   }
 }
 
@@ -69,6 +82,8 @@
 
   @media (min-width: $desktop-width) {
     width: 181px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 

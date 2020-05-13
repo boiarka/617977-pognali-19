@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 163px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 270px;
+  }
 }
 
 .choose-country::after {
@@ -92,6 +96,10 @@
     height: 15px;
     right: -42px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: -61px;
+  }
 }
 
 .choose-country__close {
@@ -111,6 +119,10 @@
     top: 54%;
     right: -22px;
     transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -14px;
   }
 }
 
@@ -141,5 +153,9 @@
   @media (min-width: $tablet-width) {
     top: 40px;
     right: 169px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 276px;
   }
 }

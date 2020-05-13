@@ -25,6 +25,12 @@
     padding-bottom: 8px;
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-left: 16px;
+    padding-bottom: 20px;
+  }
 }
 
 .days-table__day--weekend {
@@ -39,12 +45,17 @@
   @media (min-width: $tablet-width) {
     height: 69px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 70px;
+  }
 }
 
 .days-table__button {
   border: none;
   padding: 0;
   font-family: inherit;
+  box-sizing: border-box;
   font-size: 14px;
   color: $pale-grey-two;
   display: flex;
@@ -53,7 +64,6 @@
   width: 100%;
   height: 30px;
   background-color: $white;
-  text-transform: uppercase;
   z-index: 1;
   position: relative;
   cursor: pointer;
@@ -62,6 +72,14 @@
     width: 100%;
     height: 100%;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    justify-content: flex-start;
+    height: 70px;
+    padding-left: 15px;
+    padding-bottom: 25px;
   }
 }
 
@@ -97,4 +115,34 @@
   @media (min-width: $tablet-width) {
     border-width: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.days-table--mobile-hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+}
+
+.days-table--month {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding-left: 8px;
+  }
+}
+
+.days-table__info {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  letter-spacing: 2px;
 }

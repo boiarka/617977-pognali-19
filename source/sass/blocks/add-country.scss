@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding-right: 163px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 270px;
+  }
 }
 
 .add-country__button {
@@ -68,5 +72,10 @@
     width: 15px;
     height: 15px;
     right: -41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -60px;
+    top: 47%;
   }
 }

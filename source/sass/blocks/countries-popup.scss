@@ -13,6 +13,10 @@
     top: 72px;
     width: calc(100% + 43px);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .countries-popup--opened {
@@ -38,6 +42,10 @@
     border-left: 1px solid $cloudy-blue;
     padding: 33px 26px 33px 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+  }
 }
 
 .countries-popup__list {
@@ -52,5 +60,9 @@
 .countries-popup__alphabet {
   @media (min-width: $tablet-width) {
     padding: 36px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 28px 23px;
   }
 }

@@ -10,7 +10,7 @@
 
 .user-profile__content {
   @include container();
-
+  position: relative;
   padding-top: 2px;
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +19,11 @@
   @media (min-width: $tablet-width) {
     @include extra-container();
     padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container();
+    padding-top: 52px;
   }
 }
 
@@ -48,6 +53,9 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
+    position: absolute;
+    top: -169px;
+    right: 390px;
   }
 }
 
@@ -61,6 +69,15 @@
     border-radius: 10px;
     margin-right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -210px;
+    right: 155px;
+    border-radius: 0;
+  }
 }
 
 .user-profile__button {
@@ -73,6 +90,21 @@
     margin-top: 53px;
     border-radius: 10px;
     height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 47px;
+    position: absolute;
+    top: -73px;
+    right: 155px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.user-profile__text {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -90,7 +122,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    margin: 0;
+    margin-left: 64px;
+    width: 730px;
+    height: 94px;
   }
 }
 
@@ -114,6 +149,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 384px;
+    height: 94px;
+    padding-top: 25px;
     order: 0;
   }
 }
@@ -136,6 +174,12 @@
     font-size: 20px;
     top: auto;
     bottom: -25px;
+  }
+}
+
+.user-profile__title--left {
+  @media (min-width: $desktop-width) {
+    left: 63px;
   }
 }
 

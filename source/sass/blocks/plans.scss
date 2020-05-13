@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     @include extra-container();
   }
+
+  @media (min-width: $desktop-width) {
+    @include container();
+  }
 }
 
 .plans__title {
@@ -31,5 +35,15 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+  }
+}
+
+.plans__card {
+  @media (min-width: $desktop-width) {
+    margin-left: 64px;
   }
 }

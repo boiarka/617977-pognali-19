@@ -20,6 +20,10 @@
     background-color: $light-blue-grey-five;
     z-index: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 225px;
+  }
 }
 
 .route-section__item {
