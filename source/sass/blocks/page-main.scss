@@ -138,11 +138,20 @@
 .page-main__user-profile {
   padding-top: 20px;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+  }
 }
 
 .page-main__plans {
   padding-top: 30px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 68px;
+  }
 }
 
 .page-main__promo {

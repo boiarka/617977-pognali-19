@@ -2,6 +2,11 @@
   font-size: 18px;
   font-weight: 500;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
 
 .textarea__title {
@@ -11,10 +16,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: -0.1px;
+  }
 }
 
 .textarea__main {
   margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-right: 120px;
@@ -30,6 +43,13 @@
   border-radius: 4px;
   border: 1px solid $cloudy-blue;
   padding: 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1.2;
+    height: 142px;
+    font-size: 20px;
+    padding: 16px 18px;
+  }
 }
 
 .textarea__field::placeholder {
@@ -39,6 +59,10 @@
 .textarea__title--connected {
   padding-left: 10px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .textarea__title--connected::after {
@@ -53,7 +77,8 @@
 
   @media (min-width: $tablet-width) {
     left: auto;
-    right: -28px;
+    top: 16px;
+    right: -35px;
     width: 15px;
     height: 15px;
   }

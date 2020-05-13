@@ -2,6 +2,10 @@
   display: flex;
   position: relative;
   height: 42px;
+
+  @media (min-width: $tablet-width) {
+    height: 70px;
+  }
 }
 
 .added-country::after {
@@ -31,9 +35,9 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
-    padding-left: 26px;
-    padding-right: 52px;
-    margin-left: 26px;
+    padding-left: 25px;
+    padding-right: 40px;
+    margin-left: 28px;
   }
 }
 
@@ -60,6 +64,7 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
+    top: 47%;
     width: 15px;
     height: 15px;
   }
@@ -80,6 +85,7 @@
     height: auto;
     background-color: transparent;
     top: 50%;
+    right: -22px;
     transform: translate(-50%, -50%);
   }
 }
@@ -113,6 +119,14 @@
   white-space: nowrap;
   overflow-x: hidden;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 24px 0;
+    letter-spacing: 2.4px;
+    font-size: 20px;
+    height: 70px;
+    margin: 0;
+  }
 }
 
 .added-country__button::before {
@@ -138,4 +152,9 @@
   background-repeat: no-repeat;
   z-index: 2;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    background-size: 17px 9px, 100% 100%;
+    background-position: 20% 50%;
+  }
 }

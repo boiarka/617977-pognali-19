@@ -3,8 +3,19 @@
   display: flex;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
+.dots-list__item {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+  }
+}
 
 .dots-list__button {
   padding: 0;
@@ -15,6 +26,10 @@
   border-radius: 50%;
   margin-right: 15px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .dots-list__button--active {

@@ -51,6 +51,22 @@
   }
 }
 
+.alphabet--modal .alphabet__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid $bluey-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 70px;
+    background-color: $white;
+    text-transform: uppercase;
+    margin: -2px -2px -1px -1px;
+  }
+}
+
 .alphabet__item {
   padding: 1px;
 

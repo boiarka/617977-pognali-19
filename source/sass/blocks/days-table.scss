@@ -17,6 +17,14 @@
   font-weight: normal;
   padding-bottom: 12px;
   width: 12.5%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 4px;
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
 }
 
 .days-table__day--weekend {
@@ -27,6 +35,10 @@
   width: 12.5%;
   border: 1px solid $pale-grey-two;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 69px;
+  }
 }
 
 .days-table__button {
@@ -47,7 +59,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    height: 70px;
+    width: 100%;
+    height: 100%;
     font-size: 20px;
   }
 }
@@ -83,7 +96,5 @@
 
   @media (min-width: $tablet-width) {
     border-width: 4px;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
   }
 }

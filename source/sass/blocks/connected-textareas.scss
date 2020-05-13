@@ -4,7 +4,9 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 50px;
+    padding-top: 40px;
+    padding-right: 32px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +30,8 @@
   @media (min-width: $tablet-width) {
     width: 3px;
     left: auto;
-    right: 28px;
+    right: 3px;
+    top: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,9 +50,7 @@
   background-color: $dark-slate-blue;
 
   @media (min-width: $tablet-width) {
-    width: 3px;
-    left: auto;
-    right: 28px;
+    display: none;
   }
 
   @media (min-width: $desktop-width) {

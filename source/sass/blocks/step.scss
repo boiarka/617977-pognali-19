@@ -5,14 +5,33 @@
   border: none;
   padding: 25px 25px 21px 25px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 30px;
+    padding: 48px 43px 55px 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 60px;
+  }
 }
 
 .step-two {
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 39px;
+    padding-bottom: 50px;
+  }
 }
 
 .step-three {
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    padding-bottom: 50px;
+  }
 }
 
 .step__top {
@@ -36,6 +55,10 @@
   font-size: 20px;
   font-weight: bold;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
 }
 
 .step__title-name {
@@ -47,17 +70,30 @@
   margin: 14px 0 0 0;
   color: $page-text-dark;
   line-height: 1.38;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 35px;
+    padding-right: 20px;
+  }
 }
 
 
-.step__checkbox {
+.step__section-checkbox {
   padding: 6px 15px 6px 38px;
   margin-bottom: 19px;
   margin-top: 18px;
   order: 1;
 
   @media (min-width: $tablet-width) {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $dark-slate-blue;
     order: 0;
+    margin-top: 22px;
+    margin-bottom: 23px;
+    padding-bottom: 34px;
     border-bottom: 1px solid $light-blue-grey-five;
   }
 
@@ -72,10 +108,28 @@
   padding-top: 14px;
   padding-bottom: 10px;
   letter-spacing: 0.2px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 73px;
+    padding-left: 33px;
+    margin-top: 0;
+    font-size: 24px;
+    text-transform: initial;
+    width: 285px;
+    height: 81px;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: normal;
+  }
 }
 
 .step__button-next {
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: auto;
+  }
 }
 
 .step__button-send {
@@ -84,11 +138,22 @@
 
 .step_calendar {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 57px;
+    margin-bottom: 46px;
+  }
 }
 
 .step__inputs {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    padding-top: 23px;
+    border-top: 1px solid $light-blue-grey-five;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -108,10 +173,25 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
   }
 }
 
 
 .step__selected-countries {
   margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+}
+
+
+.step__add-country {
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+    margin-bottom: 39px;
+  }
 }
