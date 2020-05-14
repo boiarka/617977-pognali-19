@@ -133,6 +133,11 @@
     padding-top: 48px;
     padding-bottom: 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 57px;
+  }
 }
 
 .page-main__user-profile {

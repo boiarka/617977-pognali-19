@@ -6,8 +6,23 @@
   z-index: 6;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: 289px 575px;
+    background-position: 439px 80px;
+
     @include borderBottomRadius(60px);
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: 1091px 88px;
+  }
+
 }
 
 .directions::before {
@@ -33,6 +48,25 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+}
+
+.directions__content::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 334px;
+    width: 141px;
+    height: 141px;
+    z-index: -1;
+    background-color: $pale-grey-four;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -72px;
+    left: 60px;
   }
 }
 
@@ -106,10 +140,25 @@
 
 .directions-cards {
   padding-top: 18px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-right: 30px;
     width: 50%;
+  }
+}
+
+.directions-cards::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  background-image: linear-gradient(to top, $pale-grey, transparent);
+  z-index: 5;
+
+  @media (min-width: $desktop-width) {
+    bottom: 96px;
   }
 }
