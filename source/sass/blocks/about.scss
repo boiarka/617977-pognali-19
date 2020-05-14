@@ -20,8 +20,7 @@
   padding-top: 72px;
   padding-bottom: 63px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/about-mobile@2x.png");
   }
 
@@ -33,8 +32,7 @@
     padding-top: 138px;
     padding-bottom: 88px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about-tablet@2x.png");
     }
   }
@@ -45,8 +43,7 @@
     padding-top: 133px;
     padding-bottom: 163px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/about-desktop@2x.png");
     }
   }

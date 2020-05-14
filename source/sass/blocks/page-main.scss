@@ -66,35 +66,6 @@
   }
 }
 
-.page-main__directions {
-  padding-top: 72px;
-  padding-bottom: 117px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 206px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 161px;
-    padding-bottom: 53px;
-  }
-}
-
-.page-main__travelers {
-  padding-top: 72px;
-  padding-bottom: 102px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 141px;
-    padding-bottom: 239px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 116px;
-    padding-bottom: 124px;
-  }
-}
-
 .page-main__profile {
   padding-top: 52px;
   padding-bottom: 37px;

@@ -16,8 +16,7 @@
     background-size: 1800px 750px;
     border-radius: 0 0 60px 60px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/globe-back-desktop@2x.jpg");
     }
   }
@@ -29,8 +28,7 @@
   background-position: 79px 127px, center -96px;
   background-size: 192px 256px, 320px 569px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
   }
 
@@ -41,8 +39,7 @@
     background-position: 284px 244px, center 220px;
     background-size: 372px 448px, 1479px 612px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
     }
   }
@@ -59,8 +56,7 @@
     background-size: 431px 640px;
     padding-bottom: 122px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/traveller-illustration-desktop@2x.png");
     }
   }
