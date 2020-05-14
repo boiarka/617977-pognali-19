@@ -83,7 +83,6 @@
   }
 }
 
-
 .days-table__button:hover {
   border: 1px solid $dark-slate-blue;
   z-index: 2;
@@ -101,6 +100,24 @@
 
 .days-table__button--active {
   position: relative;
+}
+
+.days-table__button:hover::before {
+  content: "";
+  border: 2px solid $orange-red;
+  border-radius: 2px;
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+
+  @media (min-width: $tablet-width) {
+    border-width: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
 }
 
 

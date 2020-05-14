@@ -82,12 +82,13 @@
 
 .user-profile__button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 16px;
+  background-color: $pale-grey-two;
 
   @media (min-width: $tablet-width) {
     letter-spacing: 1.4px;
     font-size: 20px;
-    margin-top: 53px;
+    margin-top: 49px;
     border-radius: 10px;
     height: 60px;
   }
@@ -96,10 +97,18 @@
     width: 190px;
     height: 47px;
     position: absolute;
-    top: -73px;
+    top: -69px;
     right: 155px;
     border-radius: 0 0 10px 10px;
   }
+}
+
+.user-profile__button:hover {
+  background-color: $light-blue-grey;
+}
+
+.user-profile__button:active {
+  color: $dark-slate-blue-30;
 }
 
 .user-profile__text {
@@ -110,23 +119,50 @@
 
 .user-profile__tags {
   width: 100%;
-  border: 1px solid $cloudy-blue;
   position: relative;
-  border-radius: 10px;
   margin-top: 32px;
-  padding: 19px 22px 15px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
-    padding: 30px 36px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 64px;
     width: 730px;
-    height: 94px;
+    height: 85px;
   }
+}
+
+.user-profile__textarea-tags {
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  padding: 19px 22px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.38;
+  color: $greyish-brown-60;
+  border: 1px solid $cloudy-blue;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 30px 36px 0;
+  }
+}
+
+.user-profile__textarea-tags:hover {
+  border-color: $cloudy-blue-two;
+}
+
+.user-profile__textarea-tags:focus {
+  border-color: $dark-two;
+  color: $greyish-brown;
 }
 
 .user-profile__transport {

@@ -17,6 +17,11 @@
   }
 }
 
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+}
+
 .header-contacts__icon {
   width: 45px;
   height: 45px;
@@ -26,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 67px;
@@ -40,15 +46,33 @@
   }
 }
 
+.header-contacts__icon:active .header-contacts__svg {
+  @media (min-width: $desktop-width) {
+    opacity: 0.3;
+  }
+}
+
 .header-contacts__icon--mango {
   @media (min-width: $desktop-width) {
     background-color: $mango;
   }
 }
 
+.header-contacts__icon--mango:hover {
+  @media (min-width: $desktop-width) {
+    background-color: $dusty-orange;
+  }
+}
+
 .header-contacts__icon--mangotwo {
   @media (min-width: $desktop-width) {
     background-color: $mango-two;
+  }
+}
+
+.header-contacts__icon--mangotwo:hover {
+  @media (min-width: $desktop-width) {
+    background-color: $mango;
   }
 }
 
@@ -66,7 +90,7 @@
   }
 }
 
-.header-contacts__link {
+.header-contacts__link-text {
   margin-top: 5px;
   color: $dark-blue-grey;
 
