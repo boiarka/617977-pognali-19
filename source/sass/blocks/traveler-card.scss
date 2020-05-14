@@ -4,7 +4,7 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 11px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -105,12 +105,19 @@
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 14px;
   }
 }
 
 .traveler-card__transport {
-  margin-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.traveler-card__transport li {
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
+    width: 34px;
+  }
 }
 
 .traveler-card__image {

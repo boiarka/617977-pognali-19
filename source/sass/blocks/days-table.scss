@@ -122,7 +122,7 @@
   }
 }
 
-.days-table--mobile-hidden {
+.days-table .days-table__day-letter {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -130,7 +130,7 @@
   }
 }
 
-.days-table--month {
+.days-table__month {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -140,8 +140,13 @@
 }
 
 .days-table__info {
-  position: absolute;
-  bottom: 12px;
-  left: 15px;
-  letter-spacing: 2px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    letter-spacing: 2px;
+  }
 }

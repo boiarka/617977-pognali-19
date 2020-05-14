@@ -1,6 +1,7 @@
 $white: #ffffff;
 $dark-two: #161c35;
 $dark-blue-grey: #192144;
+$dark-blue-grey-four: #141b3b;
 $dark-slate-blue: #1d2e5b;
 $mango: #ff8d30;
 $mango-two: #ffbd30;
@@ -50,6 +51,9 @@ $tabletExtraPadding: 75px;
 $desktopExtraPadding: 130px;
 
 $extraPadding: 25px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @mixin container() {
   width: 100%;

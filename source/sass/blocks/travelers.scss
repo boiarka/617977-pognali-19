@@ -1,10 +1,5 @@
 .travelers {
   background-color: $dark-blue-grey;
-  background-image:
-    url("../img/smolov-back-desktop@1x.png"),
-    url("../img/rogovaya-back-mobile@1x.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 150px 40px, -10px 310px;
   position: relative;
   z-index: 5;
 
@@ -26,18 +21,74 @@
 .travelers__content {
   @include container();
 
+  padding-top: 72px;
+  padding-bottom: 102px;
+  background-image:
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 150px 40px, -10px 310px;
+  background-size: 143px 143px, 71px 71px;
   display: flex;
   flex-direction: column;
   position: relative;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/smolov-back-desktop@2x.png"),
+      url("../img/rogovaya-back-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     @include extra-container();
+
+    padding-top: 141px;
+    padding-bottom: 239px;
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-size: 143px 143px, 285px 285px;
+    background-position: 40px 427px, 408px 81px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include container();
+
+    padding-top: 116px;
+    padding-bottom: 124px;
     flex-direction: row;
     justify-content: space-between;
+    background-position: 547px 132px, 191px 385px;
+  }
+}
+
+.travelers__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 113px;
+  height: 132px;
+  z-index: -1;
+  background-color: $dark-blue-grey-four;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+    height: 213px;
+    left: 40px;
+    top: -61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 69px;
+    left: 60px;
   }
 }
 
@@ -98,13 +149,13 @@
   order: 2;
   position: absolute;
   width: calc(100% - 50px);
-  bottom: -72px;
+  bottom: 30px;
   left: 25px;
   right: 25px;
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 150px);
-    bottom: -150px;
+    bottom: 89px;
     left: 75px;
     margin-top: 71px;
   }
