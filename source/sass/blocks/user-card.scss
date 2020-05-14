@@ -22,6 +22,12 @@
   }
 }
 
+.user-card__photo picture {
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
+}
+
 .user-card__photo {
   display: flex;
   position: absolute;
@@ -42,7 +48,7 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    width: 30%;
+    width: 100%;
     height: 100%;
     border-radius: 20px 0 0 20px;
   }
@@ -408,7 +414,6 @@
   width: 26px;
   height: 18px;
   margin-right: 15px;
-  background-color: blue;
 
   @media (min-width: $tablet-width) {
     width: 35px;
@@ -420,6 +425,11 @@
   @media (min-width: $desktop-width) {
     margin-right: 19px;
   }
+}
+
+.user-card__flag-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .user-card__countries-wrapper {
