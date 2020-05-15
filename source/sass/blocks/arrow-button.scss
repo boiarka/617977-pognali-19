@@ -29,6 +29,15 @@
   }
 }
 
+.arrow-button:hover {
+  background-color: $mango-two;
+  cursor: pointer;
+}
+
+.arrow-button:active {
+  color: $dark-slate-blue-30;
+}
+
 .arrow-button::after {
   width: 10px;
   height: 14px;
@@ -42,6 +51,10 @@
   @media (min-width: $tablet-width) {
     right: 35px;
   }
+}
+
+.arrow-button:active::after {
+  opacity: 0.3;
 }
 
 .arrow-button--bordered {

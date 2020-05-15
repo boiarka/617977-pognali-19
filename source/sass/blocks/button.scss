@@ -15,14 +15,22 @@
   line-height: 1;
 }
 
-.button--gray {
+.button:hover {
+  background-color: $mango-two;
+  cursor: pointer;
+}
+
+.button--gray,
+.button--gray:hover {
   background-color: $button-gray-color;
 }
 
-.button--white {
+.button--white,
+.button--white:hover {
   background-color: $white;
 }
 
-.button--nobg {
+.button--nobg,
+.button--nobg:hover {
   background-color: transparent;
 }

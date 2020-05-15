@@ -102,7 +102,7 @@
   padding-top: 19px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -211,7 +211,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 39px;
+    padding-top: 100px;
     padding-left: 126px;
     padding-right: 123px;
     padding-bottom: 55px;
@@ -219,7 +219,7 @@
 }
 
 .page-header__title {
-  margin: 27px 25px 0 0;
+  margin: 31px 25px 0 0;
   padding-bottom: 10px;
   display: inline-block;
   font-size: 36px;
@@ -230,6 +230,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    margin-top: 18px;
   }
 }
 
@@ -256,7 +257,7 @@
   font-weight: bold;
   color: $white;
   padding-right: 61px;
-  padding-top: 22px;
+  padding-top: 13px;
 }
 
 .page-header__link-home {

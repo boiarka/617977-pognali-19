@@ -27,6 +27,7 @@
   font-size: 30px;
   font-weight: 500;
   color: $dark-blue-grey;
+  cursor: default;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -39,4 +40,13 @@
     color: $white;
     text-transform: uppercase;
   }
+}
+
+.site-list__link:hover {
+  cursor: pointer;
+  color: $light-gold;
+}
+
+.site-list__link:active {
+  color: $light-gold-30;
 }

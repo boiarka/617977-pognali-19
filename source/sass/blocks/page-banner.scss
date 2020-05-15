@@ -26,7 +26,7 @@
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 79px 127px, center -96px;
-  background-size: 192px 256px, 320px 569px;
+  background-size: 192px 256px, 100% 569px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
