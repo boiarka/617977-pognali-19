@@ -56,3 +56,13 @@
     margin-top: 36px;
   }
 }
+
+.search__button:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 21px 0 $black-08;
+}
+
+.search__button:active {
+  color: $black-30;
+  background-color: $macaroni-and-cheese;
+}

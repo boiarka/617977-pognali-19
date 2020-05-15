@@ -56,6 +56,14 @@
   }
 }
 
+.textarea__field:hover {
+  border-color: $blue-grey;
+}
+
+.textarea__field:active {
+  border-color: $dark-two;
+}
+
 .textarea__field::placeholder {
   color: $greyish-brown-30;
 }

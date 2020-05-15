@@ -24,6 +24,23 @@
   }
 }
 
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list__link:hover {
+  color: $mango-two;
+}
+
+.contacts-list__link:active {
+  opacity: 0.3;
+}
+
+.contacts-list__link:hover .contacts-list__svg {
+  fill: $mango-two;
+}
+
 .contacts-list__icon {
   width: 45px;
   height: 45px;

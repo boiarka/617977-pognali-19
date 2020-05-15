@@ -20,6 +20,10 @@
   cursor: pointer;
 }
 
+.button:active {
+  color: $black-30;
+}
+
 .button--gray,
 .button--gray:hover {
   background-color: $button-gray-color;

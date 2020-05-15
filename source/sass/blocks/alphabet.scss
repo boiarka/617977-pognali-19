@@ -135,6 +135,18 @@
   }
 }
 
+.alphabet--modal .alphabet__button {
+  @media (min-width: $desktop-width) {
+    border: 1px solid $cloudy-blue;
+  }
+}
+
+.alphabet--modal .alphabet__button:hover {
+  @media (min-width: $desktop-width) {
+    border-color: $bluey-grey;
+  }
+}
+
 .alphabet--modal .alphabet__button--active {
   border-color: $cloudy-blue;
   background-color: $pale-grey;
@@ -143,5 +155,11 @@
   @media (min-width: $tablet-width) {
     background-color: $dark-slate-blue;
     color: $white;
+  }
+}
+
+.alphabet--modal .alphabet__button--active:hover {
+  @media (min-width: $desktop-width) {
+    border-color: $pale-grey;
   }
 }

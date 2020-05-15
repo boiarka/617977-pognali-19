@@ -14,6 +14,14 @@
   }
 }
 
+.copyright__link:hover {
+  opacity: 0.6;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 .copyright__text {
   padding: 0;
   margin: 0;

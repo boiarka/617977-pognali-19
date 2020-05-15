@@ -54,6 +54,14 @@
   text-decoration: underline;
 }
 
+.email-form__link:hover {
+  color: $mango;
+}
+
+.email-form__link:active {
+  opacity: 0.3;
+}
+
 .email-form__input {
   margin-top: 28px;
   margin-bottom: 30px;

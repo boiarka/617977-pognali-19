@@ -103,6 +103,12 @@
 }
 
 .choose-country__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
   border: none;
   background-color: $pale-grey;
   width: 21px;
@@ -117,15 +123,23 @@
     height: auto;
     background-color: transparent;
     top: 54%;
-    right: -22px;
+    right: -11px;
+    opacity: 0.7;
     transform: translate(-50%, -50%);
   }
 
   @media (min-width: $desktop-width) {
-    right: -14px;
+    right: -31px;
+    opacity: 1;
   }
 }
 
+.choose-country__close svg {
+  @media (min-width: $desktop-width) {
+    fill: $black;
+    opacity: 0.3;
+  }
+}
 
 .choose-country--active .choose-country__button {
   background-color: $dark-slate-blue;
@@ -149,13 +163,36 @@
   background-color: transparent;
   top: 9px;
   right: 6px;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     top: 40px;
-    right: 169px;
+    right: 180px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 276px;
+    right: 285px;
   }
+}
+
+.choose-country--active .choose-country__close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.choose-country--active .choose-country__close:active {
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.choose-country--active .choose-country__close svg {
+  @media (min-width: $desktop-width) {
+    fill: $white;
+    opacity: 0.8;
+  }
+}
+
+.choose-country__button:hover {
+  cursor: pointer;
+  border-color: $bluey-grey;
 }

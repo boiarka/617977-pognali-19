@@ -7,6 +7,15 @@
   background-color: transparent;
 }
 
+.show-more:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.show-more:active {
+  opacity: 0.3;
+}
+
 .show-more__icon {
   width: 18px;
   height: 18px;

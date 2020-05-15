@@ -271,6 +271,16 @@
 .page-header__link-home {
   color: $white;
   position: relative;
+
+}
+
+.page-header__link-home:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.page-header__link-home:active {
+  opacity: 0.3;
 }
 
 .page-header__link-home::after {

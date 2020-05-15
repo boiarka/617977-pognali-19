@@ -24,6 +24,10 @@
   font-weight: bold;
 }
 
+.user-nav__link svg {
+  fill: $dark-two;
+}
+
 .user-nav__link--big {
   width: 189px;
   padding: 7px 40px 3px;

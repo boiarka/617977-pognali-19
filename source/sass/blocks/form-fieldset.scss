@@ -98,6 +98,14 @@
   }
 }
 
+.form-fieldset__toggle:hover {
+  opacity: 0.6;
+}
+
+.form-fieldset__toggle:active {
+  opacity: 0.3;
+}
+
 .form-fieldset__toggle::after {
   content: "";
   position: absolute;

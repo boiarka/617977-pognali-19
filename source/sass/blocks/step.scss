@@ -178,6 +178,16 @@
   }
 }
 
+.step__button-next:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.step__button-next:active {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
 .step__button-next::after {
   @media (min-width: $tablet-width) {
     transform: rotate(180deg);
@@ -286,4 +296,9 @@
   font-size: 20px;
   color: $black-60;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.step__nav-button:hover {
+  color: $dark-slate-blue;
 }

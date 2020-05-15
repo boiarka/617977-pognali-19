@@ -14,7 +14,6 @@
 }
 
 .range-control__inputs {
-  border: 1px solid $cloudy-blue;
   border-radius: 5px;
   background-color: $white;
   display: flex;
@@ -47,21 +46,34 @@
     width: 75px;
     height: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .range-control__label {
   width: 50%;
   position: relative;
+  border: 1px solid $cloudy-blue;
+
 }
 
-.range-control__label--min::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background-color: $cloudy-blue;
+.range-control__label:hover {
+  border: 1px solid $blue-grey;
+}
+
+.range-control__label:active {
+  border: 1px solid $dark-two;
+}
+
+.range-control__label--min {
+  border-radius: 5px 0 0 5px;
+}
+
+.range-control__label--max {
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid $white;
 }
 
 .range-control__label--min::before {

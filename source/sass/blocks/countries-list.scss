@@ -11,5 +11,13 @@
 }
 
 .countries-list__link {
-  color: #444444;
+  color: $page-text-dark;
+}
+
+.countries-list__link:hover {
+  color: $dark-slate-blue;
+}
+
+.countries-list__link:active {
+  color: $dark-slate-blue-30;
 }
