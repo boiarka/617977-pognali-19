@@ -37,7 +37,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 110px;
+    padding-top: 88px;
     padding-left: 97px;
     padding-bottom: 75px;
     margin: 0;
@@ -90,6 +90,14 @@
 
 .main-nav--closed .main-nav__social {
   display: none;
+}
+
+.main-nav--opened .main-nav__social {
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 83px;
+  }
 }
 
 .main-nav__list {

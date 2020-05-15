@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    overflow: hidden;
   }
 }
 
@@ -31,6 +32,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,4 +51,45 @@
 
 .site-list__link:active {
   color: $light-gold-30;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+
+  .site-list__link span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .site-list__link:hover span,
+  .site-list__link:focus span {
+    transform: translateY(-100%);
+  }
+}
+
+.site-list__link--inactive:hover,
+.site-list__link--inactive:active {
+  transition: none;
+  transform: translateY(-10%);
+  cursor: default;
+  color: $dark-blue-grey;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
+.site-list__link--inactive span::before {
+  display: none;
+}
+
+.site-list__link--inactive:hover span,
+.site-list__link--inactive:focus span {
+  transform: translateY(0);
 }

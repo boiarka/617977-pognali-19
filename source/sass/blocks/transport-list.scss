@@ -81,6 +81,10 @@
   height: 100%;
 }
 
+.transport-list__item:hover {
+  box-shadow: 0 2px 10px 0 $black-08;
+}
+
 .transport-list__checkbox:hover .transport-list__icon {
   opacity: 0.3;
 }
@@ -93,12 +97,12 @@
   opacity: 0.1;
 }
 
-.transport-list__input:checked + .transport-list__icon {
+.transport-list__input:checked+.transport-list__icon {
   opacity: 1;
   fill: $dark-slate-blue;
 }
 
-.transport-list__input:checked:hover + .transport-list__icon {
+.transport-list__input:checked:hover+.transport-list__icon {
   opacity: 0.7;
 }
 
