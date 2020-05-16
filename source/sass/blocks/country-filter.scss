@@ -133,6 +133,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 62px;
+    margin-left: 0;
   }
 }
 
@@ -158,6 +159,10 @@
     right: 58%;
     width: 19px;
     height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 54%;
   }
 }
 
@@ -190,6 +195,7 @@
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: inherit;
   color: $dark-blue-grey;
   line-height: 1;
   display: flex;
