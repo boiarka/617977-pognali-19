@@ -38,6 +38,7 @@
   color: dark-slate-blue-30;
 }
 
+
 .arrow-button::after {
   width: 10px;
   height: 14px;
@@ -52,10 +53,6 @@
   @media (min-width: $tablet-width) {
     right: 15px;
   }
-}
-
-.arrow-button:active {
-  color: $dark-slate-blue-30;
 }
 
 .arrow-button:active::after {

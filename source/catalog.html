@@ -16,7 +16,12 @@
       <div class="page-header__wrapper">
         <a href="/" class="page-header__logo">
           <picture>
-            <source media="(min-width: 1200px)"
+            <source media="(min-width: 1440px)"
+              srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x" type="image/webp">
+            <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1440px)"
               srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)"
               srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
@@ -570,58 +575,32 @@
                 <li class="transport-list__item">
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
-                    <svg class="transport-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21"
-                      style="enable-background:new 0 0 19 21" xml:space="preserve">
-                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-fly"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
-                    <svg class="transport-list__icon" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21"
-                      style="enable-background:new 0 0 17 21" xml:space="preserve">
-                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bus"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
-                    <svg class="transport-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21"
-                      style="enable-background:new 0 0 24 21" xml:space="preserve">
-                      <path
-                        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bike"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="transport-list__item">
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
-                    <svg class="transport-list__icon" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
-                      style="enable-background:new 0 0 20 21" xml:space="preserve">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-z" />
-                      </g>
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-foot"></use>
                     </svg>
                   </label>
                 </li>
@@ -666,6 +645,11 @@ z" />
         <article class="user-card">
           <div class="user-card__photo">
             <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x"
                 type="image/jpg">
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x"
@@ -705,19 +689,25 @@ z" />
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-sri-lanka.svg" alt="флаг Шри-Ланка">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
+                    </svg>
                   </span>
                   Шри-ланка
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-thailand.svg" alt="флаг Таиланд">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-thailand"></use>
+                    </svg>
                   </span>
                   Таиланд
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-seychelles.svg" alt="флаг Сейшелы">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-seychelles"></use>
+                    </svg>
                   </span>
                   Сейшелы
                 </li>
@@ -732,49 +722,23 @@ z" />
 
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21" xml:space="preserve">
-                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21"
-                      style="enable-background:new 0 0 17 21" xml:space="preserve">
-                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21"
-                      style="enable-background:new 0 0 24 21" xml:space="preserve">
-                      <path
-                        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
-                      style="enable-background:new 0 0 20 21" xml:space="preserve">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-  z" />
-                      </g>
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -804,6 +768,11 @@ z" />
         <article class="user-card">
           <div class="user-card__photo">
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x"
                 type="image/jpg">
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x"
@@ -842,13 +811,17 @@ z" />
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-belgium.svg" alt="флаг Бельгия">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-belgium"></use>
+                    </svg>
                   </span>
                   Бельгия
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-czech.svg" alt="флаг Чехия">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
+                    </svg>
                   </span>
                   Чехия
                 </li>
@@ -864,49 +837,23 @@ z" />
 
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21" xml:space="preserve">
-                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="svg2103"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21" xml:space="preserve">
-                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21"
-                      style="enable-background:new 0 0 24 21" xml:space="preserve">
-                      <path
-                        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Icons_Run"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21" xml:space="preserve">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-  z" />
-                      </g>
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -937,6 +884,11 @@ z" />
         <article class="user-card">
           <div class="user-card__photo">
             <picture>
+              <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x"
                 type="image/jpg">
               <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x"
@@ -975,19 +927,25 @@ z" />
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-usa.svg" alt="флаг США">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-usa"></use>
+                    </svg>
                   </span>
                   США
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-australia.svg" alt="флаг Австралия">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-australia"></use>
+                    </svg>
                   </span>
                   Австралия
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-dominica.svg" alt="флаг Доминикана">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-dominicana"></use>
+                    </svg>
                   </span>
                   Доминикана
                 </li>
@@ -1002,49 +960,23 @@ z" />
 
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21" xml:space="preserve">
-                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21"
-                      style="enable-background:new 0 0 17 21" xml:space="preserve">
-                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21" xml:space="preserve">
-                      <path
-                        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
-                      style="enable-background:new 0 0 20 21" xml:space="preserve">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-  z" />
-                      </g>
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -1074,6 +1006,11 @@ z" />
         <article class="user-card">
           <div class="user-card__photo">
             <picture>
+              <source media="(min-width: 1440px)"
+                srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)"
                 srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x" type="image/jpg">
               <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x"
@@ -1111,13 +1048,17 @@ z" />
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-united-kingdom.svg" alt="флаг Великобритания">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-uk"></use>
+                    </svg>
                   </span>
                   Великобритания
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <img class="user-card__flag-icon" src="img/flag-germany.svg" alt="флаг Германия">
+                    <svg class="user-card__flag-icon" width="35" height="24">
+                      <use xlink:href="img/sprite.svg#flag-germany"></use>
+                    </svg>
                   </span>
                   Германия
                 </li>
@@ -1132,49 +1073,23 @@ z" />
 
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21" xml:space="preserve">
-                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-  c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-  C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-  c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-  c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-  c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-  c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon transport-list__icon--active" version="1.1" id="svg2103"
-                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21" xml:space="preserve">
-                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-  c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-  C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-  H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                    <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21"
-                      style="enable-background:new 0 0 24 21" xml:space="preserve">
-                      <path
-                        d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5 S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2 l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5 l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
-                    <svg class="transport-list__icon" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21"
-                      style="enable-background:new 0 0 20 21" xml:space="preserve">
-                      <g>
-                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2" />
-                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-  C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-  c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-  c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-  z" />
-                      </g>
+                    <svg class="transport-list__icon" width="19" height="21">
+                      <use xlink:href="img/sprite.svg#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -1202,11 +1117,8 @@ z" />
         </article>
 
         <button class="all-travelers__show-more show-more" type="button">
-          <svg class="show-more__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 27"
-            style="enable-background:new 0 0 27 27" xml:space="preserve">
-            <path d="M25.5,12H15V1.5C15,0.7,14.3,0,13.5,0S12,0.7,12,1.5V12H1.5C0.7,12,0,12.7,0,13.5S0.7,15,1.5,15H12v10.5
-c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.5,12z" />
+          <svg class="show-more__icon" width="27" height="27">
+            <use xlink:href="img/sprite.svg#show-more"></use>
           </svg>
           <span class="show-more__text">Показать еще</span>
         </button>
@@ -1226,19 +1138,15 @@ c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.
           </li>
           <li class="pagination__item pagination__item--button">
             <button class="pagination-button pagination-button--left" type="button">
-              <svg class="pagination-button__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14"
-                style="enable-background:new 0 0 10 14" xml:space="preserve">
-                <polygon points="0,7.1 10,0.1 10,14 " />
+              <svg class="pagination-button__icon" width="10" height="14">
+                <use xlink:href="img/sprite.svg#pagination-left"></use>
               </svg>
             </button>
           </li>
           <li class="pagination__item">
             <button class="pagination-button pagination-button--right" type="button">
-              <svg class="pagination-button__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14"
-                style="enable-background:new 0 0 10 14" xml:space="preserve">
-                <polygon points="0,14 0,0.1 10,7.1 " />
+              <svg class="pagination-button__icon" width="10" height="14">
+                <use xlink:href="img/sprite.svg#pagination-right"></use>
               </svg>
             </button>
           </li>
@@ -1249,9 +1157,14 @@ c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.
 
   <footer class="page-footer">
     <div class="page-footer__content">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="/">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 1440px)"
+            srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x"
+            type="image/webp">
+          <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img class="page-header__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
             alt="Логотип сайта «Погнали?»">
@@ -1261,17 +1174,23 @@ c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.
       <ul class="page-footer__social socials">
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
-            <img class="social-link__icon" src="img/facebook.svg" width="11" height="21" alt="Facebook иконка">
+            <svg class="social-link__icon" width="11" height="21">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
-            <img class="social-link__icon" src="img/vk.svg" width="23" height="12" alt="VK иконка">
+            <svg class="social-link__icon" width="23" height="12">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
-            <img class="social-link__icon" src="img/instagram.svg" width="18" height="18" alt="Instagram иконка">
+            <svg class="social-link__icon" width="18" height="18">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -1279,7 +1198,9 @@ c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5V15h10.5c0.8,0,1.5-0.7,1.5-1.5S26.3,12,25.
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="#">
-          <img class="copyright__icon" src="img/htmlacademy.svg" width="27" height="34" alt="Иконка академии">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

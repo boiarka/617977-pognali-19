@@ -23,8 +23,11 @@
 }
 
 .transport-list__icon {
+  padding: 6px;
+  display: block;
+  opacity: 0.15;
   width: 100%;
-  height: 21px;
+  height: 100%;
 }
 
 .transport-list--vertical .transport-list__icon {
@@ -71,13 +74,6 @@
   background-color: $pale-grey;
 }
 
-.transport-list__icon {
-  padding: 6px;
-  display: block;
-  opacity: 0.15;
-  height: 100%;
-}
-
 .transport-list__checkbox {
   display: flex;
   justify-content: center;
@@ -100,12 +96,12 @@
   opacity: 0.1;
 }
 
-.transport-list__input:checked+.transport-list__icon {
+.transport-list__input:checked + .transport-list__icon {
   opacity: 1;
   fill: $dark-slate-blue;
 }
 
-.transport-list__input:checked:hover+.transport-list__icon {
+.transport-list__input:checked:hover + .transport-list__icon {
   opacity: 0.7;
 }
 

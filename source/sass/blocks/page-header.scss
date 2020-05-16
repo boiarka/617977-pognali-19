@@ -81,16 +81,14 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/logo-mobile-blue@2x.png");
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/logo-tablet-blue@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/logo-tablet-blue@2x.png");
     }
   }
@@ -99,8 +97,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/logo-desktop-white@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/logo-desktop-white@2x.png");
     }
   }
@@ -271,7 +268,6 @@
 .page-header__link-home {
   color: $white;
   position: relative;
-
 }
 
 .page-header__link-home:hover {
