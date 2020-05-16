@@ -62,24 +62,29 @@ a {
   display: none;
 }
 
+.tooltip {
+  position: relative;
+  z-index: 20;
+}
 
 .tooltip:hover::before {
   content: attr(data-name);
+  white-space: nowrap;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: -20px;
+  font-size: 20px;
+  bottom: -54px;
   background-color: $dark-blue-grey-three;
   color: $white;
   border-radius: 4px;
-  padding: 5px 10px;
-  z-index: 999;
+  padding: 15px 25px;
 }
 
 .tooltip:hover::after {
   content: "";
   position: absolute;
-  bottom: 5px;
+  bottom: -5px;
   left: 50%;
   transform: translate(-50%, 0);
   border: 7px solid transparent;
