@@ -3,6 +3,14 @@
   cursor: pointer;
 }
 
+.form-fieldset__option--square:hover {
+  opacity: 0.6;
+}
+
+.form-fieldset__option--square:active {
+  opacity: 0.3;
+}
+
 .form-checkbox__text {
   position: relative;
   letter-spacing: -0.41px;
@@ -71,6 +79,15 @@
     width: 36px;
     height: 36px;
   }
+}
+
+.form-checkbox__input--border:hover + .form-checkbox__text::before {
+  border-color: $blue-grey;
+}
+
+.form-checkbox__input--border:active + .form-checkbox__text::before {
+  border-color: $pale-grey-three;
+  background-color: $pale-grey-three;
 }
 
 .form-checkbox__input--border:checked + .form-checkbox__text::after {

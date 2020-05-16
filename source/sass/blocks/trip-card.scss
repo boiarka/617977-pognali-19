@@ -100,6 +100,16 @@
   }
 }
 
+.trip-card__button:hover {
+  cursor: pointer;
+  color: $black-60;
+}
+
+.trip-card__button:active {
+  cursor: pointer;
+  color: $black-08;
+}
+
 .trip-card__counter {
   margin-right: 4px;
 

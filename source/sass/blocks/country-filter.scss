@@ -136,6 +136,14 @@
   }
 }
 
+.country-filter__turn-button:hover {
+  background-color: $light-blue-gery-four;
+}
+
+.country-filter__turn-button:active::after {
+  opacity: 0.3;
+}
+
 .country-filter__turn-button::after {
   content: "";
   position: absolute;
@@ -189,6 +197,16 @@
   position: relative;
   border: none;
   background-color: transparent;
+}
+
+.country-filter__toggle:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.country-filter__toggle:active {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .country-filter__toggle--closed {

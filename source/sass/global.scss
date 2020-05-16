@@ -61,3 +61,33 @@ a {
 .d-none {
   display: none;
 }
+
+.tooltip {
+  position: relative;
+  z-index: 20;
+}
+
+.tooltip:hover::before {
+  content: attr(data-name);
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 20px;
+  bottom: -54px;
+  background-color: $dark-blue-grey-three;
+  color: $white;
+  border-radius: 4px;
+  padding: 15px 25px;
+}
+
+.tooltip:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 7px solid transparent;
+  border-bottom: 7px solid $dark-blue-grey-three;
+  z-index: 999;
+}

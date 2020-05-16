@@ -33,6 +33,14 @@
   background-color: $light-gold;
 }
 
+.pagination__link:hover {
+  color: $black-60;
+}
+
+.pagination__link:active {
+  background-color: $light-gold;
+}
+
 .pagination__item {
   padding: 0;
   width: 50%;
@@ -69,6 +77,15 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+}
+
+.pagination-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.pagination-button:active {
+  opacity: 0.3;
 }
 
 .pagination-button--left {

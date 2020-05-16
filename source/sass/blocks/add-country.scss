@@ -26,6 +26,7 @@
   font-weight: 500;
   text-align: left;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 4px 24px 0;
@@ -34,6 +35,10 @@
     margin-top: 2px;
     height: 70px;
   }
+}
+
+.add-country__button:hover {
+  background-color: $blue-grey-white;
 }
 
 .add-country__button::after {
@@ -68,7 +73,7 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: $pale-grey;
     width: 15px;
     height: 15px;
     right: -41px;

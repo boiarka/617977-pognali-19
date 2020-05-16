@@ -3,8 +3,8 @@
   background-color: $white;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
   padding-bottom: 16px;
+  transition: all 0.3s;
 
   @media (min-width: $tablet-width) {
     border-radius: 20px;
@@ -24,6 +24,7 @@
 
 .traveler-card__name {
   position: relative;
+  z-index: 2;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
@@ -70,6 +71,7 @@
   margin: 0;
   list-style: none;
   position: absolute;
+  z-index: 999;
   width: 100%;
   transform: translate(0, -50%);
   display: flex;
@@ -77,6 +79,8 @@
 }
 
 .traveler-card__country {
+  position: relative;
+  z-index: 20;
   margin-right: 19px;
 }
 
@@ -124,4 +128,23 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.traveler-card__name-link {
+  color: $dark-slate-blue;
+}
+
+.traveler-card__name-link:hover {
+  opacity: 0.7;
+}
+
+.traveler-card__name-link:active {
+  opacity: 0.3;
+}
+
+.traveler-card:hover {
+  box-shadow: 0 6px 21px 0 $black-08;
+  transform: scale(1.02);
 }

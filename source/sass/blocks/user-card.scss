@@ -7,6 +7,8 @@
   padding-bottom: 73px;
   margin-bottom: 10px;
   position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 17px;
@@ -22,13 +24,22 @@
   }
 }
 
-.user-card__photo picture {
-  @media (min-width: $desktop-width) {
-    width: 30%;
-  }
+.user-card:hover {
+  box-shadow: 0 6px 21px 0 $black-08;
+}
+
+.user-card:hover .user-card__image {
+  transform: scale(1.1);
+}
+
+
+.user-card__image {
+  transition: all 0.2s;
+  width: 100%;
 }
 
 .user-card__photo {
+  overflow: hidden;
   display: flex;
   position: absolute;
   top: 15px;
@@ -48,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    width: 100%;
+    width: 30%;
     height: 100%;
     border-radius: 20px 0 0 20px;
   }
@@ -188,6 +199,18 @@
   }
 }
 
+.user-card__like-button:hover {
+  cursor: pointer;
+}
+
+.user-card__like-button:hover::before {
+  opacity: 0.6;
+}
+
+.user-card__like-button:active::before {
+  opacity: 0.1;
+}
+
 .user-card__like-button::before {
   content: "";
   position: absolute;
@@ -207,6 +230,18 @@
     height: 17px;
     background-size: 20px 17px;
   }
+}
+
+.user-card__like-button--active:hover {
+  background-color: $light-tan;
+}
+
+.user-card__like-button--active:hover::before {
+  opacity: 1;
+}
+
+.user-card__like-button--active:active::before {
+  opacity: 0.3;
 }
 
 .user-card__like-button--active {
@@ -458,6 +493,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     flex-direction: column;
+    width: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -485,4 +521,16 @@
     margin-left: -1px;
     flex-direction: row;
   }
+}
+
+.user-card__link {
+  color: $dark-slate-blue;
+}
+
+.user-card__link:hover {
+  opacity: 0.6;
+}
+
+.user-card__link:active {
+  opacity: 0.3;
 }

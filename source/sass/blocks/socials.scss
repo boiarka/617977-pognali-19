@@ -27,8 +27,24 @@
   }
 }
 
+.social-link:hover {
+  background-color: $mango-two;
+}
+
+.social-link:active .social-link__icon {
+  opacity: 0.3;
+}
+
 .social-link--nobg {
   background-color: transparent;
+}
+
+.social-link--nobg:hover {
+  opacity: 0.6;
+}
+
+.social-link--nobg:active {
+  opacity: 0.3;
 }
 
 .social-link__icon {

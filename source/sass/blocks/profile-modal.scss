@@ -65,3 +65,12 @@
     border-radius: 0 0 30px 30px;
   }
 }
+
+.profile-modal__button:hover {
+  background-color: $pale-grey;
+  cursor: pointer;
+}
+
+.profile-modal__button:active {
+  color: $dark-slate-blue-30;
+}

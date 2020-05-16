@@ -30,13 +30,14 @@
 }
 
 .arrow-button:hover {
-  background-color: $mango-two;
   cursor: pointer;
+  background-color: $mango-two;
 }
 
 .arrow-button:active {
-  color: $dark-slate-blue-30;
+  color: dark-slate-blue-30;
 }
+
 
 .arrow-button::after {
   width: 10px;
@@ -44,12 +45,13 @@
   position: absolute;
   content: "";
   top: 50%;
-  right: 23px;
+  right: 13px;
   transform: translate(0, -50%);
-  background-image: url("../img/triangle-arrow-right.svg");
+  border: 9px solid transparent;
+  border-left: 9px solid $dark-blue-grey;
 
   @media (min-width: $tablet-width) {
-    right: 35px;
+    right: 15px;
   }
 }
 
@@ -66,4 +68,24 @@
     border-radius: 20px;
     padding: 27px 33px 24px;
   }
+}
+
+.arrow-button--bordered:hover {
+  background-color: $dark-blue-grey;
+  color: $white;
+  cursor: pointer;
+}
+
+.arrow-button--bordered:active {
+  color: $white-30;
+}
+
+.arrow-button--bordered:hover::after {
+  border-left: 9px solid $white;
+  opacity: 1;
+}
+
+.arrow-button--bordered:active::after {
+  border-left: 9px solid $white;
+  opacity: 0.3;
 }

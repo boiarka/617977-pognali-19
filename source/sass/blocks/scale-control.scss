@@ -24,6 +24,7 @@
 }
 
 .scale-control__toggle {
+  transition: all 0.3s;
   position: absolute;
   top: -5px;
   transform: translate(-50%, 0);
@@ -38,6 +39,13 @@
   }
 }
 
+.scale-control__toggle:hover {
+  width: 19px;
+  height: 19px;
+  top: -8px;
+  cursor: pointer;
+}
+
 .scale-control__toggle--min {
   left: 30%;
 }
@@ -46,6 +54,6 @@
   right: -5px;
 
   @media (min-width: $tablet-width) {
-    right: -8px;
+    right: -12px;
   }
 }

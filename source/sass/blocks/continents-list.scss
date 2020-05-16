@@ -35,3 +35,12 @@
 .continents-list__button--active {
   color: $dark-blue-grey;
 }
+
+.continents-list__button:hover {
+  cursor: pointer;
+  color: $dark-blue-grey-60;
+}
+
+.continents-list__button:active {
+  color: $dark-blue-grey;
+}
