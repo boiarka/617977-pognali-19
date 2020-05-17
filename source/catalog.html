@@ -5,16 +5,18 @@
   <meta charset="utf-8">
   <title>Погнали: Попутчики</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--bradius">
     <div class="page-header__main page-header__main--page">
 
       <div class="page-header__wrapper">
-        <a href="/" class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
@@ -35,9 +37,9 @@
       <div class="main-nav">
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="/"><span data-hover="О сервисе">О
+          <li class="site-list__item"><a class="site-list__link" href="index.html"><span data-hover="О сервисе">О
                 сервисе</span></a></li>
-          <li class="site-list__item"><a class="site-list__link" href="/form.html"><span
+          <li class="site-list__item"><a class="site-list__link" href="form.html"><span
                 data-hover="Направления">Направления</span></a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link--inactive"><span
                 data-hover="Попутчики">Попутчики</span></a></li>
@@ -50,7 +52,7 @@
             <a class="header-contacts__link" href="tel:+88005558628">
               <span class="header-contacts__icon header-contacts__icon--mango">
                 <svg class="header-contacts__svg" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#telephone"></use>
+                  <use xlink:href="#telephone"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">8 800 555-86-28</span>
@@ -60,7 +62,7 @@
             <a class="header-contacts__link" href="mailto:mail@htmlacademy.ru">
               <span class="header-contacts__icon header-contacts__icon--mangotwo">
                 <svg class="header-contacts__svg" width="18" height="14">
-                  <use xlink:href="img/sprite.svg#letter"></use>
+                  <use xlink:href="#letter"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">mail@htmlacademy.ru</span>
@@ -72,21 +74,21 @@
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="11" height="21">
-                <use xlink:href="img/sprite.svg#facebook"></use>
+                <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="23" height="12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="#vk"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#instagram"></use>
+                <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
@@ -576,7 +578,7 @@
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-fly"></use>
+                      <use xlink:href="#transport-fly"></use>
                     </svg>
                   </label>
                 </li>
@@ -584,7 +586,7 @@
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bus"></use>
+                      <use xlink:href="#transport-bus"></use>
                     </svg>
                   </label>
                 </li>
@@ -592,7 +594,7 @@
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bike"></use>
+                      <use xlink:href="#transport-bike"></use>
                     </svg>
                   </label>
                 </li>
@@ -600,7 +602,7 @@
                   <label class="transport-list__checkbox">
                     <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-foot"></use>
+                      <use xlink:href="#transport-foot"></use>
                     </svg>
                   </label>
                 </li>
@@ -689,25 +691,19 @@
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-sri-lanka"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-sri-lanka.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Шри-ланка
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-thailand"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Таиланд
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-seychelles"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-seychelles.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Сейшелы
                 </li>
@@ -723,22 +719,22 @@
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-fly"></use>
+                      <use xlink:href="#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bus"></use>
+                      <use xlink:href="#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bike"></use>
+                      <use xlink:href="#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-foot"></use>
+                      <use xlink:href="#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -811,17 +807,13 @@
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-belgium"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-belgium.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Бельгия
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-czech"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-czech.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Чехия
                 </li>
@@ -838,22 +830,22 @@
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-fly"></use>
+                      <use xlink:href="#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bus"></use>
+                      <use xlink:href="#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bike"></use>
+                      <use xlink:href="#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-foot"></use>
+                      <use xlink:href="#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -927,25 +919,19 @@
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-usa"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-usa.svg" width="35" height="24" alt="Флаг">
                   </span>
                   США
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-australia"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-australia.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Австралия
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-dominicana"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-dominica.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Доминикана
                 </li>
@@ -961,22 +947,22 @@
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-fly"></use>
+                      <use xlink:href="#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bus"></use>
+                      <use xlink:href="#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bike"></use>
+                      <use xlink:href="#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-foot"></use>
+                      <use xlink:href="#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -1048,17 +1034,14 @@
               <ul class="user-card__countries">
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-uk"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-united-kingdom.svg" width="35" height="24"
+                      alt="Флаг">
                   </span>
                   Великобритания
                 </li>
                 <li class="user-card__item">
                   <span class="user-card__flag">
-                    <svg class="user-card__flag-icon" width="35" height="24">
-                      <use xlink:href="img/sprite.svg#flag-germany"></use>
-                    </svg>
+                    <img class="user-card__flag-icon" src="img/flag-germany.svg" width="35" height="24" alt="Флаг">
                   </span>
                   Германия
                 </li>
@@ -1074,22 +1057,22 @@
                 <ul class="user-card__transport transport-list transport-list--vertical">
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-fly"></use>
+                      <use xlink:href="#transport-fly"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon transport-list__icon--active" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bus"></use>
+                      <use xlink:href="#transport-bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-bike"></use>
+                      <use xlink:href="#transport-bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__item">
                     <svg class="transport-list__icon" width="19" height="21">
-                      <use xlink:href="img/sprite.svg#transport-foot"></use>
+                      <use xlink:href="#transport-foot"></use>
                     </svg>
                   </li>
                 </ul>
@@ -1118,7 +1101,7 @@
 
         <button class="all-travelers__show-more show-more" type="button">
           <svg class="show-more__icon" width="27" height="27">
-            <use xlink:href="img/sprite.svg#show-more"></use>
+            <use xlink:href="#show-more"></use>
           </svg>
           <span class="show-more__text">Показать еще</span>
         </button>
@@ -1139,14 +1122,14 @@
           <li class="pagination__item pagination__item--button">
             <button class="pagination-button pagination-button--left" type="button">
               <svg class="pagination-button__icon" width="10" height="14">
-                <use xlink:href="img/sprite.svg#pagination-left"></use>
+                <use xlink:href="#pagination-left"></use>
               </svg>
             </button>
           </li>
           <li class="pagination__item">
             <button class="pagination-button pagination-button--right" type="button">
               <svg class="pagination-button__icon" width="10" height="14">
-                <use xlink:href="img/sprite.svg#pagination-right"></use>
+                <use xlink:href="#pagination-right"></use>
               </svg>
             </button>
           </li>
@@ -1157,7 +1140,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__content">
-      <a class="page-footer__logo" href="/">
+      <a class="page-footer__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)"
             srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
@@ -1175,21 +1158,21 @@
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="11" height="21">
-              <use xlink:href="img/sprite.svg#facebook"></use>
+              <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="23" height="12">
-              <use xlink:href="img/sprite.svg#vk"></use>
+              <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#instagram"></use>
+              <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
@@ -1199,7 +1182,7 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="#">
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
