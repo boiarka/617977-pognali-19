@@ -24,44 +24,62 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
+    // добавляю normalize
+    .pipe(sass({
+      includePaths: require("node-normalize-scss").includePaths
+    }))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("css", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(concat("node_modules/normalize.css/normalize.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
+// .pipe(concat("node_modules/normalize.css/normalize.css"))
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  // .pipe(imagemin([
-  //   imagemin.optipng({
-  //     optimizationLevel: 3
-  //   }),
-  //   imagemin.mozjpeg({
-  //     progressive: true
-  //   }),
-  //   imagemin.svgo()
-  // ]))
-  // .pipe(gulp.dest("source/img"))
-  // .pipe(gulp.src("source/img/**/*.{png,jpg}"))
-  // .pipe(webp({
-  //   quality: 90
-  // }))
-  // .pipe(gulp.dest("source/img"))
-
-  // .pipe(gulp.src("source/img/icon-*.svg"))
-  // .pipe(svgstore({
-  //   inlineSvg: true
-  // }))
-  // .pipe(rename("sprite.svg"))
-  // .pipe(gulp.dest("build/img"));
+    .pipe(imagemin([
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.src("source/img/**/*.{png,jpg}"))
+    .pipe(webp({
+      quality: 90
+    }))
+    // svg спрайт
+    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.src("source/img/icon-*.svg"))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("new-sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 });
-
 
 gulp.task("clean", function () {
   return clean("build");
@@ -70,7 +88,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/*.html",
-      "source/css/style.min.css",
       "source/js/**",
       "source/fonts/**",
       "source/img/**"
