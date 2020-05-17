@@ -138,7 +138,7 @@
 
 .alphabet--modal .alphabet__button:hover {
   @media (min-width: $desktop-width) {
-    border-color: $bluey-grey;
+    border: 1px solid $bluey-grey;
   }
 }
 

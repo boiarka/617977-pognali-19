@@ -9,11 +9,14 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--bradius">
     <div class="page-header__main page-header__main--page">
 
       <div class="page-header__wrapper">
-        <a href="/" class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
@@ -34,11 +37,11 @@
       <div class="main-nav">
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="/"><span data-hover="О сервисе">О
+          <li class="site-list__item"><a class="site-list__link" href="index.html"><span data-hover="О сервисе">О
                 сервисе</span></a></li>
           <li class="site-list__item"><a class="site-list__link site-list__link--inactive"><span
                 data-hover="Направления">Направления</span></a></li>
-          <li class="site-list__item"><a class="site-list__link" href="/catalog.html"><span
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html"><span
                 data-hover="Попутчики">Попутчики</span></a></li>
         </ul>
 
@@ -49,7 +52,7 @@
             <a class="header-contacts__link" href="tel:+88005558628">
               <span class="header-contacts__icon header-contacts__icon--mango">
                 <svg class="header-contacts__svg" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#telephone"></use>
+                  <use xlink:href="#telephone"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">8 800 555-86-28</span>
@@ -59,7 +62,7 @@
             <a class="header-contacts__link" href="mailto:mail@htmlacademy.ru">
               <span class="header-contacts__icon header-contacts__icon--mangotwo">
                 <svg class="header-contacts__svg" width="18" height="14">
-                  <use xlink:href="img/sprite.svg#letter"></use>
+                  <use xlink:href="#letter"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">mail@htmlacademy.ru</span>
@@ -71,21 +74,21 @@
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="11" height="21">
-                <use xlink:href="img/sprite.svg#facebook"></use>
+                <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="23" height="12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="#vk"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="social-link social-link--nobg" href="#">
               <svg class="social-link__icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#instagram"></use>
+                <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
@@ -142,7 +145,7 @@
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
                 <svg class="transport-list__icon" width="19" height="21">
-                  <use xlink:href="img/sprite.svg#transport-fly"></use>
+                  <use xlink:href="#transport-fly"></use>
                 </svg>
               </label>
             </li>
@@ -150,7 +153,7 @@
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
                 <svg class="transport-list__icon" width="19" height="21">
-                  <use xlink:href="img/sprite.svg#transport-bus"></use>
+                  <use xlink:href="#transport-bus"></use>
                 </svg>
               </label>
             </li>
@@ -158,7 +161,7 @@
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
                 <svg class="transport-list__icon" width="19" height="21">
-                  <use xlink:href="img/sprite.svg#transport-bike"></use>
+                  <use xlink:href="#transport-bike"></use>
                 </svg>
               </label>
             </li>
@@ -166,7 +169,7 @@
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
                 <svg class="transport-list__icon" width="19" height="21">
-                  <use xlink:href="img/sprite.svg#transport-foot"></use>
+                  <use xlink:href="#transport-foot"></use>
                 </svg>
               </label>
             </li>
@@ -456,9 +459,7 @@
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Босния и Герцеговина</button>
                 <div class="added-country__flag">
-                  <svg class="textarea__flag" width="35" height="24">
-                    <use xlink:href="img/sprite.svg#flag-bosnia"></use>
-                  </svg>
+                  <img class="textarea__flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг">
                   <button class="added-country__close" type="button"></button>
                 </div>
               </div>
@@ -466,9 +467,7 @@
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Чехия</button>
                 <div class="added-country__flag">
-                  <svg class="textarea__flag" width="35" height="24">
-                    <use xlink:href="img/sprite.svg#flag-czech"></use>
-                  </svg>
+                  <img class="textarea__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг">
                   <button class="added-country__close" type="button"></button>
                 </div>
               </div>
@@ -479,7 +478,7 @@
                 </button>
                 <button class="choose-country__close" type="button">
                   <svg class="close-button__icon" width="9" height="9">
-                    <use xlink:href="img/sprite.svg#closebutton-icon"></use>
+                    <use xlink:href="#closebutton-icon"></use>
                   </svg>
                 </button>
                 <div class="choose-country__popup countries-popup">
@@ -581,9 +580,7 @@
                 class="connected-textareas__item connected-textareas__item--start connected-textareas__item--line textarea">
                 <p class="textarea__title textarea__title--connected">
                   <span class="textarea__name">Босния и Герцеговина</span>
-                  <svg class="textarea__flag" width="35" height="24">
-                    <use xlink:href="img/sprite.svg#flag-bosnia"></use>
-                  </svg>
+                  <img class="textarea__flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг">
                 </p>
                 <div class="textarea__main">
                   <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
@@ -594,9 +591,7 @@
               <label class="connected-textareas__item connected-textareas__item--end textarea">
                 <p class="textarea__title textarea__title--connected">
                   <span class="textarea__name">Чехия</span>
-                  <svg class="textarea__flag" width="35" height="24">
-                    <use xlink:href="img/sprite.svg#flag-czech"></use>
-                  </svg>
+                  <img class="textarea__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг">
                 </p>
                 <div class="textarea__main">
                   <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
@@ -621,7 +616,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__content">
-      <a class="page-footer__logo" href="/">
+      <a class="page-footer__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)"
             srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
@@ -639,21 +634,21 @@
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="11" height="21">
-              <use xlink:href="img/sprite.svg#facebook"></use>
+              <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="23" height="12">
-              <use xlink:href="img/sprite.svg#vk"></use>
+              <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="social-link social-link--orange" href="#">
             <svg class="social-link__icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#instagram"></use>
+              <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
@@ -663,7 +658,7 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="#">
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
