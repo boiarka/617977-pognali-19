@@ -27,7 +27,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
@@ -35,7 +35,7 @@ gulp.task("css", function () {
 
 
 gulp.task("concat-css", function () {
-  return gulp.src(["node_modules/normalize.css/normalize.css", "source/css/style.min.css"])
+  return gulp.src(["node_modules/normalize.css/normalize.css", "source/css/style.css"])
     .pipe(concat("style.min.css"))
     .pipe(csso())
     .pipe(gulp.dest("build/css"))
@@ -79,8 +79,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/js/**",
-      "source/fonts/**",
-      "source/css/style.min.css"
+      "source/fonts/**"
     ], {
       base: "source"
     })
