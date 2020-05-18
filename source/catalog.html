@@ -6,6 +6,7 @@
   <title>Погнали: Попутчики</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/libs/picturefill.min.js" async=""></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <div class="page-header__main page-header__main--page">
 
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
+        <a href="index.html" class="page-header__logo page-header__logo--colored">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
@@ -52,7 +53,7 @@
             <a class="header-contacts__link" href="tel:+88005558628">
               <span class="header-contacts__icon header-contacts__icon--mango">
                 <svg class="header-contacts__svg" width="18" height="18">
-                  <use xlink:href="#telephone"></use>
+                  <use xlink:href="#contacts-phone"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">8 800 555-86-28</span>
@@ -62,7 +63,7 @@
             <a class="header-contacts__link" href="mailto:mail@htmlacademy.ru">
               <span class="header-contacts__icon header-contacts__icon--mangotwo">
                 <svg class="header-contacts__svg" width="18" height="14">
-                  <use xlink:href="#letter"></use>
+                  <use xlink:href="#contacts-mail"></use>
                 </svg>
               </span>
               <span class="header-contacts__link-text">mail@htmlacademy.ru</span>
@@ -489,8 +490,8 @@
           <div class="search__title">Подберите идеального попутчика</div>
 
           <fieldset class="form-fieldset">
-            <button class="form-fieldset__toggle" type="button">Хобби</button>
-            <div class="form-fieldset__inner mobile-hidden desktop-hidden">
+            <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Хобби</button>
+            <div class="form-fieldset__inner">
               <div class="form-fieldset__name mobile-hidden">Хобби:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option form-fieldset__option--square">
@@ -517,7 +518,7 @@
 
           <fieldset class="form-fieldset">
             <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Музыка</button>
-            <div class="form-fieldset__inner">
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Музыка:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option form-fieldset__option--square">
@@ -543,8 +544,8 @@
           </fieldset>
 
           <fieldset class="form-fieldset">
-            <button class="form-fieldset__toggle" type="button">Еда</button>
-            <div class="form-fieldset__inner mobile-hidden desktop-hidden">
+            <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Еда</button>
+            <div class="form-fieldset__inner">
               <div class="form-fieldset__name mobile-hidden">Еда:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option">
@@ -570,8 +571,8 @@
           </fieldset>
 
           <fieldset class="form-fieldset form-fieldset--rounds">
-            <button class="form-fieldset__toggle" type="button">Транспорт</button>
-            <div class="form-fieldset__inner">
+            <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Транспорт</button>
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Транспорт:</div>
               <ul class="form-fieldset__transport transport-list">
                 <li class="transport-list__item">
@@ -611,8 +612,8 @@
           </fieldset>
 
           <fieldset class="form-fieldset form-fieldset--range">
-            <button class="form-fieldset__toggle" type="button">Левел</button>
-            <div class="form-fieldset__inner">
+            <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Левел</button>
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Левел:</div>
               <div class="range-control">
                 <div class="range-control__inputs">
@@ -657,7 +658,7 @@
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -774,7 +775,7 @@
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -886,7 +887,7 @@
               <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -1002,7 +1003,7 @@
               <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" img" src="img/rogovaya-mobile@1x.jpg"
-                srcset="img/rogovaya-desktop@2x.jpg 2x" alt="Фото юзера">
+                srcset="img/rogovaya-desktop@2x.jpg 2x" alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -1189,8 +1190,10 @@
     </div>
   </footer>
 
-  <script src="js/main-nav.js"></script>
-  <script src="js/filter.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

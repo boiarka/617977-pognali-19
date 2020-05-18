@@ -65,10 +65,23 @@
   }
 }
 
-.page-header__main--opened .page-header__logo {
+.page-header__logo {
   position: relative;
+  width: 96px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
 }
 
+.page-header__logo--colored::after,
 .page-header__main--opened .page-header__logo::after {
   content: "";
   position: absolute;
