@@ -12,12 +12,19 @@
   font-style: normal;
   line-height: 1.13;
   letter-spacing: -0.5px;
+  padding: 0 0 0 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.2;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 8px 0 0;
   }
 }
+
 
 .tags__link {
   color: $greyish-brown;

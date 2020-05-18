@@ -1,7 +1,7 @@
-const chosoeButton = document.querySelector(".choose-country__button");
-const chooseCountryWrapper = document.querySelector(".choose-country");
-const chooseClose = document.querySelector(".choose-country__close");
-const choosePopup = document.querySelector(".countries-popup ");
+var chosoeButton = document.querySelector(".choose-country__button");
+var chooseCountryWrapper = document.querySelector(".choose-country");
+var chooseClose = document.querySelector(".choose-country__close");
+var choosePopup = document.querySelector(".countries-popup ");
 
 if (chosoeButton) {
   chosoeButton.addEventListener("click", function () {

@@ -35,7 +35,7 @@
 }
 
 .arrow-button:active {
-  color: dark-slate-blue-30;
+  color: $dark-slate-blue-30;
 }
 
 
@@ -47,11 +47,15 @@
   top: 50%;
   right: 13px;
   transform: translate(0, -50%);
-  border: 9px solid transparent;
-  border-left: 9px solid $dark-blue-grey;
+  border: 8px solid transparent;
+  border-left: 11px solid $dark-blue-grey;
 
   @media (min-width: $tablet-width) {
     right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 26px;
   }
 }
 

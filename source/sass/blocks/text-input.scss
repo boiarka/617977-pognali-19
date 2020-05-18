@@ -47,16 +47,40 @@
   border: none;
   background-color: $light-gold;
   margin-left: -10px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 82px;
     height: 81px;
     border-radius: 0 20px 20px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 328px;
+    padding: 3px 40px 0 36px;
+  }
+}
+
+.text-input__button:hover {
+  background-color: $mango-two;
 }
 
 .text-input__button svg {
   width: 10px;
   height: 14px;
   fill: $dark-slate-blue;
+}
+
+.text-input__button-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark-slate-blue;
+  }
 }

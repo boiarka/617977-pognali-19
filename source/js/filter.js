@@ -1,12 +1,12 @@
-const filter = document.querySelector(".country-filter");
-const filterToggle = document.querySelector(".country-filter__toggle");
-const filterContinents = document.querySelector(".country-filter__continents");
-const filterCountries = document.querySelector(".country-filter__countries");
+var filter = document.querySelector(".country-filter");
+var filterToggle = document.querySelector(".country-filter__toggle");
+var filterContinents = document.querySelector(".country-filter__continents");
+var filterCountries = document.querySelector(".country-filter__countries");
 
-const filterCloseText = document.querySelector(".country-filter__close");
-const filterShowAllText = document.querySelector(".country-filter__show-all");
+var filterCloseText = document.querySelector(".country-filter__close");
+var filterShowAllText = document.querySelector(".country-filter__show-all");
 
-const filterTurnButton = document.querySelector(".country-filter__turn-button");
+var filterTurnButton = document.querySelector(".country-filter__turn-button");
 
 function filterToggler() {
   filterToggle.classList.toggle("country-filter__toggle--opened");
@@ -27,12 +27,12 @@ if (filterTurnButton) {
 
 // pick country
 
-const countriesListDiv = document.querySelector(".country-filter__countries-checked");
-const alphabetButtons = document.querySelectorAll(".alphabet .alphabet__button");
-const alphabetLists = document.querySelectorAll(".alphabet .alphabet__list");
+var countriesListDiv = document.querySelector(".country-filter__countries-checked");
+var alphabetButtons = document.querySelectorAll(".alphabet .alphabet__button");
+var alphabetLists = document.querySelectorAll(".alphabet .alphabet__list");
 
 function pickList(dataset) {
-  for (let k = 0; k < alphabetLists.length; k++) {
+  for (var k = 0; k < alphabetLists.length; k++) {
     if (alphabetLists[k].dataset.info == dataset) {
       alphabetLists[k].classList.remove("alphabet__list");
       alphabetLists[k].classList.add("country-filter__list", "countries-list", "countries-list--active");
@@ -43,7 +43,7 @@ function pickList(dataset) {
 }
 
 if (alphabetButtons && alphabetLists) {
-  for (let i = 0; i < alphabetButtons.length; i++) {
+  for (var i = 0; i < alphabetButtons.length; i++) {
     alphabetButtons[i].addEventListener("click", function () {
       pickList(alphabetButtons[i].dataset.info);
     });
@@ -51,9 +51,9 @@ if (alphabetButtons && alphabetLists) {
 }
 
 //search
-const searchButtons = document.querySelectorAll(".page-main__filter .form-fieldset__toggle");
-const searchInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner");
-const openedInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner--opened");
+var searchButtons = document.querySelectorAll(".page-main__filter .form-fieldset__toggle");
+var searchInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner");
+var closedNums = [0, 2];
 
 function addListener(button, inner) {
   button.addEventListener("click", function () {
@@ -62,10 +62,15 @@ function addListener(button, inner) {
   });
 }
 
-if (searchInners && searchButtons) {
-  for (let i = 0; i < searchInners.length; i++) {
-    searchInners[i].classList.add("form-fieldset__inner--closed");
-    searchButtons[i].classList.add("form-fieldset__toggle--close");
+if (searchInners.length > 0 && searchButtons.length > 0) {
+  for (var i = 0; i < searchInners.length; i++) {
     addListener(searchButtons[i], searchInners[i]);
   }
+
+  for (var i = 0; i < closedNums.length; i++) {
+    var counter = closedNums[i];
+    searchInners[counter].classList.add("form-fieldset__inner--closed");
+    searchButtons[counter].classList.add("form-fieldset__toggle--close");
+  }
+
 }

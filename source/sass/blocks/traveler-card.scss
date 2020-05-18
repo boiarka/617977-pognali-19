@@ -111,6 +111,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 14px;
+  }
 }
 
 .traveler-card__transport {
