@@ -62,13 +62,15 @@ function addListener(button, inner) {
   });
 }
 
-if (searchInners && searchButtons) {
+if (searchInners.length > 0 && searchButtons.length > 0) {
   for (var i = 0; i < searchInners.length; i++) {
-
     addListener(searchButtons[i], searchInners[i]);
   }
+
   for (var i = 0; i < closedNums.length; i++) {
-    searchInners[closedNums[i]].classList.add("form-fieldset__inner--closed");
-    searchButtons[closedNums[i]].classList.add("form-fieldset__toggle--close");
+    var counter = closedNums[i];
+    searchInners[counter].classList.add("form-fieldset__inner--closed");
+    searchButtons[counter].classList.add("form-fieldset__toggle--close");
   }
+
 }
