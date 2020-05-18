@@ -95,6 +95,11 @@ gulp.task("html", function () {
 });
 
 
+gulp.task("scripts", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -104,8 +109,14 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("css", "concat-css", "reload-page"));
+  gulp.watch("source/js/*.js", gulp.series("scripts", "reload-page"));
+  gulp.watch("source/*.html", gulp.series("html", "reload-page"));
+});
+
+gulp.task("reload-page", function (done) {
+  server.reload();
+  done();
 });
 
 

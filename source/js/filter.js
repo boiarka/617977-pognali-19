@@ -22,7 +22,7 @@ filterToggle.addEventListener("click", filterToggler);
 filterTurnButton.addEventListener("click", filterToggler);
 
 
-// test
+// pick country
 
 const countriesListDiv = document.querySelector(".country-filter__countries-checked");
 const alphabetButtons = document.querySelectorAll(".alphabet .alphabet__button");
@@ -43,4 +43,22 @@ for (let i = 0; i < alphabetButtons.length; i++) {
   alphabetButtons[i].addEventListener("click", function () {
     pickList(alphabetButtons[i].dataset.info);
   });
+}
+
+
+//search
+const searchButtons = document.querySelectorAll(".page-main__filter .form-fieldset__toggle");
+const searchInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner");
+
+function addListener(button, inner) {
+  button.addEventListener("click", function () {
+    inner.classList.toggle("form-fieldset__inner--closed");
+    button.classList.toggle("form-fieldset__toggle--close");
+  });
+}
+
+for (let i = 0; i < searchInners.length; i++) {
+  searchInners[i].classList.toggle("form-fieldset__inner--closed");
+  searchButtons[i].classList.toggle("form-fieldset__toggle--close");
+  addListener(searchButtons[i], searchInners[i]);
 }

@@ -46,6 +46,18 @@
   }
 }
 
+.form-fieldset__inner--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .desktop-hidden {
   @media (min-width: $desktop-width) {
     display: none;

@@ -65,10 +65,11 @@
   }
 }
 
-.page-header__main--opened .page-header__logo {
+.page-header__logo {
   position: relative;
 }
 
+.page-header__logo--colored::after,
 .page-header__main--opened .page-header__logo::after {
   content: "";
   position: absolute;
