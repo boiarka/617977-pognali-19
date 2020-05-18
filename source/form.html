@@ -6,6 +6,7 @@
   <title>Погнали: Направления</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/libs/picturefill.min.js" async=""></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <source media="(min-width: 768px)"
               srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
             <img class="page-header__image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png"
-              alt="Логотип сайта «Погнали?»">
+              alt="Логотип сайта «Погнали?»" width="100" height="19">
           </picture>
         </a>
         <button class="page-header__toggle"></button>
@@ -665,8 +666,10 @@
     </div>
   </footer>
 
-  <script src="js/main-nav.js"></script>
-  <script src="js/countries-popup.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

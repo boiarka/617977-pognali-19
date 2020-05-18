@@ -6,6 +6,7 @@
   <title>Погнали: Попутчики</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/libs/picturefill.min.js" async=""></script>
 </head>
 
 <body>
@@ -517,7 +518,7 @@
 
           <fieldset class="form-fieldset">
             <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Музыка</button>
-            <div class="form-fieldset__inner">
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Музыка:</div>
               <ul class="form-fieldset__list">
                 <li class="form-fieldset__option form-fieldset__option--square">
@@ -571,7 +572,7 @@
 
           <fieldset class="form-fieldset form-fieldset--rounds">
             <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Транспорт</button>
-            <div class="form-fieldset__inner">
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Транспорт:</div>
               <ul class="form-fieldset__transport transport-list">
                 <li class="transport-list__item">
@@ -612,7 +613,7 @@
 
           <fieldset class="form-fieldset form-fieldset--range">
             <button class="form-fieldset__toggle form-fieldset__toggle--close" type="button">Левел</button>
-            <div class="form-fieldset__inner">
+            <div class="form-fieldset__inner form-fieldset__inner--opened">
               <div class="form-fieldset__name mobile-hidden">Левел:</div>
               <div class="range-control">
                 <div class="range-control__inputs">
@@ -657,7 +658,7 @@
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -774,7 +775,7 @@
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -886,7 +887,7 @@
               <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
-                alt="Фото юзера">
+                alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -1002,7 +1003,7 @@
               <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x"
                 type="image/jpg">
               <img class="user-card__image" img" src="img/rogovaya-mobile@1x.jpg"
-                srcset="img/rogovaya-desktop@2x.jpg 2x" alt="Фото юзера">
+                srcset="img/rogovaya-desktop@2x.jpg 2x" alt="Фото юзера" width="70" height="70">
             </picture>
           </div>
           <div class="user-card__content">
@@ -1189,8 +1190,10 @@
     </div>
   </footer>
 
-  <script src="js/main-nav.js"></script>
-  <script src="js/filter.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

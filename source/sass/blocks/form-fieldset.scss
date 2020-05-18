@@ -58,6 +58,10 @@
   }
 }
 
+.form-fieldset__inner--opened {
+  display: flex;
+}
+
 .desktop-hidden {
   @media (min-width: $desktop-width) {
     display: none;
