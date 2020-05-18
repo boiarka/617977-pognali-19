@@ -287,6 +287,30 @@
 
 .step__nav-list-item {
   margin-bottom: 19px;
+  position: relative;
+}
+
+.step__nav-list-item::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    width: 5px;
+    height: 5px;
+    background-color: $steel-gray;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+}
+
+.step__nav-list-item--active button {
+  color: $black;
+}
+
+.step__nav-list-item--active::after {
+  background-color: $dark-slate-blue;
+  opacity: 1;
 }
 
 .step__nav-button {

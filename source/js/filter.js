@@ -53,7 +53,7 @@ if (alphabetButtons && alphabetLists) {
 //search
 var searchButtons = document.querySelectorAll(".page-main__filter .form-fieldset__toggle");
 var searchInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner");
-var openedInners = document.querySelectorAll(".page-main__filter .form-fieldset__inner--opened");
+var closedNums = [0, 2];
 
 function addListener(button, inner) {
   button.addEventListener("click", function () {
@@ -64,8 +64,11 @@ function addListener(button, inner) {
 
 if (searchInners && searchButtons) {
   for (var i = 0; i < searchInners.length; i++) {
-    searchInners[i].classList.add("form-fieldset__inner--closed");
-    searchButtons[i].classList.add("form-fieldset__toggle--close");
+
     addListener(searchButtons[i], searchInners[i]);
+  }
+  for (var i = 0; i < closedNums.length; i++) {
+    searchInners[closedNums[i]].classList.add("form-fieldset__inner--closed");
+    searchButtons[closedNums[i]].classList.add("form-fieldset__toggle--close");
   }
 }

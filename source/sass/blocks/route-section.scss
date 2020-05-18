@@ -26,6 +26,25 @@
   }
 }
 
+.route-section::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -56px;
+    right: 136px;
+    width: 1px;
+    height: 56px;
+    background-image: linear-gradient(to top, transparent, $light-blue-grey-five);
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -106px;
+    height: 106px;
+    right: 225px;
+  }
+}
+
 .route-section__item {
   margin-top: 22px;
 
