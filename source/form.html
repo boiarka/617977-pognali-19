@@ -109,7 +109,7 @@
         <div class="level level--big user-profile__level">
           <div class="level__progress-inner">
             <svg class="level__progress-pie" width="100" height="100" stroke-dasharray="80 100"
-              viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              viewBox="0 0 31.83 31.83" aria-hidden="true">
               <circle r="15.915" cx="15.915" cy="15.915" stroke-width="2"></circle>
             </svg>
           </div>
@@ -134,7 +134,7 @@
 
         <div class="user-profile__tags">
           <span class="user-profile__title user-profile__title--left">Тэги</span>
-          <textarea class="user-profile__textarea-tags" name="" id="">#бургер #бар #футбол #концерт #крафт</textarea>
+          <textarea class="user-profile__textarea-tags" name="user-tags">#бургер #бар #футбол #концерт #крафт</textarea>
         </div>
 
 
@@ -252,7 +252,8 @@
               </div>
               <div class="step__nav">
                 <ul class="step__nav-list">
-                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button" type="button">Даты</button></li>
+                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button"
+                      type="button">Даты</button></li>
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Маршрут</button></li>
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Развлечения</button>
                   </li>
@@ -263,15 +264,17 @@
             <div class="step__inputs">
 
               <div class="step__section counter-control">
-                <label class="counter-control__content" for="plan-travelers">
+                <div class="counter-control__content">
                   <span class="counter-control__name">Ищу попутчиков:</span>
                   <span class="counter-control__text counter-control__title--gray">Чел.</span>
-                  <div class="counter-control__wrapper">
-                    <button class="counter-control__button counter-control__button-minus" type="button"></button>
+                  <span class="counter-control__wrapper">
+                    <button class="counter-control__button counter-control__button-minus" for="plan-travelers"
+                      type="button"></button>
                     <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
-                    <button class="counter-control__button counter-control__button-plus" type="button"></button>
-                  </div>
-                </label>
+                    <button class="counter-control__button counter-control__button-plus" for="plan-travelers"
+                      type="button"></button>
+                  </span>
+                </div>
               </div>
 
               <div class="step__section step__section--checkbox">
@@ -283,15 +286,17 @@
               </div>
 
               <div class="step__section counter-control">
-                <label class="counter-control__content" for="plan-duration">
+                <div class="counter-control__content">
                   <span class="counter-control__name">Длительность:</span>
                   <span class="counter-control__text counter-control__title--gray">дн.</span>
-                  <div class="counter-control__wrapper">
-                    <button class="counter-control__button counter-control__button-minus" type="button"></button>
+                  <span class="counter-control__wrapper">
+                    <button class="counter-control__button counter-control__button-minus" for="plan-duration"
+                      type="button"></button>
                     <input class="counter-control__input" type="text" value="1" name="duration" id="plan-duration" />
-                    <button class="counter-control__button counter-control__button-plus" type="button"></button>
-                  </div>
-                </label>
+                    <button class="counter-control__button counter-control__button-plus" for="plan-duration"
+                      type="button"></button>
+                  </span>
+                </div>
               </div>
 
             </div>
@@ -448,7 +453,8 @@
               <div class="step__nav">
                 <ul class="step__nav-list">
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Даты</button></li>
-                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button" type="button">Маршрут</button></li>
+                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button"
+                      type="button">Маршрут</button></li>
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Развлечения</button>
                   </li>
                 </ul>
@@ -570,7 +576,8 @@
                 <ul class="step__nav-list">
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Даты</button></li>
                   <li class="step__nav-list-item"><button class="step__nav-button" type="button">Маршрут</button></li>
-                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button" type="button">Развлечения</button>
+                  <li class="step__nav-list-item step__nav-list-item--active"><button class="step__nav-button"
+                      type="button">Развлечения</button>
                   </li>
                 </ul>
               </div>
@@ -579,10 +586,10 @@
             <div class="step__selected-countries connected-textareas">
               <label
                 class="connected-textareas__item connected-textareas__item--start connected-textareas__item--line textarea">
-                <p class="textarea__title textarea__title--connected">
+                <span class="textarea__title textarea__title--connected">
                   <span class="textarea__name">Босния и Герцеговина</span>
                   <img class="textarea__flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг">
-                </p>
+                </span>
                 <div class="textarea__main">
                   <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
                     name="text"></textarea>
@@ -590,10 +597,10 @@
               </label>
 
               <label class="connected-textareas__item connected-textareas__item--end textarea">
-                <p class="textarea__title textarea__title--connected">
+                <span class="textarea__title textarea__title--connected">
                   <span class="textarea__name">Чехия</span>
                   <img class="textarea__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг">
-                </p>
+                </span>
                 <div class="textarea__main">
                   <textarea class="connected-textareas__textarea textarea__field" placeholder="План действий"
                     name="text">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
