@@ -98,6 +98,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 17px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 

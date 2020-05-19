@@ -48,3 +48,18 @@
     margin-top: 0;
   }
 }
+
+.page-header__image {
+  width: 96px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
+}

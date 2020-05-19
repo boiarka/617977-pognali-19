@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -60,6 +61,19 @@
   }
 }
 
+.transport-list__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.transport-list__item--btn:hover {
+  box-shadow: 0 2px 10px 0 $black-08;
+}
 
 .transport-list__item--active {
   opacity: 1;
@@ -74,22 +88,9 @@
   background-color: $pale-grey;
 }
 
-.transport-list__checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 1px;
-  width: 100%;
-  height: 100%;
-}
-
-.transport-list--button:hover {
-  box-shadow: 0 2px 10px 0 $black-08;
-}
-
-.transport-list__checkbox:hover .transport-list__icon {
-  opacity: 0.3;
+.transport-list__checkbox:hover .transport-list__icon,
+.transport-list__input:focus + .transport-list__icon {
+  opacity: 0.4;
 }
 
 .transport-list__checkbox:active .transport-list__icon {
@@ -101,11 +102,25 @@
   fill: $dark-slate-blue;
 }
 
-.transport-list__input:checked:hover + .transport-list__icon {
+.transport-list__input:checked:hover + .transport-list__icon,
+.transport-list__input:checked:focus + .transport-list__icon {
   opacity: 0.7;
 }
 
 .transport-list__icon--active {
   fill: $dark-slate-blue;
   opacity: 1;
+}
+
+.transport-list--form {
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

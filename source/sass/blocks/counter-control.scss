@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 
-.counter-control__title--gray {
+.counter-control__title--grey {
   color: $dark-slate-blue-30;
 }
 
@@ -179,7 +179,6 @@
   }
 }
 
-
 .counter-control__icon--plus {
   width: 14px;
   height: 14px;
@@ -188,4 +187,8 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.counter-control__text--blue {
+  color: $dark-slate-blue-30;
 }

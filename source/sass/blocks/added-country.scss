@@ -127,22 +127,6 @@
   }
 }
 
-.close-button__icon {
-  width: 9px;
-  height: 9px;
-  fill: $bluey-grey;
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 17px;
-    height: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    fill: $pale-grey;
-  }
-}
-
 .added-country__button {
   margin-right: -1px;
   width: 166px;

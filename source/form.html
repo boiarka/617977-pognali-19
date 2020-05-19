@@ -34,7 +34,7 @@
               alt="Логотип сайта «Погнали?»" width="100" height="19">
           </picture>
         </a>
-        <button class="page-header__toggle"></button>
+        <button class="page-header__toggle" aria-label="Кнопка открыть/закрыть меню"></button>
       </div>
 
       <div class="main-nav">
@@ -143,8 +143,8 @@
         <div class="user-profile__transport">
           <span class="user-profile__title">Транспорт</span>
 
-          <ul class="form-fieldset__transport transport-list">
-            <li class="transport-list__item transport-list--button">
+          <ul class="transport-list transport-list--form">
+            <li class="transport-list__item transport-list__item--btn">
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="plane" />
                 <svg class="transport-list__icon" width="19" height="21">
@@ -152,7 +152,7 @@
                 </svg>
               </label>
             </li>
-            <li class="transport-list__item transport-list--button">
+            <li class="transport-list__item transport-list__item--btn">
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="bus" />
                 <svg class="transport-list__icon" width="19" height="21">
@@ -160,7 +160,7 @@
                 </svg>
               </label>
             </li>
-            <li class="transport-list__item transport-list--button">
+            <li class="transport-list__item transport-list__item--btn">
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="bike" />
                 <svg class="transport-list__icon" width="19" height="21">
@@ -168,7 +168,7 @@
                 </svg>
               </label>
             </li>
-            <li class="transport-list__item transport-list--button">
+            <li class="transport-list__item transport-list__item--btn">
               <label class="transport-list__checkbox">
                 <input class="visually-hidden transport-list__input" type="checkbox" name="foot" />
                 <svg class="transport-list__icon" width="19" height="21">
@@ -230,13 +230,13 @@
           <p class="add-plan__title">Добавить план:</p>
           <ul class="add-plan__dots dots-list">
             <li class="dots-list__item">
-              <button class="dots-list__button dots-list__button--active" type="button"></button>
+              <button class="dots-list__button dots-list__button--active" type="button" aria-label="Шаг 1"></button>
             </li>
             <li class="dots-list__item">
-              <button class="dots-list__button" type="button"></button>
+              <button class="dots-list__button" type="button" aria-label="Шаг 2"></button>
             </li>
             <li class="dots-list__item">
-              <button class="dots-list__button" type="button"></button>
+              <button class="dots-list__button" type="button" aria-label="Шаг 3"></button>
             </li>
           </ul>
         </div>
@@ -264,15 +264,14 @@
             </div>
 
             <div class="step__inputs">
-
               <div class="step__section counter-control">
                 <div class="counter-control__content">
                   <span class="counter-control__name">Ищу попутчиков:</span>
-                  <span class="counter-control__text counter-control__title--gray">Чел.</span>
+                  <span class="counter-control__text counter-control__text--blue">Чел.</span>
                   <span class="counter-control__wrapper">
-                    <button class="counter-control__button counter-control__button-minus" type="button"></button>
+                    <button class="counter-control__button counter-control__button-minus" type="button" aria-label="Увеличить кол-во попутчиков"></button>
                     <input class="counter-control__input" type="text" value="1" name="travelers" id="plan-travelers" />
-                    <button class="counter-control__button counter-control__button-plus" type="button"></button>
+                    <button class="counter-control__button counter-control__button-plus" type="button" aria-label="Уменьшить кол-во попутчиков"></button>
                   </span>
                 </div>
               </div>
@@ -288,11 +287,11 @@
               <div class="step__section counter-control">
                 <div class="counter-control__content">
                   <span class="counter-control__name">Длительность:</span>
-                  <span class="counter-control__text counter-control__title--gray">дн.</span>
+                  <span class="counter-control__text counter-control__text--blue">дн.</span>
                   <span class="counter-control__wrapper">
-                    <button class="counter-control__button counter-control__button-minus" type="button"></button>
+                    <button class="counter-control__button counter-control__button-minus" type="button" aria-label="Увеличить длительность"></button>
                     <input class="counter-control__input" type="text" value="1" name="duration" id="plan-duration" />
-                    <button class="counter-control__button counter-control__button-plus" type="button"></button>
+                    <button class="counter-control__button counter-control__button-plus" type="button" aria-label="Уменьшить длительность"></button>
                   </span>
                 </div>
               </div>
@@ -302,9 +301,9 @@
 
             <div class="step_calendar calendar">
               <div class="calendar__header calendar-nav">
-                <button class="calendar-nav__button calendar-nav__button--left" type="button"></button>
+                <button class="calendar-nav__button calendar-nav__button--left" type="button" aria-label="Переключить месяц назад"></button>
                 <div class="calendar-nav__date">Март 2019</div>
-                <button class="calendar-nav__button calendar-nav__button--right" type="button"></button>
+                <button class="calendar-nav__button calendar-nav__button--right" type="button" aria-label="Переключить месяц вперёд"></button>
               </div>
 
               <table class="calendar__table days-table">
@@ -464,16 +463,16 @@
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Босния и Герцеговина</button>
                 <div class="added-country__flag">
-                  <img class="textarea__flag" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг">
-                  <button class="added-country__close" type="button"></button>
+                  <img class="added-country__flag-img" width="35" height="24" src="img/flag-bosnia.svg" alt="Флаг">
+                  <button class="added-country__close" type="button" aria-label="Удалить страну"></button>
                 </div>
               </div>
 
               <div class="route-section__item added-country">
                 <button class="added-country__button" type="button">Чехия</button>
                 <div class="added-country__flag">
-                  <img class="textarea__flag" width="35" height="24" src="img/flag-czech.svg" alt="Флаг">
-                  <button class="added-country__close" type="button"></button>
+                  <img class="added-country__flag-img" width="35" height="24" src="img/flag-czech.svg" alt="Флаг">
+                  <button class="added-country__close" type="button" aria-label="Удалить страну"></button>
                 </div>
               </div>
 
@@ -482,7 +481,7 @@
                   Выберите страну
                 </button>
                 <button class="choose-country__close" type="button">
-                  <svg class="close-button__icon" width="9" height="9">
+                  <svg class="choose-country__icon" width="9" height="9">
                     <use xlink:href="#closebutton-icon"></use>
                   </svg>
                 </button>
@@ -631,7 +630,7 @@
           <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img class="page-header__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
+          <img class="page-footer__image" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png"
             alt="Логотип сайта «Погнали?»">
         </picture>
       </a>

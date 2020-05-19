@@ -4,6 +4,8 @@ var mainNav = document.querySelector(".main-nav");
 var logo = document.querySelector(".page-header__logo");
 
 document.createElement("picture");
+
+headerToggle.classList.add("page-header__toggle--vissible");
 logo.classList.remove("page-header__logo--colored");
 headerMain.classList.add("page-header__main--closed");
 mainNav.classList.add("main-nav--closed");

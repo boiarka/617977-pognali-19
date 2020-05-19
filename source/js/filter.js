@@ -11,7 +11,7 @@ var filterTurnButton = document.querySelector(".country-filter__turn-button");
 function filterToggler() {
   filterToggle.classList.toggle("country-filter__toggle--opened");
   filterContinents.classList.toggle("country-filter--opened");
-  filterCountries.classList.toggle("country-filter--opened");
+  filterCountries.classList.toggle("country-filter__countries--opened");
   filter.classList.toggle("country-filter__opened");
 
   filterCloseText.classList.toggle("d-none");

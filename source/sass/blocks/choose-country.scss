@@ -133,6 +133,22 @@
   }
 }
 
+.choose-country__icon {
+  width: 9px;
+  height: 9px;
+  fill: $bluey-grey;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 17px;
+    height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $pale-grey;
+  }
+}
+
 .choose-country__close svg {
   @media (min-width: $desktop-width) {
     fill: $black;
@@ -184,7 +200,7 @@
   cursor: pointer;
 }
 
-.choose-country--active .choose-country__close svg {
+.choose-country--active .choose-country__icon {
   @media (min-width: $desktop-width) {
     fill: $white;
     opacity: 0.8;
